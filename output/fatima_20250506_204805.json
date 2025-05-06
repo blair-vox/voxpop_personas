@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Fatima",
+    "age": "36",
+    "location": "North Bondi",
+    "occupation": "Freelance designer",
+    "political_leaning": "Greens"
+  },
+  "narrative_response": "Honestly, I'm leaning towards supporting the policy. Given that I, like many others in Bondi, prefer walking and biking over driving, reducing parking requirements seems like a step in the right direction to prioritize more sustainable modes of transport and possibly make housing slightly more affordable. However, my support hinges on the council's commitment to improving public transport and cycling infrastructure to truly cater to those of us who don't rely on cars. Without these improvements, my support could waver.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Adequate public transport",
+      "cycling infrastructure",
+      "potential overflow parking in residential areas"
+    ],
+    "suggested_improvements": [
+      "Increase in public transport services",
+      "expansion of bike lanes",
+      "resident parking schemes"
+    ]
+  },
+  "timestamp": "2025-05-06T20:46:51.585707",
+  "sentiment_score": 0.3294642857142857,
+  "key_themes": [
+    "sustainable transport",
+    "affordable housing",
+    "public transport improvement",
+    "cycling infrastructure enhancement",
+    "conditional policy support"
+  ]
+}

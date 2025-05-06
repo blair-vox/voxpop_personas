@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Gloria",
+    "age": "84",
+    "location": "Queens Park",
+    "occupation": "Retired nurse",
+    "political_leaning": "Labor"
+  },
+  "narrative_response": "As Gloria, I'm somewhat torn about this policy. On one hand, I understand the need for more housing and the environmental benefits of reducing car dependency. However, I worry about the impact on transport and parking availability for residents and visitors, especially for those of us who rely on lifts to get around. If the council could ensure improved public transport services and dedicated parking spaces for people with mobility issues, I might be more inclined to support the policy.",
+  "survey_response": {
+    "support_level": 2,
+    "impact_on_housing": 0,
+    "impact_on_transport": 2,
+    "impact_on_community": 2,
+    "key_concerns": [
+      "Increased parking pressure on existing streets",
+      "Reduced mobility for elderly and disabled",
+      "Potential increase in traffic congestion"
+    ],
+    "suggested_improvements": [
+      "Enhanced public transport services",
+      "Provision of mobility scooter charging stations",
+      "Designated parking areas for residents and visitors with mobility issues"
+    ]
+  },
+  "timestamp": "2025-05-06T20:43:33.711781",
+  "sentiment_score": 0.25,
+  "key_themes": [
+    "housing development",
+    "environmental benefits of reduced car dependency",
+    "concerns about transport and parking availability",
+    "need for improved public transport",
+    "accommodation for mobility issues"
+  ]
+}

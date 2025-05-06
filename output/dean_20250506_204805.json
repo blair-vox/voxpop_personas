@@ -1,0 +1,34 @@
+{
+  "persona_details": {
+    "name": "Dean",
+    "age": "22",
+    "location": "Dover Heights",
+    "occupation": "Delivery rider",
+    "political_leaning": "Greens"
+  },
+  "narrative_response": "Honestly, I'm all for it. Living in student housing and getting around by bike, I see how unused car spaces just take up valuable space that could help alleviate the housing crisis we're facing. Plus, with the climate crisis, shouldn't we be encouraging less car use anyway? The only thing that might change my mind is if this policy would lead to less street parking available for residents who genuinely need it, but even then, I'd hope there could be a balanced approach.",
+  "survey_response": {
+    "support_level": 5,
+    "impact_on_housing": 0,
+    "impact_on_transport": 5,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Reduced street parking availability",
+      "potential increase in traffic congestion"
+    ],
+    "suggested_improvements": [
+      "Increase bike lanes",
+      "improve public transport options",
+      "designated parking areas for car share services"
+    ]
+  },
+  "timestamp": "2025-05-06T20:47:53.151658",
+  "sentiment_score": 0.1777777777777778,
+  "key_themes": [
+    "housing crisis",
+    "climate crisis",
+    "reducing car use",
+    "need for street parking",
+    "balanced approach"
+  ]
+}

@@ -15,10 +15,9 @@ This project processes persona data and interacts with the OpenAI API to generat
 
 ## Setup Instructions
 
-1. Create a virtual environment:
+1. Activate the pyPOSSUM conda environment:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+conda activate pyPOSSUM
 ```
 
 2. Install dependencies:

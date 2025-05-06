@@ -1,0 +1,37 @@
+{
+  "persona_details": {
+    "name": "Eli",
+    "age": "34",
+    "location": "Randwick",
+    "occupation": "Product manager (tech)",
+    "political_leaning": "Teal Independent"
+  },
+  "narrative_response": "As someone deeply involved in the tech industry and committed to innovative solutions for urban development, I'm inclined to support the proposal by Waverley Council. Removing minimum parking requirements for new apartment developments in Bondi could pave the way for more sustainable urban living and better use of space. My MBA background and experience in product management have taught me the value of flexibility and adaptation to meet resident needs more effectively. However, my support hinges on the council implementing strategies to manage potential increases in demand for public transport and ensuring that any developments contribute positively to the community's urban fabric.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 3,
+    "key_concerns": [
+      "Increased demand on public transport",
+      "potential for parking congestion in surrounding areas",
+      "ensuring developments are in line with community needs"
+    ],
+    "suggested_improvements": [
+      "Investment in public transport infrastructure",
+      "provision of shared mobility options (e.g.",
+      "car-share schemes",
+      "secure bike parking)",
+      "community consultation to ensure developments meet local needs"
+    ]
+  },
+  "timestamp": "2025-05-06T20:47:27.622971",
+  "sentiment_score": 0.22797202797202795,
+  "key_themes": [
+    "sustainable urban living",
+    "innovative urban development solutions",
+    "flexibility and adaptation in urban planning",
+    "public transport demand management",
+    "positive community impact"
+  ]
+}

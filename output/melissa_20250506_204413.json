@@ -1,0 +1,37 @@
+{
+  "persona_details": {
+    "name": "Melissa",
+    "age": "45",
+    "location": "Bondi Junction",
+    "occupation": "Events coordinator",
+    "political_leaning": "Labor"
+  },
+  "narrative_response": "As someone who's lived in Bondi Junction for over a decade and relies on public transport, I'm cautiously supportive of Waverley Council's proposal to remove minimum parking requirements for new apartment developments. Given the high reliance on public transport and the push for more sustainable living, it seems sensible to prioritize housing over car spaces, especially considering the current rental stress we're facing. However, my support hinges on the council's commitment to improving public transport services and infrastructure to accommodate any increase in demand this policy might generate. We also need transparent processes to ensure developments meet the community's needs without exacerbating existing problems like congestion.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 3,
+    "key_concerns": [
+      "Increased congestion",
+      "sufficient public transport",
+      "infrastructure strain",
+      "community consultation"
+    ],
+    "suggested_improvements": [
+      "Enhance public transport services",
+      "community engagement in development planning",
+      "incentives for green spaces and community facilities",
+      "clear guidelines for developers on non-car space amenities"
+    ]
+  },
+  "timestamp": "2025-05-06T20:43:53.044934",
+  "sentiment_score": 0.14404040404040405,
+  "key_themes": [
+    "sustainable living",
+    "public transport reliance",
+    "housing vs. car space",
+    "rental stress",
+    "community needs and transparency"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "persona_details": {
+    "name": "Fatima",
+    "age": "36",
+    "location": "North Bondi",
+    "occupation": "Freelance designer",
+    "political_leaning": "Greens"
+  },
+  "narrative_response": "Honestly, I'm all for Waverley Council's proposal to remove minimum parking requirements for new apartment developments here in Bondi. Given the area's excellent access to public transport and the growing need for affordable housing, this move could really help ease the rent pressure many of us are feeling. Plus, it aligns with my lifestyle choices\u2014I walk and bike mostly, so fewer car spaces in favor of more green spaces or creative hubs would be brilliant. My support could waver if it turns out this policy drastically worsens traffic or public transit overcrowding, though. Ensuring there are sufficient alternative transport options is key.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Public transport capacity",
+      "Traffic congestion",
+      "Street parking availability"
+    ],
+    "suggested_improvements": [
+      "Increase investment in public transport",
+      "Implement dedicated bike lanes",
+      "Create car share schemes",
+      "Ensure new developments include green spaces or communal areas"
+    ]
+  },
+  "timestamp": "2025-05-06T20:43:00.472798",
+  "sentiment_score": 0.35664335664335667,
+  "key_themes": [
+    "affordable housing",
+    "public transport accessibility",
+    "lifestyle choices",
+    "traffic and public transit concerns",
+    "alternative transport options"
+  ]
+}

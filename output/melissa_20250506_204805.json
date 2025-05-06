@@ -1,0 +1,36 @@
+{
+  "persona_details": {
+    "name": "Melissa",
+    "age": "45",
+    "location": "Bondi Junction",
+    "occupation": "Events coordinator",
+    "political_leaning": "Labor"
+  },
+  "narrative_response": "Honestly, I'm on the fence about this policy. On one hand, I see the potential for it to address the chronic shortage of affordable housing in Bondi by allowing developers to maximize residential space. Given the high reliance on public transport and the environmental benefits of reducing car dependency, it makes sense in a busy area like ours. However, as a long-term renter who's already feeling the pinch from rental stress, my concern is whether this policy will genuinely translate to more affordable housing options or just higher profits for developers. I'd be swayed to support it if there were clear, enforceable commitments that savings on parking spaces would lead to lower rent prices or more community spaces.",
+  "survey_response": {
+    "support_level": 3,
+    "impact_on_housing": 0,
+    "impact_on_transport": 4,
+    "impact_on_community": 3,
+    "key_concerns": [
+      "affordability for renters",
+      "developer accountability",
+      "public transport capacity",
+      "community space"
+    ],
+    "suggested_improvements": [
+      "enforceable guidelines ensuring affordability is passed on to renters",
+      "increased investment in public transport and community infrastructure",
+      "mandatory provision of bike storage and car-sharing spaces in developments"
+    ]
+  },
+  "timestamp": "2025-05-06T20:47:42.722156",
+  "sentiment_score": 0.261,
+  "key_themes": [
+    "affordable housing shortage",
+    "environmental benefits of reduced car dependency",
+    "concerns over developer profits vs. renter benefits",
+    "need for enforceable commitments to affordability",
+    "public transport reliance"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Joanne",
+    "age": "51",
+    "location": "Bronte",
+    "occupation": "HR manager",
+    "political_leaning": "Liberal / Centre"
+  },
+  "narrative_response": "As someone deeply involved in our community's development and character, I find myself conflicted over Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi. On one hand, I understand the argument for increased housing accessibility and the changing needs of urban residents, especially the younger population who may rely less on cars. However, as a Bronte resident who values the neighbourhood's character and the practicalities of living in such a densely populated area, I worry about the potential overflow effect on parking and congestion in surrounding areas, including Bronte. My support could be swayed by a comprehensive plan that includes robust public transport solutions and clear strategies to manage potential overflow parking in neighbouring areas.",
+  "survey_response": {
+    "support_level": 2,
+    "impact_on_housing": 0,
+    "impact_on_transport": 2,
+    "impact_on_community": 2,
+    "key_concerns": [
+      "Increased parking congestion in neighbouring areas",
+      "impact on neighbourhood character",
+      "potential strain on public transport infrastructure"
+    ],
+    "suggested_improvements": [
+      "Enhanced public transport services",
+      "designated parking areas for residents",
+      "incentives for developers to include green spaces and community facilities"
+    ]
+  },
+  "timestamp": "2025-05-06T20:48:05.227387",
+  "sentiment_score": 0.006336088154269972,
+  "key_themes": [
+    "urban development and housing policy",
+    "parking and congestion concerns",
+    "public transport solutions",
+    "neighbourhood character",
+    "community involvement"
+  ]
+}

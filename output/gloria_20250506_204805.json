@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Gloria",
+    "age": "84",
+    "location": "Queens Park",
+    "occupation": "Retired nurse",
+    "political_leaning": "Labor"
+  },
+  "narrative_response": "As a long-time resident and retired nurse, I have mixed feelings about Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi. On one hand, I understand the need for more housing and the benefits of encouraging public transport use. However, as someone who values mobility access and the stability of our neighborhood, I am concerned about the potential increase in parking and traffic congestion this could cause. It would take a comprehensive plan that ensures adequate public transportation and mobility access for all residents to change my mind.",
+  "survey_response": {
+    "support_level": 2,
+    "impact_on_housing": 0,
+    "impact_on_transport": 2,
+    "impact_on_community": 2,
+    "key_concerns": [
+      "Increased traffic congestion",
+      "Reduced mobility access",
+      "Parking shortages for existing residents"
+    ],
+    "suggested_improvements": [
+      "Enhance public transport options",
+      "Implement residential parking permits",
+      "Ensure developments include some parking spaces based on size and location"
+    ]
+  },
+  "timestamp": "2025-05-06T20:47:19.580664",
+  "sentiment_score": 0.13852813852813853,
+  "key_themes": [
+    "housing development",
+    "public transport encouragement",
+    "mobility access",
+    "parking and traffic congestion",
+    "comprehensive planning"
+  ]
+}

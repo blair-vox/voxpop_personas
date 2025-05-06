@@ -1,0 +1,34 @@
+{
+  "persona_details": {
+    "name": "Daniel",
+    "age": "57",
+    "location": "Tamarama",
+    "occupation": "Tradie (plumber)",
+    "political_leaning": "Liberal / Shooters & Fishers"
+  },
+  "narrative_response": "Honestly, I reckon this policy's not the best idea. Removing parking minimums sounds like it'd just make the on-street parking mess around Bondi even worse than it already is. I spend enough time driving around looking for a spot as is. If there was a solid plan to improve public transport or ensure that people moving into these developments didn't need a car, maybe I'd think differently. But as it stands, it's just going to pile more pressure on the locals.",
+  "survey_response": {
+    "support_level": 1,
+    "impact_on_housing": 0,
+    "impact_on_transport": 1,
+    "impact_on_community": 1,
+    "key_concerns": [
+      "Increased on-street parking competition",
+      "insufficient public transport alternatives",
+      "reduced quality of life for current residents"
+    ],
+    "suggested_improvements": [
+      "Mandatory parking spaces based on apartment size",
+      "investment in public transport infrastructure",
+      "enforceable commitments from developers to provide car share schemes"
+    ]
+  },
+  "timestamp": "2025-05-06T20:47:01.352711",
+  "sentiment_score": 0.16944444444444443,
+  "key_themes": [
+    "parking minimum removal concerns",
+    "on-street parking issues",
+    "public transport improvement necessity",
+    "impact on locals"
+  ]
+}

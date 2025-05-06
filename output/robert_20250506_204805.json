@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Robert",
+    "age": "66",
+    "location": "Dover Heights",
+    "occupation": "Retired accountant",
+    "political_leaning": "Liberal"
+  },
+  "narrative_response": "As a retired accountant living in Dover Heights and understanding the nuances of urban planning and community needs, I find myself opposed to the Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi. My concern is that while it aims to address housing availability, it could exacerbate street congestion and potentially devalue the heritage and character of our surrounding neighborhoods. Parking is already a premium in our area, and further reducing availability could lead to increased traffic, making our streets less safe and more congested. However, my opinion could be swayed if there were significant investments in public transportation and clear plans to manage the potential increase in street parking demand, ensuring it doesn't negatively impact the current residents.",
+  "survey_response": {
+    "support_level": 2,
+    "impact_on_housing": 0,
+    "impact_on_transport": 1,
+    "impact_on_community": 2,
+    "key_concerns": [
+      "Increased street congestion",
+      "Impact on heritage preservation",
+      "Lack of infrastructure to support increased density"
+    ],
+    "suggested_improvements": [
+      "Investment in public transportation",
+      "Enforcement of parking regulations",
+      "Incentives for developers to include green spaces"
+    ]
+  },
+  "timestamp": "2025-05-06T20:46:21.367205",
+  "sentiment_score": 0.08805361305361306,
+  "key_themes": [
+    "urban planning concerns",
+    "impact on traffic and safety",
+    "preservation of neighborhood character",
+    "public transportation investment",
+    "management of parking demand"
+  ]
+}

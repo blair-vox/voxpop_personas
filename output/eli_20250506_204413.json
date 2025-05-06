@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Eli",
+    "age": "34",
+    "location": "Randwick",
+    "occupation": "Product manager (tech)",
+    "political_leaning": "Teal Independent"
+  },
+  "narrative_response": "As Eli, I'm inclined to support the policy to remove minimum parking requirements for new apartment developments in Bondi. Given the urban density issues and the need for innovative transport solutions in our area, I believe this policy could pave the way for more sustainable urban living and possibly lower housing costs. However, my support hinges on the implementation of adequate public transport alternatives and infrastructure to support the expected increase in demand. If the policy led to significant congestion or impacted the quality of life due to inadequate transport options, I would reconsider my stance.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 3,
+    "key_concerns": [
+      "Increased traffic congestion",
+      "Public transport capacity",
+      "Parking availability for existing residents"
+    ],
+    "suggested_improvements": [
+      "Enhance public transport services and infrastructure",
+      "Implement resident parking schemes",
+      "Increase investment in cycling and pedestrian infrastructure"
+    ]
+  },
+  "timestamp": "2025-05-06T20:43:41.409256",
+  "sentiment_score": 0.14724517906336085,
+  "key_themes": [
+    "urban sustainability",
+    "innovative transport solutions",
+    "housing affordability",
+    "public transport infrastructure",
+    "impact on quality of life"
+  ]
+}

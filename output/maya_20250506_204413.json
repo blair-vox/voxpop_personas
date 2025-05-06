@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Maya",
+    "age": "31",
+    "location": "Bronte",
+    "occupation": "Primary teacher",
+    "political_leaning": "Labor / Greens"
+  },
+  "narrative_response": "As Maya, I'm leaning towards supporting the proposal to remove minimum parking requirements for new apartment developments in Bondi. Living in Bronte and relying on public transport and walking for my commute, I've noticed the congestion and the underutilization of car spaces. This policy could encourage more sustainable living and potentially lower housing costs, which is critical for renters like me. However, my support hinges on the council's commitment to improving public transport options and ensuring that the green spaces and amenities aren't negatively impacted by increased density.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 3,
+    "key_concerns": [
+      "Increased traffic congestion",
+      "Insufficient public transport to support higher density",
+      "Loss of green space"
+    ],
+    "suggested_improvements": [
+      "Enhance public transport services",
+      "Increase investment in green spaces",
+      "Implement car share schemes"
+    ]
+  },
+  "timestamp": "2025-05-06T20:42:35.954070",
+  "sentiment_score": 0.04292929292929292,
+  "key_themes": [
+    "sustainable living",
+    "lowering housing costs",
+    "improving public transport",
+    "protecting green spaces and amenities",
+    "reducing congestion and underutilization of car spaces"
+  ]
+}

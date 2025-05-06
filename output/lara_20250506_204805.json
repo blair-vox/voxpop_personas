@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Lara",
+    "age": "24",
+    "location": "Bondi Junction",
+    "occupation": "Nursing student & barista",
+    "political_leaning": "Left-leaning (Greens)"
+  },
+  "narrative_response": "As a young renter and someone who relies on public transport and walking to get around, I'm all for the idea of reducing minimum parking requirements for new apartment developments in Bondi. It makes sense to me because not only could it potentially make housing more affordable by lowering construction costs, but it also aligns with promoting a more sustainable, less car-dependent lifestyle which I strongly believe in. My support could be swayed if it was shown that this policy significantly worsened parking availability for existing residents or didn't actually contribute to lower rent prices as intended.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Parking availability for existing residents",
+      "Ensuring rent prices actually decrease",
+      "Potential increase in traffic congestion"
+    ],
+    "suggested_improvements": [
+      "Invest in improving public transport options",
+      "Implement residential parking permits",
+      "Ensure a portion of savings from reduced construction costs is passed on to renters"
+    ]
+  },
+  "timestamp": "2025-05-06T20:46:10.739005",
+  "sentiment_score": 0.17073002754820935,
+  "key_themes": [
+    "reducing minimum parking requirements",
+    "housing affordability",
+    "sustainable lifestyle",
+    "impact on existing residents",
+    "rent price effects"
+  ]
+}

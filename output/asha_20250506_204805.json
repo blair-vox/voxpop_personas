@@ -1,0 +1,37 @@
+{
+  "persona_details": {
+    "name": "Asha",
+    "age": "29",
+    "location": "Waverley",
+    "occupation": "Youth services worker",
+    "political_leaning": "Greens"
+  },
+  "narrative_response": "As someone deeply involved in community engagement and environmental sustainability, I'm in favor of the Waverley Council's policy to remove minimum parking requirements for new apartment developments in Bondi. This approach resonates with my values around reducing reliance on personal vehicles and promoting a more sustainable and accessible urban environment. It could also potentially lower housing costs, making Bondi more accessible for people like me. However, I'd be keen to see a comprehensive plan to ensure that the reduction in parking facilities doesn't negatively impact the area's traffic congestion or make it harder for residents to find off-street parking. Enhancements in public transport and cycleway infrastructure would be crucial to winning my full support.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Increased street parking competition",
+      "potential traffic congestion",
+      "adequate public transport alternatives",
+      "safe cycling routes"
+    ],
+    "suggested_improvements": [
+      "Expand public transport services",
+      "invest in cycleway infrastructure",
+      "implement residential parking permits",
+      "ensure new developments include sufficient bike storage and car share facilities"
+    ]
+  },
+  "timestamp": "2025-05-06T20:47:11.126611",
+  "sentiment_score": 0.15575757575757573,
+  "key_themes": [
+    "community engagement",
+    "environmental sustainability",
+    "reducing reliance on personal vehicles",
+    "housing affordability",
+    "public transport and cycleway infrastructure improvements"
+  ]
+}

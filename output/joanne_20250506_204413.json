@@ -1,0 +1,37 @@
+{
+  "persona_details": {
+    "name": "Joanne",
+    "age": "51",
+    "location": "Bronte",
+    "occupation": "HR manager",
+    "political_leaning": "Liberal / Centre"
+  },
+  "narrative_response": "As someone deeply invested in the character of our neighbourhoods and the control of development within them, I must say I'm skeptical about the Waverley Council's proposal to remove minimum parking requirements for new apartments in Bondi. My concern is that such a policy could exacerbate existing issues with parking and congestion, negatively impacting the quality of life in our community. However, I understand the need for more housing and the potential benefits of encouraging public transport use. To sway my opinion, I would need to see a comprehensive plan that addresses the potential increase in street parking demand and ensures that developments are truly aligned with the needs of future residents, perhaps by incorporating robust transport strategies or parking solutions off-site.",
+  "survey_response": {
+    "support_level": 2,
+    "impact_on_housing": 0,
+    "impact_on_transport": 2,
+    "impact_on_community": 2,
+    "key_concerns": [
+      "Increased street parking demand",
+      "congestion",
+      "impact on neighbourhood character",
+      "lack of infrastructure to support increased density"
+    ],
+    "suggested_improvements": [
+      "Mandatory transport impact assessments for developments",
+      "investment in local public transport infrastructure",
+      "provisions for shared or off-site parking facilities",
+      "requirements for green spaces or amenities that contribute to the neighbourhood character"
+    ]
+  },
+  "timestamp": "2025-05-06T20:44:13.519575",
+  "sentiment_score": -0.016363636363636358,
+  "key_themes": [
+    "community concerns",
+    "housing development",
+    "parking and congestion",
+    "public transport encouragement",
+    "need for comprehensive planning"
+  ]
+}

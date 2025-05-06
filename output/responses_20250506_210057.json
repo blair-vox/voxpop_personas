@@ -1,0 +1,407 @@
+[
+  {
+    "persona_details": {
+      "name": "Lara",
+      "age": "24",
+      "location": "Bondi Junction",
+      "occupation": "Nursing student & barista",
+      "political_leaning": "Left-leaning (Greens)"
+    },
+    "narrative_response": "Honestly, I'm leaning towards supporting this policy. Living in Bondi, I've noticed the crunch for both housing and parking, but the reality is, a lot of us younger folks are prioritizing affordability and sustainability over having a car. With the bus and walking being my go-to, the idea of potentially cheaper housing because developers aren't forced to build parking spots sounds appealing. My support hinges on seeing real commitments to improving public transport and ensuring these changes genuinely make housing more accessible, not just increase developer profits.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 3,
+      "key_concerns": [
+        "Public transport adequacy",
+        "Developer accountability",
+        "Risk of overcrowded streets with parked cars"
+      ],
+      "suggested_improvements": [
+        "Enhanced public transport services",
+        "Mandatory green spaces in developments",
+        "Caps on rent increases for affected properties"
+      ]
+    },
+    "timestamp": "2025-05-06T20:58:59.462541",
+    "sentiment_score": 0.22954545454545452,
+    "key_themes": [
+      "affordability and sustainability",
+      "public transport improvement",
+      "housing accessibility",
+      "reduced emphasis on car ownership",
+      "developer profit balance"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Robert",
+      "age": "66",
+      "location": "Dover Heights",
+      "occupation": "Retired accountant",
+      "political_leaning": "Liberal"
+    },
+    "narrative_response": "As a retired accountant living in Dover Heights, I'm quite concerned about the proposal to remove minimum parking requirements for new apartment developments in Bondi. I believe this policy could exacerbate street congestion in an area already struggling with traffic. The notion that developers can accurately predict the parking needs of residents seems optimistic at best. Providing sufficient parking should remain a standard part of development, especially in such a densely populated area. That said, if there were clear, enforceable commitments to enhance public transport and alternative transport solutions, my opposition might soften.",
+    "survey_response": {
+      "support_level": 2,
+      "impact_on_housing": 0,
+      "impact_on_transport": 2,
+      "impact_on_community": 2,
+      "key_concerns": [
+        "Increased street congestion",
+        "insufficient parking for residents",
+        "reliance on cars in areas with poor public transport options"
+      ],
+      "suggested_improvements": [
+        "Mandate a minimum number of parking spaces based on apartment size",
+        "invest in public transport infrastructure",
+        "introduce car share schemes within developments"
+      ]
+    },
+    "timestamp": "2025-05-06T20:59:09.960268",
+    "sentiment_score": 0.2337662337662338,
+    "key_themes": [
+      "concerns about removing minimum parking requirements",
+      "impact on street congestion",
+      "skepticism towards developers' predictions on parking needs",
+      "importance of sufficient parking in dense areas",
+      "potential for support with improved public and alternative transport solutions"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Maya",
+      "age": "31",
+      "location": "Bronte",
+      "occupation": "Primary teacher",
+      "political_leaning": "Labor / Greens"
+    },
+    "narrative_response": "As a long-term renter and a primary teacher who relies on public transport, I cautiously support the proposal to remove minimum parking requirements for new apartment developments in Bondi. My support stems from the belief that this could lead to more affordable housing options and better utilization of space for public amenities or green spaces, which are deeply important to me. However, I'm concerned about the potential strain on public transport and the availability of parking for existing residents. I would be more firmly in favor if there were commitments to enhance local transport services and infrastructure to accommodate this change.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 4,
+      "key_concerns": [
+        "Increased demand on public transport",
+        "parking availability for existing residents",
+        "potential for overcrowding"
+      ],
+      "suggested_improvements": [
+        "Enhance public transport services and infrastructure",
+        "allocate spaces for bike parking and car-sharing services",
+        "ensure developments include green spaces and amenities for residents"
+      ]
+    },
+    "timestamp": "2025-05-06T20:59:20.012542",
+    "sentiment_score": 0.15664335664335663,
+    "key_themes": [
+      "affordable housing",
+      "public transport concerns",
+      "green spaces",
+      "parking availability",
+      "transport infrastructure enhancement"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Kenji",
+      "age": "40",
+      "location": "Bondi Beach",
+      "occupation": "Software developer",
+      "political_leaning": "Teal Independent"
+    },
+    "narrative_response": "As someone deeply invested in climate action and urban innovation, I'm inclined to support Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi. This policy could lead to a more efficient use of space, prioritizing housing over car storage in an area where public transport and alternative modes of travel, like my scooter, are viable. However, I'd like to see comprehensive plans ensuring this shift won't overload existing public transport or make streets less safe for pedestrians and cyclists. If evidence showed the policy could lead to negative outcomes for traffic flow or public safety, I might reconsider my stance.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 4,
+      "key_concerns": [
+        "Public transport capacity",
+        "pedestrian and cyclist safety",
+        "potential for increased traffic congestion"
+      ],
+      "suggested_improvements": [
+        "Enhance public transport services and infrastructure",
+        "implement dedicated lanes for bikes and scooters",
+        "ensure new developments include green spaces or community amenities"
+      ]
+    },
+    "timestamp": "2025-05-06T20:59:27.534646",
+    "sentiment_score": 0.06997245179063362,
+    "key_themes": [
+      "climate action",
+      "urban innovation",
+      "efficient use of space",
+      "public transport and safety",
+      "traffic flow and public safety"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Fatima",
+      "age": "36",
+      "location": "North Bondi",
+      "occupation": "Freelance designer",
+      "political_leaning": "Greens"
+    },
+    "narrative_response": "As a freelance designer living in North Bondi and dealing with the pressures of rent and the need for creative spaces, I cautiously support the Waverley Council's policy to remove minimum parking requirements for new apartment developments. It's clear that with the current housing crisis, we need to prioritize living spaces over car parking, especially in areas like Bondi where public transport and biking are viable options. My support hinges on the council's commitment to ensuring that this policy doesn't just lead to higher profits for developers but translates into more affordable housing and supports sustainable transport options. If evidence showed that removing parking minimums would significantly worsen traffic congestion or reduce the availability of on-street parking for existing residents without providing clear benefits in housing affordability and sustainability, I might reconsider my position.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 3,
+      "key_concerns": [
+        "Traffic congestion",
+        "On-street parking availability for existing residents",
+        "Potential for developer profit without community benefit"
+      ],
+      "suggested_improvements": [
+        "Implement measures to ensure developers pass on savings to renters/buyers",
+        "Improve public transport services and bike infrastructure",
+        "Introduce requirements for green spaces or community facilities in new developments"
+      ]
+    },
+    "timestamp": "2025-05-06T20:59:42.467590",
+    "sentiment_score": 0.19613636363636364,
+    "key_themes": [
+      "housing crisis solutions",
+      "sustainable transport",
+      "affordable housing",
+      "developer profits vs. community benefits",
+      "traffic and parking concerns"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Daniel",
+      "age": "57",
+      "location": "Tamarama",
+      "occupation": "Tradie (plumber)",
+      "political_leaning": "Liberal / Shooters & Fishers"
+    },
+    "narrative_response": "Honestly, I'm not a fan of this proposal by the Waverley Council. Removing parking requirements seems like it's just going to make the on-street parking situation even worse around here. As a tradie, I'm constantly moving around with my ute, and finding a decent spot is hard enough as it is. I understand the need for more housing, but not at the expense of turning our streets into a parking nightmare. If they could guarantee better public transport or dedicated parking solutions for tradies and residents, then maybe I'd reconsider my stance.",
+    "survey_response": {
+      "support_level": 1,
+      "impact_on_housing": 0,
+      "impact_on_transport": 1,
+      "impact_on_community": 1,
+      "key_concerns": [
+        "increased on-street parking competition",
+        "reduced accessibility for tradespeople",
+        "potential for increased traffic congestion"
+      ],
+      "suggested_improvements": [
+        "improve public transport infrastructure",
+        "introduce dedicated parking areas for residents and tradespeople",
+        "enforce parking permits strictly"
+      ]
+    },
+    "timestamp": "2025-05-06T20:59:52.966096",
+    "sentiment_score": 0.019444444444444448,
+    "key_themes": [
+      "parking concerns",
+      "housing vs. parking balance",
+      "public transport solutions",
+      "dedicated parking for tradies and residents",
+      "Waverley Council proposal criticism"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Asha",
+      "age": "29",
+      "location": "Waverley",
+      "occupation": "Youth services worker",
+      "political_leaning": "Greens"
+    },
+    "narrative_response": "As someone deeply invested in the community and concerned about sustainable living, I'm leaning towards support for the Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi. Given the area's high reliance on public transport and walking, and the pressing need for affordable housing, this policy could help address several key issues at once. However, my support hinges on the implementation of measures to ensure that any increase in demand for public transport and cycleways is adequately met and that the policy genuinely leads to more affordable housing options rather than just increased profits for developers.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 4,
+      "key_concerns": [
+        "Increased pressure on public transport",
+        "potential for developer exploitation",
+        "need for enhanced cycling infrastructure"
+      ],
+      "suggested_improvements": [
+        "Mandatory investment in local transport and cycling infrastructure by developers",
+        "guarantees that savings are passed on to renters",
+        "increased green spaces"
+      ]
+    },
+    "timestamp": "2025-05-06T21:00:03.435839",
+    "sentiment_score": 0.15296969696969698,
+    "key_themes": [
+      "sustainable living",
+      "affordable housing",
+      "public transport reliance",
+      "policy implementation concerns",
+      "developer profits vs. housing affordability"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Gloria",
+      "age": "84",
+      "location": "Queens Park",
+      "occupation": "Retired nurse",
+      "political_leaning": "Labor"
+    },
+    "narrative_response": "As someone who's lived in this area for a long time and seen many changes, I'm a bit wary about this proposal. I understand the need for more housing, but removing parking requirements could make things difficult for those of us who rely on family and friends for lifts, especially when there's already limited parking. However, if the council could ensure that there are adequate mobility access options and noise control measures in place, I might be more supportive. It's important that any development considers the needs of all residents, not just the younger or more mobile ones.\n\nSURVAY RESPONSE:\nSupport Level: 2\nImpact on Housing Affordability: 3\nImpact on Transport: 2\nImpact on Community: 2\nKey Concerns: Reduced parking for visitors, Increased traffic congestion, Noise, Accessibility for less mobile residents\nSuggested Improvements: Ensure adequate public transport and mobility services, Enforce strict noise control regulations, Provide some visitor parking spaces, Increase green spaces or community facilities to compensate for potential overcrowding",
+    "survey_response": {
+      "support_level": 0,
+      "impact_on_housing": 0,
+      "impact_on_transport": 0,
+      "impact_on_community": 0,
+      "key_concerns": [],
+      "suggested_improvements": []
+    },
+    "timestamp": "2025-05-06T21:00:14.861446",
+    "sentiment_score": 0.12892857142857145,
+    "key_themes": [
+      "housing development concerns",
+      "parking and traffic issues",
+      "accessibility and mobility",
+      "noise control",
+      "community facilities and green spaces"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Eli",
+      "age": "34",
+      "location": "Randwick",
+      "occupation": "Product manager (tech)",
+      "political_leaning": "Teal Independent"
+    },
+    "narrative_response": "As Eli, I cautiously support the policy to remove minimum parking requirements for new apartment developments in Bondi. Given my background in tech and interest in urban density and transport innovation, I see the potential for this policy to encourage a more efficient use of space and promote alternatives to car ownership, which aligns with my values. However, my support hinges on the implementation of adequate public transport solutions and infrastructure to support the residents who will be affected by these changes. My mind could be changed if evidence suggests that the policy would lead to significant traffic congestion or negatively impact the quality of life for local residents due to inadequate public transportation options.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 3,
+      "key_concerns": [
+        "Traffic congestion",
+        "Public transport adequacy",
+        "Resident parking availability"
+      ],
+      "suggested_improvements": [
+        "Increase public transport services",
+        "Implement resident parking permits",
+        "Develop car-sharing programs"
+      ]
+    },
+    "timestamp": "2025-05-06T21:00:24.874117",
+    "sentiment_score": 0.08360881542699725,
+    "key_themes": [
+      "urban density and transport innovation",
+      "efficient use of space",
+      "alternatives to car ownership",
+      "public transport solutions and infrastructure",
+      "impact on traffic congestion and quality of life"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Melissa",
+      "age": "45",
+      "location": "Bondi Junction",
+      "occupation": "Events coordinator",
+      "political_leaning": "Labor"
+    },
+    "narrative_response": "As someone who's been living and renting in Bondi Junction for over a decade, I'm leaning towards supporting the proposal to remove minimum parking requirements for new apartment developments. Given the high rent and housing stress in our area, any policy that could potentially lower housing costs and increase supply is welcome in my book. Plus, with my reliance on buses and the general push for sustainable living, reducing car dependency sounds right. What would make me reconsider is if this policy significantly worsens our already crowded public transport or if it ends up benefiting developers more than residents and the community.",
+    "survey_response": {
+      "support_level": 4,
+      "impact_on_housing": 0,
+      "impact_on_transport": 3,
+      "impact_on_community": 3,
+      "key_concerns": [
+        "Public transport capacity",
+        "Risk of developer exploitation",
+        "Potential for increased parking pressure on existing streets"
+      ],
+      "suggested_improvements": [
+        "Enhance public transport services and infrastructure",
+        "Implement strict guidelines to ensure developers provide adequate amenities or contributions to public space",
+        "Introduce residential parking permits for existing residents"
+      ]
+    },
+    "timestamp": "2025-05-06T21:00:35.063043",
+    "sentiment_score": 0.2557077922077922,
+    "key_themes": [
+      "housing affordability",
+      "sustainable living",
+      "public transport concerns",
+      "reducing car dependency",
+      "community vs developer benefits"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Dean",
+      "age": "22",
+      "location": "Dover Heights",
+      "occupation": "Delivery rider",
+      "political_leaning": "Greens"
+    },
+    "narrative_response": "Honestly, I'm all for Waverley Council's idea of dropping minimum parking requirements for new apartments in Bondi. As a delivery rider who heavily relies on my bike, I've seen firsthand how congested streets can get and reckon removing these parking minimums could encourage more people to consider alternative transport options. Plus, with the housing crisis hitting us young folks hard, anything that potentially makes housing more affordable is a win in my book. The only thing that might change my mind is if it ends up significantly worsening street parking availability, but with proper bike lanes and public transport improvements, I think we can manage.",
+    "survey_response": {
+      "support_level": 5,
+      "impact_on_housing": 0,
+      "impact_on_transport": 4,
+      "impact_on_community": 4,
+      "key_concerns": [
+        "reduced street parking availability",
+        "potential increase in traffic congestion",
+        "safety for cyclists and pedestrians"
+      ],
+      "suggested_improvements": [
+        "invest in public transport",
+        "expand bike lanes",
+        "enforce strict regulations on ride-sharing and delivery vehicles",
+        "create more pedestrian zones"
+      ]
+    },
+    "timestamp": "2025-05-06T21:00:45.419254",
+    "sentiment_score": 0.19382284382284382,
+    "key_themes": [
+      "reducing parking minimums",
+      "encouraging alternative transport",
+      "addressing housing affordability",
+      "potential impact on street parking",
+      "importance of bike lanes and public transport improvements"
+    ]
+  },
+  {
+    "persona_details": {
+      "name": "Joanne",
+      "age": "51",
+      "location": "Bronte",
+      "occupation": "HR manager",
+      "political_leaning": "Liberal / Centre"
+    },
+    "narrative_response": "While I acknowledge the intention behind Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi, I find myself cautious about fully supporting it. My apprehension stems from concerns about how this might affect the neighbourhood character and exacerbate existing transport issues. As someone deeply involved in maintaining the integrity of our local community through the precinct committee, preserving the character of our neighbourhoods is paramount. A potential compromise could involve stringent guidelines on who these developments are targeting and ensuring adequate access to alternative transport options. If it can be demonstrated that the proposal significantly benefits housing affordability without negatively impacting the transport infrastructure or community fabric, I might reconsider my stance.\n\nSURVAY RESPONSE:\nSupport Level: 2\nImpact on Housing Affordability: 3\nImpact on Transport: 2\nImpact on Community: 2\nKey Concerns: Increased traffic congestion, parking scarcity for existing residents, potential strain on public transport, loss of neighbourhood character\nSuggested Improvements: Implement a cap on the number of developments without parking, ensure developments are aimed at demographics less likely to own cars, increase investment in public transport and infrastructure, introduce initiatives to maintain neighbourhood character",
+    "survey_response": {
+      "support_level": 0,
+      "impact_on_housing": 0,
+      "impact_on_transport": 0,
+      "impact_on_community": 0,
+      "key_concerns": [],
+      "suggested_improvements": []
+    },
+    "timestamp": "2025-05-06T21:00:57.165976",
+    "sentiment_score": 0.07811942959001782,
+    "key_themes": [
+      "neighbourhood character preservation",
+      "transport issues",
+      "housing affordability",
+      "community integrity",
+      "alternative transport options"
+    ]
+  }
+]

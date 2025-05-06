@@ -1,0 +1,34 @@
+{
+  "persona_details": {
+    "name": "Daniel",
+    "age": "57",
+    "location": "Tamarama",
+    "occupation": "Tradie (plumber)",
+    "political_leaning": "Liberal / Shooters & Fishers"
+  },
+  "narrative_response": "Look, as someone who\u2019s been around Tamarama and the wider Bondi area for years, I reckon this proposal's a bit of a mixed bag. I\u2019m leaning more against it, mainly because parking around here's already tighter than a rusted bolt. If developers start skimping on car spaces, it\u2019s only going to make finding a spot on the street tougher than it already is. That said, if there was a solid plan in place to seriously boost public transport options or some guarantee that it wouldn\u2019t just turn every side street into a parking nightmare, I might be swayed a bit. But as it stands, can't say I'm a fan.",
+  "survey_response": {
+    "support_level": 2,
+    "impact_on_housing": 0,
+    "impact_on_transport": 2,
+    "impact_on_community": 2,
+    "key_concerns": [
+      "increased on-street parking demand",
+      "insufficient public transport options",
+      "potential for increased congestion"
+    ],
+    "suggested_improvements": [
+      "enhance public transport services and infrastructure",
+      "implement resident parking schemes",
+      "require developers to contribute to local transport improvements"
+    ]
+  },
+  "timestamp": "2025-05-06T20:43:12.081385",
+  "sentiment_score": 0.047619047619047616,
+  "key_themes": [
+    "parking concerns",
+    "public transport improvement",
+    "development skepticism",
+    "community impact"
+  ]
+}

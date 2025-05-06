@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Kenji",
+    "age": "40",
+    "location": "Bondi Beach",
+    "occupation": "Software developer",
+    "political_leaning": "Teal Independent"
+  },
+  "narrative_response": "As someone deeply invested in climate action and urban innovation, I'm inclined to support Waverley Council's proposal to remove minimum parking requirements for new apartment developments in Bondi. Reducing reliance on cars aligns with my vision for a more sustainable and efficiently planned urban environment. However, I believe success hinges on simultaneously enhancing public transport and cycling infrastructure to accommodate those displaced by fewer parking spaces. I'd reconsider my stance if evidence suggested this policy would significantly worsen traffic congestion or reduce public space without adequate mitigation strategies.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Traffic congestion",
+      "Public transport capacity",
+      "Bicycle infrastructure"
+    ],
+    "suggested_improvements": [
+      "Increase investment in public transport and cycling infrastructure",
+      "Implement car share schemes",
+      "Introduce incentives for developers to include green spaces"
+    ]
+  },
+  "timestamp": "2025-05-06T20:46:42.201674",
+  "sentiment_score": 0.15860881542699723,
+  "key_themes": [
+    "climate action",
+    "urban innovation",
+    "reducing reliance on cars",
+    "enhancing public transport and cycling infrastructure",
+    "traffic congestion and public space management"
+  ]
+}

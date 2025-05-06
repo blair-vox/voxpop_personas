@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Lara",
+    "age": "24",
+    "location": "Bondi Junction",
+    "occupation": "Nursing student & barista",
+    "political_leaning": "Left-leaning (Greens)"
+  },
+  "narrative_response": "Honestly, I'm all for Waverley Council's proposal to axe minimum parking requirements for new apartment developments in Bondi. Given the chronic housing squeeze we're facing, it makes sense to prioritize living spaces over car spots, especially in a place as well connected as Bondi Junction. Plus, most of my mates and I hardly use cars \u2014 it's all about buses, walking, or cycling. The only thing that might sway me is if this change significantly worsens the existing parking woes for current residents or doesn't actually lead to more affordable housing options.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "parking congestion for current residents",
+      "potential misuse by developers",
+      "ensuring affordability improvements"
+    ],
+    "suggested_improvements": [
+      "mandating a portion of developments be affordable housing",
+      "investing in bike lanes and improved public transport infrastructure",
+      "implementing residential parking permits"
+    ]
+  },
+  "timestamp": "2025-05-06T20:42:16.925433",
+  "sentiment_score": 0.18196969696969695,
+  "key_themes": [
+    "housing squeeze",
+    "prioritizing living spaces",
+    "reducing parking requirements",
+    "reliance on alternative transportation",
+    "potential impact on current residents and housing affordability"
+  ]
+}

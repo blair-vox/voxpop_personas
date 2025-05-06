@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Asha",
+    "age": "29",
+    "location": "Waverley",
+    "occupation": "Youth services worker",
+    "political_leaning": "Greens"
+  },
+  "narrative_response": "Honestly, I'm pretty on board with Waverley Council's idea to ditch the parking minimums for new apartments in Bondi. It feels like a step in the right direction towards a more sustainable and accessible community, which is something I'm really passionate about. By focusing less on car spaces, we're encouraging public transport and cycling, which aligns with the Greens' vision and my own values. Plus, it could make housing slightly more affordable for folks like me. What could change my mind? Probably if there were clear, negative impacts on public transport congestion or if it significantly disadvantaged residents with mobility issues.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "Public transport congestion",
+      "Accessibility for people with disabilities",
+      "Risk of insufficient parking for existing residents"
+    ],
+    "suggested_improvements": [
+      "Increase investment in public transport and cycleways",
+      "Implement residential parking permits",
+      "Ensure accessibility is prioritized in new developments"
+    ]
+  },
+  "timestamp": "2025-05-06T20:43:22.365879",
+  "sentiment_score": 0.18610080395794681,
+  "key_themes": [
+    "sustainability and accessibility",
+    "encouragement of public transport and cycling",
+    "alignment with Greens' vision",
+    "potential for more affordable housing",
+    "concerns about public transport congestion and mobility issues"
+  ]
+}

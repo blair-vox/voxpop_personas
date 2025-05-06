@@ -1,0 +1,35 @@
+{
+  "persona_details": {
+    "name": "Dean",
+    "age": "22",
+    "location": "Dover Heights",
+    "occupation": "Delivery rider",
+    "political_leaning": "Greens"
+  },
+  "narrative_response": "Honestly, I'm all for Waverley Council's idea of ditching the minimum parking requirements for new apartments in Bondi. It just makes sense, especially for someone like me who's all about reducing our reliance on cars and boosting sustainable transport options. More bike lanes and public transport improvements would be a game-changer. My main concern, though, is ensuring this doesn't just become a way for developers to skimp out and hike up prices. If there were guarantees that savings would be passed on to residents and reinvested into community and transport infrastructure, I'd be even more on board.",
+  "survey_response": {
+    "support_level": 4,
+    "impact_on_housing": 0,
+    "impact_on_transport": 3,
+    "impact_on_community": 4,
+    "key_concerns": [
+      "developer accountability",
+      "potential for rent increases",
+      "lack of reinvestment in transport infrastructure"
+    ],
+    "suggested_improvements": [
+      "enforce developer savings to be passed on to residents",
+      "increase funding for bike lanes and public transport",
+      "implement strict safety measures for cyclists and pedestrians"
+    ]
+  },
+  "timestamp": "2025-05-06T20:44:03.345046",
+  "sentiment_score": 0.27186147186147186,
+  "key_themes": [
+    "reducing car reliance",
+    "sustainable transport options",
+    "concerns about developer practices",
+    "community and transport infrastructure investment",
+    "minimum parking requirements elimination"
+  ]
+}
