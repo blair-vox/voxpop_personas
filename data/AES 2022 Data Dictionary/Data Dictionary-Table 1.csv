@@ -1,0 +1,3092 @@
+,,,,,
+,Data Dictionary,,,,
+,Position,Variable,Variable Label,Value,Value Label
+,1,ID,ID,,
+,2,ID_2019,Respondent ID from 2019 data file,,
+,3,ID_2016,Respondent ID from 2016 data file,,
+,4,Mode,Mode of survey completion,1,Hard copy
+,,,,2,Online
+,5,IntDate,Date of survey completion,,
+,6,Panel_retention,Whether panellists was already on panel,1,2019
+,,,,2,2016
+,,,,3,Both
+,,,,4,New
+,7,STATE,State,1,New South Wales
+,,,,2,Victoria
+,,,,3,Queensland
+,,,,4,South Australia
+,,,,5,Western Australia
+,,,,6,Tasmania
+,,,,7,Northern Territory
+,,,,8,Australian Capital Territory
+,,,,999,Item Skipped
+,8,PCODE_r,EMBARGO VARIABLE PCODE_r Postcode PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,9,sampsrc,Sample source,1,Panel - completers from 2019
+,,,,2,GNAF
+,,,,3,Youth panel
+,10,accesstype,Online access mode,1,Accessing generic link from Invitation or Reminder letters
+,,,,11,QR code from Invitation letter
+,,,,12,QR code from Reminder letter
+,,,,13,QR code from Hard Copy questionnaire letter
+,,,,14,QR code from Hard Copy questionnaire letter 2
+,,,,22,Invitation SMS to panelists
+,,,,31,ICS helpdesk email link
+,,,,32,Invitation email to panelists
+,,,,41,CATI Reminder email link
+,,,,96,Youth boost sample
+,,,,999,Item Skipped
+,11,PANEL_FLAG,Flag whether the same panellist completed as 2019,1,Same person
+,,,,2,Different person
+,,,,999,Item skipped
+,12,PANEL,PANEL. Did you personally complete the Australian Election Study in 2019?,1,Yes
+,,,,2,"No, but someone else in my household did"
+,,,,3,No
+,,,,999,Item skipped
+,13,CITIZEN,CITIZEN. Just some questions about yourself before we start.Are you currently an Australian citizen?,1,Yes
+,,,,2,No
+,,,,999,Item Skipped
+,14,AGE,AGE. Recoded age from year of birth,1,Yes
+,,,,2,No
+,,,,999,Item Skipped
+,15,A1,"A1. Generally speaking, how much interest do you usually have in what's going on in politics?",1,A good deal
+,,,,2,Some
+,,,,3,Not much
+,,,,4,None
+,,,,999,Item skipped
+,16,A2_1,A2_1. How much attention did you pay to reports about the election campaign in the newspapers?,1,A good deal
+,,,,2,Some
+,,,,3,Not much
+,,,,4,None at all
+,,,,999,Item skipped
+,17,A2_2,A2_2. How much attention did you pay to reports about the election campaign on television?,1,A good deal
+,,,,2,Some
+,,,,3,Not much
+,,,,4,None at all
+,,,,999,Item skipped
+,18,A2_3,A2_3. How much attention did you pay to reports about the election campaign on the radio?,1,A good deal
+,,,,2,Some
+,,,,3,Not much
+,,,,4,None at all
+,,,,999,Item skipped
+,19,A2_4,A2_4. How much attention did you pay to reports about the election campaign on the internet?,1,A good deal
+,,,,2,Some
+,,,,3,Not much
+,,,,4,None at all
+,,,,999,Item skipped
+,20,A3,"A3. And, how much interest would you say you took in the election campaign overall?",1,A good deal
+,,,,2,Some
+,,,,3,Not much
+,,,,4,None at all
+,,,,999,Item skipped
+,21,A4_1,A4_1. How often did you do the following during the recent election... Discuss politics with others in person (i.e. face to face or over the phone)?,1,Frequently
+,,,,2,Occasionally
+,,,,3,Rarely
+,,,,4,Not at all
+,,,,999,Item skipped
+,22,A4_2,A4_2. How often did you do the following during the recent election... Discuss politics with others online (i.e.through email or on a social network site like Facebook or Twitter)?,1,Frequently
+,,,,2,Occasionally
+,,,,3,Rarely
+,,,,4,Not at all
+,,,,999,Item skipped
+,23,A4_3,A4_3. How often did you do the following during the recent election... Talk to other people to persuade them to vote for a particular party or candidate?,1,Frequently
+,,,,2,Occasionally
+,,,,3,Rarely
+,,,,4,Not at all
+,,,,999,Item skipped
+,24,A4_4,"A4_4. How often did you do the following during the recent election... Show your support for a particular party or candidate by, for example, attending a meeting, putting up a poster, or in some other way?",1,Frequently
+,,,,2,Occasionally
+,,,,3,Rarely
+,,,,4,Not at all
+,,,,999,Item skipped
+,25,A4_5,A4_5. How often did you do the following during the recent election... Go to any political meetings or rallies?,1,Frequently
+,,,,2,Occasionally
+,,,,3,Rarely
+,,,,4,Not at all
+,,,,999,Item skipped
+,26,A4_6,A4_6. How often did you do the following during the recent election... Contribute money to a political party or election candidate?,1,Frequently
+,,,,2,Occasionally
+,,,,3,Rarely
+,,,,4,Not at all
+,,,,999,Item skipped
+,27,A5,A5. Did you watch any of the three televised debates between Scott Morrison and Anthony Albanese?,1,"Yes, watched all three"
+,,,,2,"Yes, watched two of them"
+,,,,3,"Yes, watched one only"
+,,,,4,"No, didn't watch any"
+,,,,999,Item skipped
+,28,A6,"A6. From what you saw or what you heard or read about them, who do you think performed better in the debates - Scott Morrison or Anthony Albanese?",1,Morrison did much better
+,,,,2,Morrison did somewhat better
+,,,,3,About equal
+,,,,4,Albanese did somewhat better
+,,,,5,Albanese did much better
+,,,,999,Item skipped
+,29,A7_1,A7_1. Did a candidate or anyone from a political party contact you to persuade you to vote for them - No,0,Not selected
+,,,,1,Selected
+,30,A7_2,"A7_2. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by telephone",0,Not selected
+,,,,1,Selected
+,31,A7_3,"A7_3. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by mail",0,Not selected
+,,,,1,Selected
+,32,A7_4,"A7_4. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, face-to-face",0,Not selected
+,,,,1,Selected
+,33,A7_5,"A7_5. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by text message or SMS",0,Not selected
+,,,,1,Selected
+,34,A7_6,"A7_6. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by email",0,Not selected
+,,,,1,Selected
+,35,A7_7,"A7_7. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by social network site or other web-based method",0,Not selected
+,,,,1,Selected
+,36,A7_8,A7_8. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Item skipped,0,Not selected
+,,,,1,Selected
+,37,A8_1,A8_1. Which parties or candidates contacted you by any of these means? None,0,Not selected
+,,,,1,Selected
+,38,A8_2,A8_2. Which parties or candidates contacted you by any of these means? Liberal,0,Not selected
+,,,,1,Selected
+,39,A8_3,A8_3. Which parties or candidates contacted you by any of these means? Labor,0,Not selected
+,,,,1,Selected
+,40,A8_4,A8_4. Which parties or candidates contacted you by any of these means? National,0,Not selected
+,,,,1,Selected
+,41,A8_5,A8_5. Which parties or candidates contacted you by any of these means? Greens,0,Not selected
+,,,,1,Selected
+,42,A8_6,A8_6. Which parties or candidates contacted you by any of these means? Other party or candidate,0,Not selected
+,,,,1,Selected
+,43,A8_7,A8_7. Which parties or candidates contacted you by any of these means? Item skipped,0,Not selected
+,,,,1,Selected
+,44,A9,"A9. Do you think that voting at Federal elections should be compulsory, or do you think that people should only have to vote if they want to?",1,Strongly favour compulsory voting
+,,,,2,Favour compulsory voting
+,,,,3,Favour people voting only if they want to
+,,,,4,Strongly favour people voting only if they want to
+,,,,999,Item skipped
+,45,A10,A10. Would you have voted in the election if voting had not been compulsory?,1,Definitely would have voted
+,,,,2,Probably would have voted
+,,,,3,Might / might not have voted
+,,,,4,Probably would not have voted
+,,,,5,Definitely would not have voted
+,,,,97,Not eligible to vote
+,,,,999,Item skipped
+,46,A11,"A11. Do you think that the voting age in elections should be lowered to 16, or should it stay at 18?",1,Definitely lowered to 16
+,,,,2,Probably lowered to 16
+,,,,3,Probably stay at 18
+,,,,4,Definitely stay at 18
+,,,,999,Item skipped
+,47,A12_Order,A12_Order. A12 response frame randomised,,
+,48,A12_1,A12_1. Did you read or access any of the following - Party or campaign websites,0,Not selected
+,,,,1,Selected
+,49,A12_2,"A12_2. Did you read or access any of the following - TV or newspaper websites (e.g. ABC Online, SMH site etc)",0,Not selected
+,,,,1,Selected
+,50,A12_3,A12_3. Did you read or access any of the following - Election blogs,0,Not selected
+,,,,1,Selected
+,51,A12_4,A12_4. Did you read or access any of the following - Federal Parliament site,0,Not selected
+,,,,1,Selected
+,52,A12_5,A12_5. Did you read or access any of the following - Australian Electoral Commission site,0,Not selected
+,,,,1,Selected
+,53,A12_6,A12_6. Did you read or access any of the following - Voting advice website (e.g. VoteCompass),0,Not selected
+,,,,1,Selected
+,54,A12_7,A12_7. Did you read or access any of the following - None of the above,0,Not selected
+,,,,1,Selected
+,55,A12_8,A12_8. Did you read or access any of the following - Item skipped,0,Not selected
+,,,,1,Selected
+,56,A12_b,"A12_b. During the election campaign, in a typical week, how many days did you use social media such as Facebook, Twitter, or Whatsapp to follow news about parties and candidates?",1,None/zero days
+,,,,2,One day
+,,,,3,Two days
+,,,,4,Three days
+,,,,5,Four days
+,,,,6,Five days
+,,,,7,Six days
+,,,,8,Seven days
+,,,,999,Item skipped
+,57,A12_c,"A12_c. And how often during a typical day did you use social media such as Facebook, Twitter, or Whatsapp to follow news about parties and candidates?",1,Only about once a day
+,,,,2,Several times per day
+,,,,3,At least 10 times per day
+,,,,998,Did not use social media to follow news about parties and candidates
+,,,,999,Item skipped
+,58,A13_Order,A13_Order. A13 response frame randomised,0,Not selected
+,,,,1,selected
+,59,A13_1,"A13_1. Did you do any of the following activities online - Signed up to receive information from a party or candidate on Twitter, Facebook, or Instagram",0,Not slelected
+,,,,1,Selected
+,60,A13_2,"A13_2. Did you do any of the following activities online - Shared campaign or political content on a blog, Twitter feed or on social network",0,Not selected
+,,,,1,Selected
+,61,A13_3,A13_3. Did you do any of the following activities online - Joined or started a political group on social networking site (e.g. Facebook etc.),0,Not selected
+,,,,1,Selected
+,62,A13_4,A13_4. Did you do any of the following activities online - None of the above,0,Not Selected
+,,,,1,Selected
+,63,A13_5,A13_5. Did you do any of the following activities online - Item skipped,0,Not selected
+,,,,1,Selected
+,64,B1,"B1. Generally speaking, do you usually think of yourself as Liberal, Labor, National or what?",1,Liberal
+,,,,2,Labor
+,,,,3,National Party
+,,,,4,Greens
+,,,,5,Other party (please specify)
+,,,,6,No party
+,,,,7,Australian Democrats
+,,,,8,Christian Democratic Party
+,,,,9,Citizens Electoral Council
+,,,,10,Family First Party
+,,,,11,Pauline Hanson's One Nation
+,,,,12,Republican Party (replaced by Republican Party of Australia)
+,,,,13,"Shooters, Fishers and Farmers Party"
+,,,,14,Fishing Party
+,,,,15,United Australia Party (formerly Palmer's United Party)
+,,,,16,Katter's Australia Party
+,,,,17,Liberal Democrats
+,,,,18,Motoring Enthusiasts Party
+,,,,19,Australian Sports Party (dissolved in 2015)
+,,,,20,Reason Party (formerly The Australian Sex Party)
+,,,,21,The Wikileaks Party (dissolved in 2015)
+,,,,22,Australian Christians
+,,,,23,Derryn Hinch's Justice Party
+,,,,24,Centre Alliance (formerly Nick Xenophon Team)
+,,,,25,Rise Up Australia
+,,,,26,Science Party
+,,,,27,Australian Liberty Alliance
+,,,,28,Pirate Party
+,,,,30,Jacquie Lambie Network
+,,,,31,Arts Party
+,,,,32,Animal Justice Party
+,,,,33,Australian Cyclists Party
+,,,,34,Health Australia Party
+,,,,35,Affordable Housing Party
+,,,,36,Australia First Party
+,,,,37,Australian Better Families
+,,,,38,Australian Conservatives
+,,,,39,Australian People's Party
+,,,,40,Australian Progressives
+,,,,41,Australian Workers Party
+,,,,42,Child Protection Party
+,,,,43,Climate Action! Immigration Action! Accountable Politicians!
+,,,,44,Country Liberals (NT)
+,,,,45,Democratic Labour Party
+,,,,46,Fraser Anning'S Conservative National Party
+,,,,47,Help End Marijuana Prohibition (HEMP) Party
+,,,,48,Independents For Climate Action Now
+,,,,49,Involuntary Medication Objectors (Vaccination/Fluoride) Party
+,,,,50,Labour DLP
+,,,,51,Liberal National Party of Queensland
+,,,,52,Love Australia or Leave
+,,,,53,Non-Custodial Parents Party (Equal Parenting)
+,,,,54,Secular Party of Australia
+,,,,55,Seniors United Party of Australia
+,,,,56,Socialist Alliance
+,,,,57,Socialist Equality Party
+,,,,58,Sustainable Australia
+,,,,59,The Australian Mental Health Party
+,,,,60,The Great Australian Party
+,,,,61,The Small Business Party
+,,,,62,The Together Party
+,,,,63,Victorian Socialists
+,,,,64,VOTEFLUX.ORG | Upgrade Democracy!
+,,,,65,WESTERN AUSTRALIA PARTY
+,,,,66,Yellow Vest Australia
+,,,,67,Australian Citizens Party
+,,,,68,Australian Federation Party
+,,,,69,Australian Values Party
+,,,,70,David Pocock
+,,,,71,Drew Pavlou Democratic Alliance
+,,,,72,"FUSION: Science, Pirate, Secular, Climate Emergency"
+,,,,73,Federal ICAC Now
+,,,,74,Indigenous - Aboriginal Party of Australia
+,,,,75,Informed Medical Options Party
+,,,,76,Rex Patrick Team
+,,,,77,TNL
+,,,,78,The Local Party of Australia
+,,,,95,Swing Voter
+,,,,96,Independent
+,,,,97,Other party (not specified)
+,,,,997,Does not apply
+,,,,999,Item skipped
+,65,B1_other,"B1. Generally speaking, do you usually think of yourself as Liberal, Labor, National or what? (other specify)",,
+,66,B2,"B2. Would you call yourself a very strong, fairly strong, or not very strong supporter of that party?",1,Very strong supporter
+,,,,2,Fairly strong supporter
+,,,,3,Not very strong supporter
+,,,,999,Item skipped
+,67,B3,B3. Would you say you cared a good deal which party won the Federal election or that you did not care very much which party won?,1,Cared a good deal
+,,,,2,Did not care very much
+,,,,3,Did not care at all
+,,,,999,Item skipped
+,68,B4,B4. When did you decide how you would definitely vote in this election?,1,A long time ago
+,,,,2,"A few months ago, before election day was announced"
+,,,,3,"About the time the election was announced, on Sunday, 10 April"
+,,,,4,In the first few weeks of the campaign
+,,,,5,A few days before election day
+,,,,6,On election day
+,,,,7,Did not vote in this election
+,,,,999,Item skipped
+,69,B5,"B5. In deciding how you would vote in the election, which was most important to you?",1,The party leaders
+,,,,2,The policy issues
+,,,,3,The candidates in your electorate
+,,,,4,The parties taken as a whole
+,,,,999,Item skipped
+,70,B6,"B6. Which do you think is better - when the Federal Government has a majority in both the House of Representatives and the Senate, OR when the Federal Government in the House of Representatives does not control the Senate?",1,Much better when Government controls both
+,,,,2,Better when Government controls both
+,,,,3,Neither / doesn't matter
+,,,,4,Better when Government does not control the Senate
+,,,,5,Much better when Government does not control the Senate
+,,,,999,Item skipped
+,71,B7,"B7. Considering everything the Labor Party and the Liberal Party stand for, would you say there is....?",1,A good deal of difference between the parties
+,,,,2,Some difference between the parties
+,,,,3,Not much difference between the parties
+,,,,4,No difference between the parties
+,,,,999,Item skipped
+,72,B8_1,"B8_1. Where would you place yourself on a scale from 0 to 10, where 0 means the left and 10 means the right?",0,0 - Left
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Right
+,,,,999,Item skipped
+,73,B8_2,"B8_2. Using the same scale, where would you place each of the Federal political parties? Liberal Party",0,0 - Left
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Right
+,,,,999,Item skipped
+,74,B8_3,"B8_3. Using the same scale, where would you place each of the Federal political parties? Labor Party (ALP)",0,0 - Left
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Right
+,,,,999,Item skipped
+,75,B8_4,"B8_4. Using the same scale, where would you place each of the Federal political parties? National Party",0,0 - Left
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Right
+,,,,999,Item skipped
+,76,B8_5,"B8_5. Using the same scale, where would you place each of the Federal political parties? Greens",0,0 - Left
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Right
+,,,,999,Item skipped
+,77,B9_1,"B9_1. In the Federal election for the House of Representatives on Saturday 21 May, which party did you vote for first in the House of Representatives?",1,Liberal
+,,,,2,Labor
+,,,,3,National Party
+,,,,4,Greens
+,,,,5,Other party (please specify)
+,,,,6,Voted informal / Did not vote
+,,,,7,Australian Democrats
+,,,,8,Christian Democratic Party
+,,,,9,Citizens Electoral Council
+,,,,10,Family First Party
+,,,,11,Pauline Hanson's One Nation
+,,,,12,Republican Party (replaced by Republican Party of Australia)
+,,,,13,"Shooters, Fishers and Farmers Party"
+,,,,14,Fishing Party
+,,,,15,United Australia Party (formerly Palmer's United Party)
+,,,,16,Katter's Australia Party
+,,,,17,Liberal Democrats
+,,,,18,Motoring Enthusiasts Party
+,,,,19,Australian Sports Party (dissolved in 2015)
+,,,,20,Reason Party (formerly The Australian Sex Party)
+,,,,21,The Wikileaks Party (dissolved in 2015)
+,,,,22,Australian Christians
+,,,,23,Derryn Hinch's Justice Party
+,,,,24,Centre Alliance (formerly Nick Xenophon Team)
+,,,,25,Rise Up Australia
+,,,,26,Science Party
+,,,,27,Australian Liberty Alliance
+,,,,28,Pirate Party
+,,,,30,Jacquie Lambie Network
+,,,,31,Arts Party
+,,,,32,Animal Justice Party
+,,,,33,Australian Cyclists Party
+,,,,34,Health Australia Party
+,,,,35,Affordable Housing Party
+,,,,36,Australia First Party
+,,,,37,Australian Better Families
+,,,,38,Australian Conservatives
+,,,,39,Australian People's Party
+,,,,40,Australian Progressives
+,,,,41,Australian Workers Party
+,,,,42,Child Protection Party
+,,,,43,Climate Action! Immigration Action! Accountable Politicians!
+,,,,44,Country Liberals (NT)
+,,,,45,Democratic Labour Party
+,,,,46,Fraser Anning'S Conservative National Party
+,,,,47,Help End Marijuana Prohibition (HEMP) Party
+,,,,48,Independents For Climate Action Now
+,,,,49,Involuntary Medication Objectors (Vaccination/Fluoride) Party
+,,,,50,Labour DLP
+,,,,51,Liberal National Party of Queensland
+,,,,52,Love Australia or Leave
+,,,,53,Non-Custodial Parents Party (Equal Parenting)
+,,,,54,Secular Party of Australia
+,,,,55,Seniors United Party of Australia
+,,,,56,Socialist Alliance
+,,,,57,Socialist Equality Party
+,,,,58,Sustainable Australia
+,,,,59,The Australian Mental Health Party
+,,,,60,The Great Australian Party
+,,,,61,The Small Business Party
+,,,,62,The Together Party
+,,,,63,Victorian Socialists
+,,,,64,VOTEFLUX.ORG | Upgrade Democracy!
+,,,,65,WESTERN AUSTRALIA PARTY
+,,,,66,Yellow Vest Australia
+,,,,67,Australian Citizens Party
+,,,,68,Australian Federation Party
+,,,,69,Australian Values Party
+,,,,70,David Pocock
+,,,,71,Drew Pavlou Democratic Alliance
+,,,,72,"FUSION: Science, Pirate, Secular, Climate Emergency"
+,,,,73,Federal ICAC Now
+,,,,74,Indigenous - Aboriginal Party of Australia
+,,,,75,Informed Medical Options Party
+,,,,76,Rex Patrick Team
+,,,,77,TNL
+,,,,78,The Local Party of Australia
+,,,,94,No party
+,,,,95,Swing Voter
+,,,,96,Independent
+,,,,97,Other party (not specified)
+,,,,997,Does not apply
+,,,,999,Item skipped
+,78,B9_1_other,B9_1. Which party did you vote for first in the House of Representatives? (other specify),999,Item Skipped
+,79,B9_2,B9_2. Which party did you vote for in the Senate election?,1,Liberal
+,,,,2,Labor
+,,,,3,National Party
+,,,,4,Greens
+,,,,5,Other party (please specify)
+,,,,6,Voted informal / Did not vote
+,,,,7,Australian Democrats
+,,,,8,Christian Democratic Party
+,,,,9,Citizens Electoral Council
+,,,,10,Family First Party
+,,,,11,Pauline Hanson's One Nation
+,,,,12,Republican Party (replaced by Republican Party of Australia)
+,,,,13,"Shooters, Fishers and Farmers Party"
+,,,,14,Fishing Party
+,,,,15,United Australia Party (formerly Palmer's United Party)
+,,,,16,Katter's Australia Party
+,,,,17,Liberal Democrats
+,,,,18,Motoring Enthusiasts Party
+,,,,19,Australian Sports Party (dissolved in 2015)
+,,,,20,Reason Party (formerly The Australian Sex Party)
+,,,,21,The Wikileaks Party (dissolved in 2015)
+,,,,22,Australian Christians
+,,,,23,Derryn Hinch's Justice Party
+,,,,24,Centre Alliance (formerly Nick Xenophon Team)
+,,,,25,Rise Up Australia
+,,,,26,Science Party
+,,,,27,Australian Liberty Alliance
+,,,,28,Pirate Party
+,,,,30,Jacquie Lambie Network
+,,,,31,Arts Party
+,,,,32,Animal Justice Party
+,,,,33,Australian Cyclists Party
+,,,,34,Health Australia Party
+,,,,35,Affordable Housing Party
+,,,,36,Australia First Party
+,,,,37,Australian Better Families
+,,,,38,Australian Conservatives
+,,,,39,Australian People's Party
+,,,,40,Australian Progressives
+,,,,41,Australian Workers Party
+,,,,42,Child Protection Party
+,,,,43,Climate Action! Immigration Action! Accountable Politicians!
+,,,,44,Country Liberals (NT)
+,,,,45,Democratic Labour Party
+,,,,46,Fraser Anning'S Conservative National Party
+,,,,47,Help End Marijuana Prohibition (HEMP) Party
+,,,,48,Independents For Climate Action Now
+,,,,49,Involuntary Medication Objectors (Vaccination/Fluoride) Party
+,,,,50,Labour DLP
+,,,,51,Liberal National Party of Queensland
+,,,,52,Love Australia or Leave
+,,,,53,Non-Custodial Parents Party (Equal Parenting)
+,,,,54,Secular Party of Australia
+,,,,55,Seniors United Party of Australia
+,,,,56,Socialist Alliance
+,,,,57,Socialist Equality Party
+,,,,58,Sustainable Australia
+,,,,59,The Australian Mental Health Party
+,,,,60,The Great Australian Party
+,,,,61,The Small Business Party
+,,,,62,The Together Party
+,,,,63,Victorian Socialists
+,,,,64,VOTEFLUX.ORG | Upgrade Democracy!
+,,,,65,WESTERN AUSTRALIA PARTY
+,,,,66,Yellow Vest Australia
+,,,,67,Australian Citizens Party
+,,,,68,Australian Federation Party
+,,,,69,Australian Values Party
+,,,,70,David Pocock
+,,,,71,Drew Pavlou Democratic Alliance
+,,,,72,"FUSION: Science, Pirate, Secular, Climate Emergency"
+,,,,73,Federal ICAC Now
+,,,,74,Indigenous - Aboriginal Party of Australia
+,,,,75,Informed Medical Options Party
+,,,,76,Rex Patrick Team
+,,,,77,TNL
+,,,,78,The Local Party of Australia
+,,,,94,No party
+,,,,95,Swing Voter
+,,,,96,Independent
+,,,,97,Other party (not specified)
+,,,,997,Does not apply
+,,,,999,Item skipped
+,80,B9_2_other,B9_2. Which party did you vote for in the Senate election (other specify),999,Item Skipped
+,81,B10,B10. Voted in person on election day or casted vote before election day,1,Voted in person on election day
+,,,,2,Voted in person before election day (at a pre-polling voting centre)
+,,,,3,Cast postal vote before election day
+,,,,4,Voted by phone on election day
+,,,,5,Voted by phone before election day
+,,,,999,Item skipped
+,82,B11_1,"B11_1. If your first preference was for the Greens or other minor party: Which of the two major parties, the Liberal-National Coalition or the Labor Party, voted for in the House of Representatives",1,Liberal-National Coalition
+,,,,2,Labor Party (ALP)
+,,,,998,Not sure / Don't know
+,,,,999,Item skipped
+,83,B11_2,"B11_2. If your first preference was for the Greens or other minor party: Which of the two major parties, the Liberal-National Coalition or the Labor Party, voted for in the Senate",1,Liberal-National Coalition
+,,,,2,Labor Party (ALP)
+,,,,998,Not sure / Don't know
+,,,,999,Item skipped
+,84,B12,"B12. In voting for the House of Representatives, did you follow a party 'How to Vote' card or did you decide your own preferences?",1,Followed a 'How to Vote' card
+,,,,2,Decided my own preferences
+,,,,999,Item skipped
+,85,B13,B13. Was there any time during the election campaign when you seriously thought you might give your first preference to another party in the House of Representatives?,1,No
+,,,,2,"Yes, Liberal Party"
+,,,,3,"Yes, Labor Party (ALP)"
+,,,,4,"Yes, National Party"
+,,,,5,"Yes, Greens"
+,,,,6,"Yes, another party / independent"
+,,,,999,Item skipped
+,86,B14,"B14. In the last Federal election in May 2019, when the Liberals were led by Scott Morrison and Labor by Bill Shorten, which party got your first preference then in the House of Representatives election?",1,Liberal Party
+,,,,2,Labor Party (ALP)
+,,,,3,National Party
+,,,,4,Greens
+,,,,5,Another party / independent
+,,,,6,Did not vote
+,,,,999,Item skipped
+,87,B15_1,"B15_1. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Always voted for the same party",0,Not selected
+,,,,1,Selected
+,88,B15_2,"B15_2. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted Liberal",0,Not selected
+,,,,1,Selected
+,89,B15_3,"B15_3. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted Labor (ALP)",0,Not selected
+,,,,1,Selected
+,90,B15_4,"B15_4. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted National",0,Not selected
+,,,,1,Selected
+,91,B15_5,"B15_5. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted Greens",0,Not selected
+,,,,1,Selected
+,92,B15_6,"B15_6. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted for other party / independent",0,Not selected
+,,,,1,Selected
+,93,B15_7,"B15_7. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Did not vote before this election",0,Not selected
+,,,,1,Selected
+,94,B15_8,"B15_8. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Item skipped",0,Not selected
+,,,,1,Selected
+,95,B15a_Dummy,"B15a_Dummy.   Liberal National Party, Country Liberal or Liberal Party/ National Party",1,Liberal National Party
+,,,,2,Country Liberal
+,,,,3,Liberal Party / National Party
+,,,,999,Item Skipped
+,96,B15a,"B15a. Thinking about your last state or territory election, which party did you vote for?",1,"Liberal National Party, Country Liberal or Liberal Party/ National Party"
+,,,,2,Labor Party (ALP)
+,,,,3,Greens
+,,,,4,Independent
+,,,,90,Another party
+,,,,97,Did not vote
+,,,,999,Item skipped
+,97,B16,B16. Some people say that political parties in Australia care what ordinary people think. Others say that political parties in Australia don't care what ordinary people think. Where would you place your view on this scale from 1 to 5?,1,1 - Political parties in Australia care what ordinary people think
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Political parties in Australia don't care what ordinary people think
+,,,,999,Item skipped
+,98,B17,"B17. Where would you place your view on this scale from 1 to 5, where 1 means that political parties are necessary to make our political system work, and 5 means that political parties are not needed in Australia?",1,1 - Political parties are necessary to make our political system work
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Political parties are not needed in Australia
+,,,,999,Item skipped
+,99,B18_1,"B18_1. We would like to know what you think about the Liberal Party on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,100,B18_2,"B18_2. We would like to know what you think about the Labor Party (ALP) on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,101,B18_3,"B18_3. We would like to know what you think about the National Party on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,102,B18_4,"B18_4. We would like to know what you think about the Greens on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,103,B19_1,B19_1. Keeps its promises - Liberal-National Coalition,1,Keeps its promises
+,,,,2,Breaks its promises
+,,,,998,Unsure
+,,,,999,Item skipped
+,104,B19_2,B19_2. Keeps its promises - Labor Party,1,Keeps its promises
+,,,,2,Breaks its promises
+,,,,998,Unsure
+,,,,999,Item skipped
+,105,B20_1,B20_1. Capable of strong government - Liberal-National Coalition,1,Capable of strong government
+,,,,2,Not capable of strong government
+,,,,998,Unsure
+,,,,999,Item skipped
+,106,B20_2,B20_2. Capable of strong government - Labor Party,1,Capable of strong government
+,,,,2,Not capable of strong government
+,,,,998,Unsure
+,,,,999,Item skipped
+,107,B21_1,B21_1. United or divided - Liberal-National Coalition,1,United
+,,,,2,Divided
+,,,,998,Unsure
+,,,,999,Item skipped
+,108,B21_2,B21_2. United or divided - Labor Party,1,United
+,,,,2,Divided
+,,,,998,Unsure
+,,,,999,Item skipped
+,109,C1_1,"C1_1. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Scott Morrison",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,110,C1_2,"C1_2. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Anthony Albanese",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,111,C1_3,"C1_3. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Barnaby Joyce",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,112,C1_4,"C1_4. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Adam Bandt",0,0 - Strongly dislike
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Neutral
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Strongly like
+,,,,999,Item skipped
+,113,C2_Order,C2_Order. C2 statements randomised,,
+,114,C2_1,C2_1. How well does the following statement describe Scott Morrison? Intelligent,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,115,C2_2,C2_2. How well does the following statement describe Scott Morrison? Compassionate,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,116,C2_3,C2_3. How well does the following statement describe Scott Morrison? Competent,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,117,C2_4,C2_4. How well does the following statement describe Scott Morrison? Sensible,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,118,C2_5,C2_5. How well does the following statement describe Scott Morrison? Provides strong leadership,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,119,C2_6,C2_6. How well does the following statement describe Scott Morrison? Honest,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,120,C2_7,C2_7. How well does the following statement describe Scott Morrison? Knowledgeable,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,121,C2_8,C2_8. How well does the following statement describe Scott Morrison? Inspiring,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,122,C2_9,C2_9. How well does the following statement describe Scott Morrison? Trustworthy,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,123,C3_Order,C3_Order. C3 statements randomised,,
+,124,C3_1,C3_1. How well does the following statement describe Anthony Albanese? Intelligent,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,125,C3_2,C3_2. How well does the following statement describe Anthony Albanese? Compassionate,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,126,C3_3,C3_3. How well does the following statement describe Anthony Albanese? Competent,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,127,C3_4,C3_4. How well does the following statement describe Anthony Albanese? Sensible,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,128,C3_5,C3_5. How well does the following statement describe Anthony Albanese? Provides strong leadership,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,129,C3_6,C3_6. How well does the following statement describe Anthony Albanese? Honest,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,130,C3_7,C3_7. How well does the following statement describe Anthony Albanese? Knowledgeable,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,131,C3_8,C3_8. How well does the following statement describe Anthony Albanese? Inspiring,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,132,C3_9,C3_9. How well does the following statement describe Anthony Albanese? Trustworthy,1,Extremely well
+,,,,2,Quite well
+,,,,3,Not too well
+,,,,4,Not well at all
+,,,,999,Item skipped
+,133,C5,"C5. On the whole, are you very satisfied, fairly satisfied, not very satisfied or not at all satisfied with the way democracy works in Australia?",1,Very satisfied
+,,,,2,Fairly satisfied
+,,,,3,Not very satisfied
+,,,,4,Not at all satisfied
+,,,,999,Item skipped
+,134,C6,"C6. In general, do you feel that the people in government are too often interested in looking after themselves, or do you feel that they can be trusted to do the right thing nearly all the time?",1,Usually look after themselves
+,,,,2,Sometimes look after themselves
+,,,,3,Sometimes can be trusted to do the right thing
+,,,,4,Usually can be trusted to do the right thing
+,,,,999,Item skipped
+,135,C7,"C7. Would you say the government is run by a few big interests looking out for themselves, or that it is run for the benefit of all the people?",1,Entirely run for the big interests
+,,,,2,Mostly run for the big interests
+,,,,3,About half and half
+,,,,4,Mostly run for the benefit of all
+,,,,5,Entirely run for the benefit of all
+,,,,999,Item skipped
+,136,C8_1,"C8_1. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Contacted a politician or government official by email",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,137,C8_2,"C8_2. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Contacted a politician or government official either in person, or in writing",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,138,C8_3,"C8_3. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Taken part in a protest, march or demonstration",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,139,C8_4,"C8_4. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Worked together with people who shared the same concern",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,140,C8_5,"C8_5. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Signed a written petition",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,141,C8_6,"C8_6. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Signed an online or e-petition",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,142,C8B_1,C8B_1. Did you contact a politician or government official to? express an opinion,0,Not selected
+,,,,1,Selected
+,143,C8B_2,C8B_2. Did you contact a politician or government official to? seek information,0,Not selected
+,,,,1,Selected
+,144,C8B_3,C8B_3. Did you contact a politician or government official to? seek help on a problem you had,0,Not selected
+,,,,1,Selected
+,145,C8B_4,C8B_4. Did you contact a politician or government official to? Item skipped.,0,Not selected
+,,,,1,Selected
+,146,C9,C9. Some people say that Federal politicians know what ordinary people think. Others say that Federal politicians don't know much about what ordinary people think. Where would you place your view on this scale from 1 to 5?,1,1 - Federal politicians know what ordinary people think
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Federal politicians don't know what ordinary people think
+,,,,999,Item skipped
+,147,C10,"C10. Some people say it makes a big difference who is in power. Others say it doesn't make any difference who is in power. Using the scale below, where would you place yourself?",1,1 - It makes a big difference who is in power
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - It doesn't make any difference who is in power
+,,,,999,Item skipped
+,148,C11,"C11. Some people say that no matter who people vote for, it won't make any difference to what happens. Others say that who people vote for can make a big difference to what happens. Using the scale below, where would you place yourself?",1,1 - Who people vote for can make a big difference
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Who people vote for won't make any difference
+,,,,999,Item skipped
+,149,C12A_1,C12A_1. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion? A national body to investigate claims of government corruption :,1,Strongly support
+,,,,2,Support
+,,,,3,Oppose
+,,,,4,Strongly oppose
+,,,,999,Item skipped
+,150,C12A_2,C12A_2. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion?Limiting financial donations to political parties :,1,Strongly support
+,,,,2,Support
+,,,,3,Oppose
+,,,,4,Strongly oppose
+,,,,999,Item skipped
+,151,C12A_3,C12A_3. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion?All political parties to select more women candidates :,1,Strongly support
+,,,,2,Support
+,,,,3,Oppose
+,,,,4,Strongly oppose
+,,,,999,Item skipped
+,152,C12A_4,C12A_4. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion?Laws to protect AustraliansÆ human rights :,1,Strongly support
+,,,,2,Support
+,,,,3,Oppose
+,,,,4,Strongly oppose
+,,,,999,Item skipped
+,153,C13_Order,C13_Order. C13 statements randomised,,
+,154,C13_1,"C13_1. please say whether you strongly agree, agree, disagree or strongly disagree - The people instead of politicians should make our most important policy decisions",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,155,C13_2,"C13_2. Please say whether you strongly agree, agree, disagree or strongly disagree - Politicians in the government are corrupt",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,156,C13_3,"C13_3. Please say whether you strongly agree, agree, disagree or strongly disagree - Politicians make decisions that harm the interests of the ordinary people",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,157,C13_4,"C13_4. Please say whether you strongly agree, agree, disagree or strongly disagree - The ordinary people should have more influence in political decision-making than big companies that only want to make profits",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,158,D1_Order,D1_Order. D1 statements randomised,,
+,159,D1_1,"D1_1. When you were deciding about how to vote, how important was each of these issues to you personally? Taxation",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,160,D1_2,"D1_2. When you were deciding about how to vote, how important was each of these issues to you personally? Immigration",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,161,D1_3,"D1_3. When you were deciding about how to vote, how important was each of these issues to you personally? Education",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,162,D1_4,"D1_4. When you were deciding about how to vote, how important was each of these issues to you personally? The environment",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,163,D1_6,"D1_6. When you were deciding about how to vote, how important was each of these issues to you personally? Health and Medicare",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,164,D1_7,"D1_7. When you were deciding about how to vote, how important was each of these issues to you personally? Refugees and asylum seekers",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,165,D1_8,"D1_8. When you were deciding about how to vote, how important was each of these issues to you personally? Global warming",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,166,D1_10,"D1_10. When you were deciding about how to vote, how important was each of these issues to you personally? Management of the economy",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,167,D1_11,"D1_11. When you were deciding about how to vote, how important was each of these issues to you personally?The COVID-19 pandemic :",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,168,D1_12,"D1_12. When you were deciding about how to vote, how important was each of these issues to you personally? The cost of living :",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,169,D1_13,"D1_13. When you were deciding about how to vote, how important was each of these issues to you personally? National security :",1,Extremely important
+,,,,2,Quite important
+,,,,3,Not very important
+,,,,999,Item skipped
+,170,D2_Order,D2_Order. D2 statements randomised,,
+,171,D2_1,"D2_1. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Taxation",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,172,D2_2,"D2_2. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Immigration",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,173,D2_3,"D2_3. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Education",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,174,D2_4,"D2_4. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? The environment",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,175,D2_6,"D2_6. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Health and Medicare",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,176,D2_7,"D2_7. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Refugees and asylum seekers",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,177,D2_8,"D2_8. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Global warming",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,178,D2_10,"D2_10. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Management of the economy",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,179,D2_11,"D2_11. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? The COVID-19 pandemic :",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,180,D2_12,"D2_12. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? The cost of living :",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,181,D2_13,"D2_13.Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? National security :",1,Labor (ALP)
+,,,,2,Liberal-National Coalition
+,,,,3,No difference
+,,,,998,Don't know
+,,,,999,Item skipped
+,182,D3_1_Order,D3_1_Order. D3_1 response frame randomised,,
+,183,D3_1,"D3_1. Still thinking about the same 10 issues, which of these issues was the most important to you and your family during the election campaign?",1,Taxation
+,,,,2,Immigration
+,,,,3,Education
+,,,,4,The environment
+,,,,6,Health and Medicare
+,,,,7,Refugees and asylum seekers
+,,,,8,Global warming
+,,,,10,Management of the economy
+,,,,11,The COVID-19 pandemic
+,,,,12,The cost of living
+,,,,13,National security
+,,,,999,Item skipped
+,184,D3_2_Order,D3_2_Order. D3_2 response frame randomised,,
+,185,D3_2,D3_2. Which was the second most important issue to you and your family?,1,Taxation
+,,,,2,Immigration
+,,,,3,Education
+,,,,4,The environment
+,,,,6,Health and Medicare
+,,,,7,Refugees and asylum seekers
+,,,,8,Global warming
+,,,,10,Management of the economy
+,,,,11,The COVID-19 pandemic
+,,,,12,The cost of living
+,,,,13,National security
+,,,,999,Item skipped
+,186,D4_1,D4_1. How does the financial situation of your household now compare with what it was 12 months ago?,1,A lot better
+,,,,2,A little better
+,,,,3,About the same
+,,,,4,A little worse
+,,,,5,A lot worse
+,,,,999,Item skipped
+,187,D4_2,D4_2. How does the general economic situation in Australia now compare with what it was 12 months ago?,1,A lot better
+,,,,2,A little better
+,,,,3,About the same
+,,,,4,A little worse
+,,,,5,A lot worse
+,,,,999,Item skipped
+,188,D5_1,"D5_1. Compared with 12 months ago, would you say that the Federal government's policies have had a good effect, a bad effect, or that they really have not made much difference to the financial situation of your household?",1,A good effect
+,,,,2,Not much difference
+,,,,3,A bad effect
+,,,,999,Item skipped
+,189,D5_2,"D5_2. Compared with 12 months ago, would you say that the Federal government's policies have had a good effect, a bad effect, or that they really have not made much difference on the general economic situation in Australia as a whole?",1,A good effect
+,,,,2,Not much difference
+,,,,3,A bad effect
+,,,,999,Item skipped
+,190,D6_1,"D6_1. Compared to now, what do you think the financial situation of your household will be in 12 months time?",1,A lot better
+,,,,2,A little better
+,,,,3,About the same
+,,,,4,A little worse
+,,,,5,A lot worse
+,,,,999,Item skipped
+,191,D6_2,"D6_2. Compared to now, what do you think the general economic situation in Australia as a whole will be in 12 months time?",1,A lot better
+,,,,2,A little better
+,,,,3,About the same
+,,,,4,A little worse
+,,,,5,A lot worse
+,,,,999,Item skipped
+,192,D7_1,"D7_1. Do you think that, 12 months from now, the Federal government's policies will have had a good effect, a bad effect, or that they really will have not made much difference to the financial situation of your household?",1,A good effect
+,,,,2,Not much difference
+,,,,3,A bad effect
+,,,,999,Item skipped
+,193,D7_2,"D7_2. Do you think that, 12 months from now, the Federal government's policies will have had a good effect, a bad effect, or that they really will have not made much difference on the general economic situation in Australia as a whole?",1,A good effect
+,,,,2,Not much difference
+,,,,3,A bad effect
+,,,,999,Item skipped
+,194,D8_Order,D8_Order. D8 statements randomised,,
+,195,D8_1,D8_1. Should there be more or less public expenditure in the following area? Health,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,196,D8_2,D8_2. Should there be more or less public expenditure in the following area? Education,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,197,D8_3,D8_3. Should there be more or less public expenditure in the following area? Unemployment benefits,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,198,D8_4,D8_4. Should there be more or less public expenditure in the following area? Defence,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,199,D8_5,D8_5. Should there be more or less public expenditure in the following area? Old-age pensions,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,200,D8_6,D8_6. Should there be more or less public expenditure in the following area? Business and industry,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,201,D8_7,D8_7. Should there be more or less public expenditure in the following area? Police and law enforcement,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,202,D8_8,D8_8. Should there be more or less public expenditure in the following area? The National Disability Insurance Scheme,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,203,D8_9,D8_9. Should there be more or less public expenditure in the following area? Public transport infrastructure,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,204,D8_10,D8_10. Should there be more or less public expenditure in the following area? Child care,1,Much more than now
+,,,,2,Somewhat more than now
+,,,,3,The same as now
+,,,,4,Somewhat less than now
+,,,,5,Much less than now
+,,,,999,Item skipped
+,205,D9_1,"D9_1. If you lost your job, how easy or difficult would it be to find another job in the next 12 months?",1,Very easy
+,,,,2,Somewhat easy
+,,,,3,Somewhat difficult
+,,,,4,Very difficult
+,,,,97,Do not have a job
+,,,,999,Item skipped
+,206,D9_2,"D9_2. If your spouse / partner lost their job, how easy or difficult would it be for them to find another job in the next 12 months?",1,Very easy
+,,,,2,Somewhat easy
+,,,,3,Somewhat difficult
+,,,,4,Very difficult
+,,,,5,Not applicable - Do not have a spouse / partner
+,,,,97,Do not have a job
+,,,,999,Item skipped
+,207,D10_Order,D10_Order. D10 statements randomised,,
+,208,D10_1,"D10_1. Do you strongly agree, agree, disagree or strongly disagree with the following statement? High income tax makes people less willing to work hard",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,209,D10_2,"D10_2. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The trade unions in this country have too much power",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,210,D10_3,"D10_3. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Big business in this country has too much power",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,211,D10_4,"D10_4. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Income and wealth should be redistributed towards ordinary working people",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,212,D10_5,"D10_5. Do you strongly agree, agree, disagree or strongly disagree with the following statement? There should be stricter laws to regulate the activities of trade unions",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,213,D10_6,"D10_6. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The government should take measures to reduce differences in income levels",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,214,D12,D12. Some people feel that government should make much greater efforts to make people's incomes more equal. Other people feel that government should be much less concerned about how equal people's incomes are. Where would you place yourself on this scale?,0,0 - Make greater efforts to make people's incomes more equal
+,,,,1,1
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5
+,,,,6,6
+,,,,7,7
+,,,,8,8
+,,,,9,9
+,,,,10,10 - Be less concerned about making people's incomes more equal
+,,,,999,Item skipped
+,215,D15,"D15. To the best of your knowledge, have you or anyone living with you been infected with the coronavirus?",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,216,D16_1,D16_1. How has the coronavirus pandemic affected Australia in Social cohesion or inclusiveness :,1,Very positively
+,,,,2,Fairly positively
+,,,,3,Not at all
+,,,,4,Fairly negatively
+,,,,5,Very negatively
+,,,,999,Item skipped
+,217,D16_2,D16_2. How has the coronavirus pandemic affected Australia in Individual rights and freedom :,1,Very positively
+,,,,2,Fairly positively
+,,,,3,Not at all
+,,,,4,Fairly negatively
+,,,,5,Very negatively
+,,,,999,Item skipped
+,218,D16_3,D16_3. How has the coronavirus pandemic affected Australia in the functioning of democracy:,1,Very positively
+,,,,2,Fairly positively
+,,,,3,Not at all
+,,,,4,Fairly negatively
+,,,,5,Very negatively
+,,,,999,Item skipped
+,219,D16_4,D16_4. How has the coronavirus pandemic affected Australia in your personal economic circumstances :,1,Very positively
+,,,,2,Fairly positively
+,,,,3,Not at all
+,,,,4,Fairly negatively
+,,,,5,Very negatively
+,,,,999,Item skipped
+,220,D17_1,D17_1. How well has your state or territory government handled the pandemic?,1,1 - Very badly
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Very well
+,,,,999,Item skipped
+,221,D17_2,D17_2. How well has the Commonwealth government handled the pandemic?,1,1 - Very badly
+,,,,2,2
+,,,,3,3
+,,,,4,4
+,,,,5,5 - Very well
+,,,,999,Item skipped
+,222,E1,"E1. If the government had a choice between reducing taxes or spending more on social services, which do you think it should do?",1,Strongly favour reducing taxes
+,,,,2,Mildly favour reducing taxes
+,,,,3,It depends
+,,,,4,Mildly favour spending more on social services
+,,,,5,Strongly favour spending more on social services
+,,,,999,Item skipped
+,223,E2_Order,E2_Order. E2 statements randomised,,
+,224,E2_1,"E2_1. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Equal opportunities for migrants",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,225,E2_2,"E2_2. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? The right to show nudity and sex in films and magazines",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,226,E2_3,"E2_3. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Aboriginal land rights",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,227,E2_4,"E2_4. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Equal opportunities for women",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,228,E2_5,"E2_5. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? The number of migrants allowed into Australia at the present time",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,229,E2_6,"E2_6. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Government help for Indigenous Australians",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,230,E2_7,"E2_7. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Building closer relations with Asia",1,Gone much too far
+,,,,2,Gone too far
+,,,,3,About right
+,,,,4,Not gone far enough
+,,,,5,Not gone nearly far enough
+,,,,999,Item skipped
+,231,E3,E3. Which one of these statements comes closest to how you feel about abortion in Australia?,1,Women should be able to obtain an abortion readily when they want one
+,,,,2,Abortion should be allowed only in special circumstances
+,,,,3,Abortion should not be allowed under any circumstances
+,,,,998,Don't know
+,,,,999,Item skipped
+,232,E4,E4. Did you personally favour or oppose same sex couples being given the same rights to marry as couples consisting of a man and a woman?,1,Strongly favour
+,,,,2,Favour
+,,,,3,Oppose
+,,,,4,Strongly oppose
+,,,,999,Item skipped
+,233,E6_Order,E6_Order. E6 statements randomised,,
+,234,E6_1,"E6_1. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The death penalty should be reintroduced for murder",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,235,E6_2,"E6_2. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The smoking of marijuana should NOT be a criminal offence",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,236,E6_3,"E6_3. Do you strongly agree, agree, disagree or strongly disagree with the following statement? People who break the law should be given stiffer sentences",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,237,E6_4,"E6_4. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Women should be given preferential treatment when applying for jobs and promotions",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,238,E6_5,"E6_5. Do you strongly agree, agree, disagree or strongly disagree with the following statement? All boats carrying asylum seekers should be turned back",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,239,E6_6,"E6_6. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Terminally ill patients should be able to end their own lives with medical assistance",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,240,E6_7,"E6_7. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The government should increase opportunities for women in business and industry",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,241,E6_8,"E6_8. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Pill testing should be allowed at music festivals",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,242,E7,E7. If a referendum were held to recognise Indigenous Australians in the Constitution would you support or oppose such a change to the Constitution?,1,Strongly support
+,,,,2,Support
+,,,,3,Oppose
+,,,,4,Strongly oppose
+,,,,999,Item skipped
+,243,E8_1_Order,E8_1_Order. E8_1 response frame randomised,,
+,244,E8_1,"E8_1. Here is a list of four aims that different people would give priority. If you had to choose among these four aims, which would be your fir",1,Maintain order in the nation
+,,,,2,Give people more say in important government decisions
+,,,,3,Fight rising prices
+,,,,4,Protect freedom of speech
+,,,,999,Item skipped
+,245,E8_2_Order,E8_2_Order. E8_2 response frame randomised,,
+,246,E8_2,E8_2. Which would be your second choice?,1,Maintain order in the nation
+,,,,2,Give people more say in important government decisions
+,,,,3,Fight rising prices
+,,,,4,Protect freedom of speech
+,,,,999,Item skipped
+,247,E9_Order,E9_Order. E9 statements randomised,,
+,248,E9_1,"E9_1. Please say whether you strongly agree, agree, disagree or strongly disagree with each of these statements. - Many women interpret innocent remarks or acts as being sexist",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,249,E9_2,"E9_2. Please say whether you strongly agree, agree, disagree or strongly disagree with each of these statements. - Women fail to appreciate what men do for them",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,250,E9_3,"E9_3. Please say whether you strongly agree, agree, disagree or strongly disagree with each of these statements. - Women seek to gain power by getting control over men",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,251,F1,F1. How important do you feel the Queen and the Royal Family are to Australia?,1,Very important
+,,,,2,Fairly important
+,,,,3,Not very important
+,,,,999,Item skipped
+,252,F2,"F2. Do you think that Australia should become a republic with an Australian head of state, or should the Queen be retained as head of state?",1,Strongly favour becoming republic
+,,,,2,Favour becoming republic
+,,,,3,Favour retaining the Queen as head of state
+,,,,4,Strongly favour retaining the Queen as head of state
+,,,,999,Item skipped
+,253,F3,F3. How important do you think the Australian alliance with the United States under the ANZUS treaty is for protecting Australia's security?,1,Very important
+,,,,2,Fairly important
+,,,,3,Not very important
+,,,,4,Not at all important
+,,,,999,Item skipped
+,254,F4,"F4. If Australia's security were threatened by some other country, how much trust do you feel Australia can have in the United States to come to Australia's defence?",1,A great deal
+,,,,2,A fair amount
+,,,,3,Not very much
+,,,,4,None at all
+,,,,999,Item skipped
+,255,F5_Order,F5_Order. F5 statements randomised,,
+,256,F5_1,"F5_1. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Japan",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,257,F5_2,"F5_2. In your opinion, are any of the following countries likely to pose a threat to Australia's security? United States",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,258,F5_3,"F5_3. In your opinion, are any of the following countries likely to pose a threat to Australia's security? China",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,259,F5_4,"F5_4. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Vietnam",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,260,F5_5,"F5_5. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Malaysia",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,261,F5_6,"F5_6. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Indonesia",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,262,F5_7,"F5_7. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Russia",1,Very likely
+,,,,2,Fairly likely
+,,,,3,Not very likely
+,,,,999,Item skipped
+,263,F6_Order,F6_Order. F6 statements randomised,,
+,264,F6_1,"F6_1. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia's defence is stronger now than it was 10 years ago",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,265,F6_2,"F6_2. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia would be able to defend itself successfully if it were ever attacked",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,266,F6_3,"F6_3. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia's trading future lies in Asia",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,267,F6_4,"F6_4. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia should provide military assistance for the war on terrorism",1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,268,F7,F7. Do you think the number of immigrants allowed into Australia nowadays should be reduced or increased?,1,Increased a lot
+,,,,2,Increased a little
+,,,,3,Remain about the same as it is
+,,,,4,Reduced a little
+,,,,5,Reduced a lot
+,,,,999,Item skipped
+,269,F8_Order,F8_Order. F8 statements randomised,,
+,270,F8_1,F8_1. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants increase the crime rate,1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,271,F8_2,F8_2. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants are generally good for Australia's economy,1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,272,F8_3,F8_3. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants take jobs away from people who are born in Australia,1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,273,F8_4,F8_4. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants make Australia more open to new ideas and cultures,1,Strongly agree
+,,,,2,Agree
+,,,,3,Neither agree nor disagree
+,,,,4,Disagree
+,,,,5,Strongly disagree
+,,,,999,Item skipped
+,274,F9,F9. How serious a threat do you think global warming will pose to you or your way of life in your lifetime?,1,Very serious
+,,,,2,Fairly serious
+,,,,3,Not very serious
+,,,,4,Not at all serious
+,,,,999,Item skipped
+,275,F10_Order,F10_Order. F10 statements randomised,,
+,276,F10_1,F10_1. Do you think the following statement is true or false? Australia became a federation in 1901,1,TRUE
+,,,,2,FALSE
+,,,,998,Don't know
+,,,,999,Item skipped
+,277,F10_2,F10_2. Do you think the following statement is true or false? There are 75 members of the House of Representatives,1,TRUE
+,,,,2,FALSE
+,,,,998,Don't know
+,,,,999,Item skipped
+,278,F10_3,F10_3. Do you think the following statement is true or false? The Constitution can only be changed by the High Court,1,TRUE
+,,,,2,FALSE
+,,,,998,Don't know
+,,,,999,Item skipped
+,279,F10_4,F10_4. Do you think the following statement is true or false? The Senate election is based on proportional representation,1,TRUE
+,,,,2,FALSE
+,,,,998,Don't know
+,,,,999,Item skipped
+,280,F10_5,F10_5. Do you think the following statement is true or false? No one may stand for Federal parliament unless they pay a deposit,1,TRUE
+,,,,2,FALSE
+,,,,998,Don't know
+,,,,999,Item skipped
+,281,F10_6,F10_6. Do you think the following statement is true or false? The longest time allowed between Federal elections for the House of Representatives is four years,1,TRUE
+,,,,2,FALSE
+,,,,998,Don't know
+,,,,999,Item skipped
+,282,G1,G1. How old were you when you left secondary school?,-4,Still at secondary school
+,,,,-3,Went to primary school only
+,,,,-2,No formal schooling
+,,,,999,Item skipped
+,283,G2,"G2. In all, how many years of tertiary study have you completed since you left secondary school?",999,Item skipped
+,284,G3,"G3. Have you obtained a trade qualification, a degree or a diploma, or any other qualification since leaving school? What is your highest qualification?If you are qualified, please select your highest qualification.",1,No qualification since leaving school
+,,,,2,Postgraduate Degree or Postgraduate Diploma
+,,,,3,Bachelor Degree (including Honours)
+,,,,4,Undergraduate Diploma
+,,,,5,Associate Diploma
+,,,,6,Trade qualification
+,,,,7,Non-trade qualification
+,,,,999,Item skipped
+,285,G4,"G4. Now some questions about the work you are doing now. Last week, what were you mainly doing?",1,Working full-time for pay
+,,,,2,Working part-time for pay
+,,,,3,Unemployed - looking for full-time work
+,,,,4,Unemployed - looking for part-time work
+,,,,5,Retired from paid work
+,,,,6,A full-time school or university student
+,,,,7,Family or caring responsibilities
+,,,,96,Other (please specify)
+,,,,999,Item skipped
+,286,G4_other,"G4. Last week, what were you mainly doing? (other specify)",,
+,287,G5_Work,G5_Work. Do you currently or have you ever worked for pay?,999,Item Skipped
+,288,G5_Code,G5_Code. What kind of work do you do? ANZSCO 1-Digit Code. Confidentialised Variable - Please contact ADA to arrange access to 4-digit code.,1,Managers
+,,,,2,Professionals
+,,,,3,Technicians and Trades Workers
+,,,,4,Community and Personal Service Workers
+,,,,5,Clerical and Administrative Workers
+,,,,6,Sales Workers
+,,,,7,Machinery Operators and Drivers
+,,,,8,Labourers
+,,,,9,Other (insufficiently detailed)
+,,,,99997,Does not apply
+,,,,99999,Item Skipped
+,289,G5_A_r,EMBARGO VARIABLE G5_A_r G5_A. What kind of work do you do? Full job title PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,290,G5_B_r,EMBARGO VARIABLE G5_B. What are (or were) the main tasks that you usually perform? PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,291,G5_C_r,EMBARGO VARIABLE G5_C. What kind of business or industry is (or was) that in? PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,292,G5_D,G5_D. Which of the following best describes the position that you hold (or held most recently)?,1,Upper managerial
+,,,,2,Middle managerial
+,,,,3,Lower managerial
+,,,,4,Supervisory
+,,,,5,Non-supervisory
+,,,,999,Item skipped
+,293,G5_E,G5_E. Whom do (or did) you work for?,1,Self-employed
+,,,,2,Employee in private company or business
+,,,,3,Employee of Federal / State / Local Government
+,,,,4,Employee in family business or farm
+,,,,999,Item skipped
+,294,G5_F,"G5_F. As an official part of your job, do (or did) you directly supervise the work of other employees or tell other employees what work to do?",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,295,G6,G6. Do you belong to a trade union?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,296,H1,H1. Are you male or female?,1,Male
+,,,,2,Female
+,,,,3,Other
+,,,,999,Item skipped
+,297,H1b,H1b. Which of the following options best describes how you think of yourself?,1,Heterosexual or Straight
+,,,,2,Gay or Lesbian
+,,,,3,Bisexual
+,,,,4,Other
+,,,,97,Prefer not to say
+,,,,999,Item skipped
+,298,H2,H2. In what year were you born?,-97,Prefer not to say
+,,,,999,Item skipped
+,299,H3_1,H3_1. In which country were you born?,0,Inadequately Described
+,,,,1,At Sea
+,,,,3,Not Stated
+,,,,4,Unknown (for use in economic statistics: the destination or origin of the goods is unknown)
+,,,,5,Unidentified (for use in economic statistics: the country reported on import/export documentation is not recognised)
+,,,,12,Other (please specify)
+,,,,911,"Europe, nfd"
+,,,,912,"Former USSR, nfd"
+,,,,913,"Former Yugoslavia, nfd"
+,,,,914,"Czechoslovakia, nfd"
+,,,,915,"Kurdistan, nfd"
+,,,,916,"East Asia, nfd"
+,,,,917,"Asia, nfd"
+,,,,918,"Africa, nfd"
+,,,,921,"Serbia and Montenegro, nfd"
+,,,,922,"Channel Islands, nfd"
+,,,,924,"Netherlands Antilles, nfd"
+,,,,1000,Oceania and Antarctica
+,,,,1100,Australia (includes External Territories)
+,,,,1101,Australia
+,,,,1102,Norfolk Island
+,,,,1199,"Australian External Territories, nec"
+,,,,1201,New Zealand
+,,,,1300,Melanesia
+,,,,1301,New Caledonia
+,,,,1302,Papua New Guinea
+,,,,1303,Solomon Islands
+,,,,1304,Vanuatu
+,,,,1400,Micronesia
+,,,,1401,Guam
+,,,,1402,Kiribati
+,,,,1403,Marshall Islands
+,,,,1404,"Micronesia, Federated States of"
+,,,,1405,Nauru
+,,,,1406,Northern Mariana Islands
+,,,,1407,Palau
+,,,,1500,Polynesia (excludes Hawaii)
+,,,,1501,Cook Islands
+,,,,1502,Fiji
+,,,,1503,French Polynesia
+,,,,1504,Niue
+,,,,1505,Samoa
+,,,,1506,"Samoa, American"
+,,,,1507,Tokelau
+,,,,1508,Tonga
+,,,,1511,Tuvalu
+,,,,1512,Wallis and Futuna
+,,,,1513,Pitcairn Islands
+,,,,1599,"Polynesia (excludes Hawaii), nec"
+,,,,1600,Antarctica
+,,,,1601,Adelie Land (France)
+,,,,1602,Argentinian Antarctic Territory
+,,,,1603,Australian Antarctic Territory
+,,,,1604,British Antarctic Territory
+,,,,1605,Chilean Antarctic Territory
+,,,,1606,Queen Maud Land (Norway)
+,,,,1607,Ross Dependency (New Zealand)
+,,,,2000,North-West Europe
+,,,,2100,"United Kingdom, Channel Islands and Isle of Man"
+,,,,2102,England
+,,,,2103,Isle of Man
+,,,,2104,Northern Ireland
+,,,,2105,Scotland
+,,,,2106,Wales
+,,,,2107,Guernsey
+,,,,2108,Jersey
+,,,,2201,Ireland
+,,,,2300,Western Europe
+,,,,2301,Austria
+,,,,2302,Belgium
+,,,,2303,France
+,,,,2304,Germany
+,,,,2305,Liechtenstein
+,,,,2306,Luxembourg
+,,,,2307,Monaco
+,,,,2308,Netherlands
+,,,,2311,Switzerland
+,,,,2400,Northern Europe
+,,,,2401,Denmark
+,,,,2402,Faroe Islands
+,,,,2403,Finland
+,,,,2404,Greenland
+,,,,2405,Iceland
+,,,,2406,Norway
+,,,,2407,Sweden
+,,,,2408,Aland Islands
+,,,,3000,Southern and Eastern Europe
+,,,,3100,Southern Europe
+,,,,3101,Andorra
+,,,,3102,Gibraltar
+,,,,3103,Holy See
+,,,,3104,Italy
+,,,,3105,Malta
+,,,,3106,Portugal
+,,,,3107,San Marino
+,,,,3108,Spain
+,,,,3200,South Eastern Europe
+,,,,3201,Albania
+,,,,3202,Bosnia and Herzegovina
+,,,,3203,Bulgaria
+,,,,3204,Croatia
+,,,,3205,Cyprus
+,,,,3206,Former Yugoslav Republic of Macedonia (FYROM)
+,,,,3207,Greece
+,,,,3208,Moldova
+,,,,3211,Romania
+,,,,3212,Slovenia
+,,,,3214,Montenegro
+,,,,3215,Serbia
+,,,,3216,Kosovo
+,,,,3300,Eastern Europe
+,,,,3301,Belarus
+,,,,3302,Czech Republic
+,,,,3303,Estonia
+,,,,3304,Hungary
+,,,,3305,Latvia
+,,,,3306,Lithuania
+,,,,3307,Poland
+,,,,3308,Russian Federation
+,,,,3311,Slovakia
+,,,,3312,Ukraine
+,,,,4000,North Africa and the Middle East
+,,,,4100,North Africa
+,,,,4101,Algeria
+,,,,4102,Egypt
+,,,,4103,Libya
+,,,,4104,Morocco
+,,,,4105,Sudan
+,,,,4106,Tunisia
+,,,,4107,Western Sahara
+,,,,4108,Spanish North Africa
+,,,,4111,South Sudan
+,,,,4200,Middle East
+,,,,4201,Bahrain
+,,,,4202,Gaza Strip and West Bank
+,,,,4203,Iran
+,,,,4204,Iraq
+,,,,4205,Israel
+,,,,4206,Jordan
+,,,,4207,Kuwait
+,,,,4208,Lebanon
+,,,,4211,Oman
+,,,,4212,Qatar
+,,,,4213,Saudi Arabia
+,,,,4214,Syria
+,,,,4215,Turkey
+,,,,4216,United Arab Emirates
+,,,,4217,Yemen
+,,,,5000,South-East Asia
+,,,,5100,Mainland South-East Asia
+,,,,5101,"Myanmar, The Republic of the Union of"
+,,,,5102,Cambodia
+,,,,5103,Laos
+,,,,5104,Thailand
+,,,,5105,Vietnam
+,,,,5200,Maritime South-East Asia
+,,,,5201,Brunei Darussalam
+,,,,5202,Indonesia
+,,,,5203,Malaysia
+,,,,5204,Philippines
+,,,,5205,Singapore
+,,,,5206,Timor-Leste
+,,,,6000,North-East Asia
+,,,,6100,Chinese Asia (includes Mongolia)
+,,,,6101,China (excludes SARs and Taiwan)
+,,,,6102,Hong Kong (SAR of China)
+,,,,6103,Macau (SAR of China)
+,,,,6104,Mongolia
+,,,,6105,Taiwan
+,,,,6200,Japan and the Koreas
+,,,,6201,Japan
+,,,,6202,"Korea, Democratic People's Republic of (North)"
+,,,,6203,"Korea, Republic of (South)"
+,,,,7000,Southern and Central Asia
+,,,,7100,Southern Asia
+,,,,7101,Bangladesh
+,,,,7102,Bhutan
+,,,,7103,India
+,,,,7104,Maldives
+,,,,7105,Nepal
+,,,,7106,Pakistan
+,,,,7107,Sri Lanka
+,,,,7200,Central Asia
+,,,,7201,Afghanistan
+,,,,7202,Armenia
+,,,,7203,Azerbaijan
+,,,,7204,Georgia
+,,,,7205,Kazakhstan
+,,,,7206,Kyrgyzstan
+,,,,7207,Tajikistan
+,,,,7208,Turkmenistan
+,,,,7211,Uzbekistan
+,,,,8000,Americas
+,,,,8100,Northern America
+,,,,8101,Bermuda
+,,,,8102,Canada
+,,,,8103,St Pierre and Miquelon
+,,,,8104,United States of America
+,,,,8200,South America
+,,,,8201,Argentina
+,,,,8202,"Bolivia, Plurinational State of"
+,,,,8203,Brazil
+,,,,8204,Chile
+,,,,8205,Colombia
+,,,,8206,Ecuador
+,,,,8207,Falkland Islands
+,,,,8208,French Guiana
+,,,,8211,Guyana
+,,,,8212,Paraguay
+,,,,8213,Peru
+,,,,8214,Suriname
+,,,,8215,Uruguay
+,,,,8216,"Venezuela, Bolivarian Republic of"
+,,,,8299,"South America, nec"
+,,,,8300,Central America
+,,,,8301,Belize
+,,,,8302,Costa Rica
+,,,,8303,El Salvador
+,,,,8304,Guatemala
+,,,,8305,Honduras
+,,,,8306,Mexico
+,,,,8307,Nicaragua
+,,,,8308,Panama
+,,,,8400,Caribbean
+,,,,8401,Anguilla
+,,,,8402,Antigua and Barbuda
+,,,,8403,Aruba
+,,,,8404,Bahamas
+,,,,8405,Barbados
+,,,,8406,Cayman Islands
+,,,,8407,Cuba
+,,,,8408,Dominica
+,,,,8411,Dominican Republic
+,,,,8412,Grenada
+,,,,8413,Guadeloupe
+,,,,8414,Haiti
+,,,,8415,Jamaica
+,,,,8416,Martinique
+,,,,8417,Montserrat
+,,,,8421,Puerto Rico
+,,,,8422,St Kitts and Nevis
+,,,,8423,St Lucia
+,,,,8424,St Vincent and the Grenadines
+,,,,8425,Trinidad and Tobago
+,,,,8426,Turks and Caicos Islands
+,,,,8427,"Virgin Islands, British"
+,,,,8428,"Virgin Islands, United States"
+,,,,8431,St Barthelemy
+,,,,8432,St Martin (French part)
+,,,,8433,"Bonaire, Sint Eustatius and Saba"
+,,,,8434,Curacao
+,,,,8435,Sint Maarten (Dutch part)
+,,,,9000,Sub-Saharan Africa
+,,,,9100,Central and West Africa
+,,,,9101,Benin
+,,,,9102,Burkina Faso
+,,,,9103,Cameroon
+,,,,9104,Cabo Verde
+,,,,9105,Central African Republic
+,,,,9106,Chad
+,,,,9107,"Congo, Republic of"
+,,,,9108,"Congo, Democratic Republic of"
+,,,,9111,Cote d'Ivoire
+,,,,9112,Equatorial Guinea
+,,,,9113,Gabon
+,,,,9114,Gambia
+,,,,9115,Ghana
+,,,,9116,Guinea
+,,,,9117,Guinea-Bissau
+,,,,9118,Liberia
+,,,,9121,Mali
+,,,,9122,Mauritania
+,,,,9123,Niger
+,,,,9124,Nigeria
+,,,,9125,Sao Tome and Principe
+,,,,9126,Senegal
+,,,,9127,Sierra Leone
+,,,,9128,Togo
+,,,,9200,Southern and East Africa
+,,,,9201,Angola
+,,,,9202,Botswana
+,,,,9203,Burundi
+,,,,9204,Comoros
+,,,,9205,Djibouti
+,,,,9206,Eritrea
+,,,,9207,Ethiopia
+,,,,9208,Kenya
+,,,,9211,Lesotho
+,,,,9212,Madagascar
+,,,,9213,Malawi
+,,,,9214,Mauritius
+,,,,9215,Mayotte
+,,,,9216,Mozambique
+,,,,9217,Namibia
+,,,,9218,Reunion
+,,,,9221,Rwanda
+,,,,9222,St Helena
+,,,,9223,Seychelles
+,,,,9224,Somalia
+,,,,9225,South Africa
+,,,,9226,Swaziland
+,,,,9227,Tanzania
+,,,,9228,Uganda
+,,,,9231,Zambia
+,,,,9232,Zimbabwe
+,,,,9299,"Southern and East Africa, nec"
+,,,,99999,Item skipped
+,300,H3A_other,H3_1. In which country were you born? Other specify responses,,
+,301,H3_2,H3_2. In which country was your mother born?,0,Inadequately Described
+,,,,1,At Sea
+,,,,3,Not Stated
+,,,,4,Unknown (for use in economic statistics: the destination or origin of the goods is unknown)
+,,,,5,Unidentified (for use in economic statistics: the country reported on import/export documentation is not recognised)
+,,,,12,Other (please specify)
+,,,,911,"Europe, nfd"
+,,,,912,"Former USSR, nfd"
+,,,,913,"Former Yugoslavia, nfd"
+,,,,914,"Czechoslovakia, nfd"
+,,,,915,"Kurdistan, nfd"
+,,,,916,"East Asia, nfd"
+,,,,917,"Asia, nfd"
+,,,,918,"Africa, nfd"
+,,,,921,"Serbia and Montenegro, nfd"
+,,,,922,"Channel Islands, nfd"
+,,,,924,"Netherlands Antilles, nfd"
+,,,,1000,Oceania and Antarctica
+,,,,1100,Australia (includes External Territories)
+,,,,1101,Australia
+,,,,1102,Norfolk Island
+,,,,1199,"Australian External Territories, nec"
+,,,,1201,New Zealand
+,,,,1300,Melanesia
+,,,,1301,New Caledonia
+,,,,1302,Papua New Guinea
+,,,,1303,Solomon Islands
+,,,,1304,Vanuatu
+,,,,1400,Micronesia
+,,,,1401,Guam
+,,,,1402,Kiribati
+,,,,1403,Marshall Islands
+,,,,1404,"Micronesia, Federated States of"
+,,,,1405,Nauru
+,,,,1406,Northern Mariana Islands
+,,,,1407,Palau
+,,,,1500,Polynesia (excludes Hawaii)
+,,,,1501,Cook Islands
+,,,,1502,Fiji
+,,,,1503,French Polynesia
+,,,,1504,Niue
+,,,,1505,Samoa
+,,,,1506,"Samoa, American"
+,,,,1507,Tokelau
+,,,,1508,Tonga
+,,,,1511,Tuvalu
+,,,,1512,Wallis and Futuna
+,,,,1513,Pitcairn Islands
+,,,,1599,"Polynesia (excludes Hawaii), nec"
+,,,,1600,Antarctica
+,,,,1601,Adelie Land (France)
+,,,,1602,Argentinian Antarctic Territory
+,,,,1603,Australian Antarctic Territory
+,,,,1604,British Antarctic Territory
+,,,,1605,Chilean Antarctic Territory
+,,,,1606,Queen Maud Land (Norway)
+,,,,1607,Ross Dependency (New Zealand)
+,,,,2000,North-West Europe
+,,,,2100,"United Kingdom, Channel Islands and Isle of Man"
+,,,,2102,England
+,,,,2103,Isle of Man
+,,,,2104,Northern Ireland
+,,,,2105,Scotland
+,,,,2106,Wales
+,,,,2107,Guernsey
+,,,,2108,Jersey
+,,,,2201,Ireland
+,,,,2300,Western Europe
+,,,,2301,Austria
+,,,,2302,Belgium
+,,,,2303,France
+,,,,2304,Germany
+,,,,2305,Liechtenstein
+,,,,2306,Luxembourg
+,,,,2307,Monaco
+,,,,2308,Netherlands
+,,,,2311,Switzerland
+,,,,2400,Northern Europe
+,,,,2401,Denmark
+,,,,2402,Faroe Islands
+,,,,2403,Finland
+,,,,2404,Greenland
+,,,,2405,Iceland
+,,,,2406,Norway
+,,,,2407,Sweden
+,,,,2408,Aland Islands
+,,,,3000,Southern and Eastern Europe
+,,,,3100,Southern Europe
+,,,,3101,Andorra
+,,,,3102,Gibraltar
+,,,,3103,Holy See
+,,,,3104,Italy
+,,,,3105,Malta
+,,,,3106,Portugal
+,,,,3107,San Marino
+,,,,3108,Spain
+,,,,3200,South Eastern Europe
+,,,,3201,Albania
+,,,,3202,Bosnia and Herzegovina
+,,,,3203,Bulgaria
+,,,,3204,Croatia
+,,,,3205,Cyprus
+,,,,3206,Former Yugoslav Republic of Macedonia (FYROM)
+,,,,3207,Greece
+,,,,3208,Moldova
+,,,,3211,Romania
+,,,,3212,Slovenia
+,,,,3214,Montenegro
+,,,,3215,Serbia
+,,,,3216,Kosovo
+,,,,3300,Eastern Europe
+,,,,3301,Belarus
+,,,,3302,Czech Republic
+,,,,3303,Estonia
+,,,,3304,Hungary
+,,,,3305,Latvia
+,,,,3306,Lithuania
+,,,,3307,Poland
+,,,,3308,Russian Federation
+,,,,3311,Slovakia
+,,,,3312,Ukraine
+,,,,4000,North Africa and the Middle East
+,,,,4100,North Africa
+,,,,4101,Algeria
+,,,,4102,Egypt
+,,,,4103,Libya
+,,,,4104,Morocco
+,,,,4105,Sudan
+,,,,4106,Tunisia
+,,,,4107,Western Sahara
+,,,,4108,Spanish North Africa
+,,,,4111,South Sudan
+,,,,4200,Middle East
+,,,,4201,Bahrain
+,,,,4202,Gaza Strip and West Bank
+,,,,4203,Iran
+,,,,4204,Iraq
+,,,,4205,Israel
+,,,,4206,Jordan
+,,,,4207,Kuwait
+,,,,4208,Lebanon
+,,,,4211,Oman
+,,,,4212,Qatar
+,,,,4213,Saudi Arabia
+,,,,4214,Syria
+,,,,4215,Turkey
+,,,,4216,United Arab Emirates
+,,,,4217,Yemen
+,,,,5000,South-East Asia
+,,,,5100,Mainland South-East Asia
+,,,,5101,"Myanmar, The Republic of the Union of"
+,,,,5102,Cambodia
+,,,,5103,Laos
+,,,,5104,Thailand
+,,,,5105,Vietnam
+,,,,5200,Maritime South-East Asia
+,,,,5201,Brunei Darussalam
+,,,,5202,Indonesia
+,,,,5203,Malaysia
+,,,,5204,Philippines
+,,,,5205,Singapore
+,,,,5206,Timor-Leste
+,,,,6000,North-East Asia
+,,,,6100,Chinese Asia (includes Mongolia)
+,,,,6101,China (excludes SARs and Taiwan)
+,,,,6102,Hong Kong (SAR of China)
+,,,,6103,Macau (SAR of China)
+,,,,6104,Mongolia
+,,,,6105,Taiwan
+,,,,6200,Japan and the Koreas
+,,,,6201,Japan
+,,,,6202,"Korea, Democratic People's Republic of (North)"
+,,,,6203,"Korea, Republic of (South)"
+,,,,7000,Southern and Central Asia
+,,,,7100,Southern Asia
+,,,,7101,Bangladesh
+,,,,7102,Bhutan
+,,,,7103,India
+,,,,7104,Maldives
+,,,,7105,Nepal
+,,,,7106,Pakistan
+,,,,7107,Sri Lanka
+,,,,7200,Central Asia
+,,,,7201,Afghanistan
+,,,,7202,Armenia
+,,,,7203,Azerbaijan
+,,,,7204,Georgia
+,,,,7205,Kazakhstan
+,,,,7206,Kyrgyzstan
+,,,,7207,Tajikistan
+,,,,7208,Turkmenistan
+,,,,7211,Uzbekistan
+,,,,8000,Americas
+,,,,8100,Northern America
+,,,,8101,Bermuda
+,,,,8102,Canada
+,,,,8103,St Pierre and Miquelon
+,,,,8104,United States of America
+,,,,8200,South America
+,,,,8201,Argentina
+,,,,8202,"Bolivia, Plurinational State of"
+,,,,8203,Brazil
+,,,,8204,Chile
+,,,,8205,Colombia
+,,,,8206,Ecuador
+,,,,8207,Falkland Islands
+,,,,8208,French Guiana
+,,,,8211,Guyana
+,,,,8212,Paraguay
+,,,,8213,Peru
+,,,,8214,Suriname
+,,,,8215,Uruguay
+,,,,8216,"Venezuela, Bolivarian Republic of"
+,,,,8299,"South America, nec"
+,,,,8300,Central America
+,,,,8301,Belize
+,,,,8302,Costa Rica
+,,,,8303,El Salvador
+,,,,8304,Guatemala
+,,,,8305,Honduras
+,,,,8306,Mexico
+,,,,8307,Nicaragua
+,,,,8308,Panama
+,,,,8400,Caribbean
+,,,,8401,Anguilla
+,,,,8402,Antigua and Barbuda
+,,,,8403,Aruba
+,,,,8404,Bahamas
+,,,,8405,Barbados
+,,,,8406,Cayman Islands
+,,,,8407,Cuba
+,,,,8408,Dominica
+,,,,8411,Dominican Republic
+,,,,8412,Grenada
+,,,,8413,Guadeloupe
+,,,,8414,Haiti
+,,,,8415,Jamaica
+,,,,8416,Martinique
+,,,,8417,Montserrat
+,,,,8421,Puerto Rico
+,,,,8422,St Kitts and Nevis
+,,,,8423,St Lucia
+,,,,8424,St Vincent and the Grenadines
+,,,,8425,Trinidad and Tobago
+,,,,8426,Turks and Caicos Islands
+,,,,8427,"Virgin Islands, British"
+,,,,8428,"Virgin Islands, United States"
+,,,,8431,St Barthelemy
+,,,,8432,St Martin (French part)
+,,,,8433,"Bonaire, Sint Eustatius and Saba"
+,,,,8434,Curacao
+,,,,8435,Sint Maarten (Dutch part)
+,,,,9000,Sub-Saharan Africa
+,,,,9100,Central and West Africa
+,,,,9101,Benin
+,,,,9102,Burkina Faso
+,,,,9103,Cameroon
+,,,,9104,Cabo Verde
+,,,,9105,Central African Republic
+,,,,9106,Chad
+,,,,9107,"Congo, Republic of"
+,,,,9108,"Congo, Democratic Republic of"
+,,,,9111,Cote d'Ivoire
+,,,,9112,Equatorial Guinea
+,,,,9113,Gabon
+,,,,9114,Gambia
+,,,,9115,Ghana
+,,,,9116,Guinea
+,,,,9117,Guinea-Bissau
+,,,,9118,Liberia
+,,,,9121,Mali
+,,,,9122,Mauritania
+,,,,9123,Niger
+,,,,9124,Nigeria
+,,,,9125,Sao Tome and Principe
+,,,,9126,Senegal
+,,,,9127,Sierra Leone
+,,,,9128,Togo
+,,,,9200,Southern and East Africa
+,,,,9201,Angola
+,,,,9202,Botswana
+,,,,9203,Burundi
+,,,,9204,Comoros
+,,,,9205,Djibouti
+,,,,9206,Eritrea
+,,,,9207,Ethiopia
+,,,,9208,Kenya
+,,,,9211,Lesotho
+,,,,9212,Madagascar
+,,,,9213,Malawi
+,,,,9214,Mauritius
+,,,,9215,Mayotte
+,,,,9216,Mozambique
+,,,,9217,Namibia
+,,,,9218,Reunion
+,,,,9221,Rwanda
+,,,,9222,St Helena
+,,,,9223,Seychelles
+,,,,9224,Somalia
+,,,,9225,South Africa
+,,,,9226,Swaziland
+,,,,9227,Tanzania
+,,,,9228,Uganda
+,,,,9231,Zambia
+,,,,9232,Zimbabwe
+,,,,9299,"Southern and East Africa, nec"
+,,,,99999,Item skipped
+,302,H3B_other,H3_2. In which country was your mother born? Other specify responses,,
+,303,H3_3,"H3_3. And, in which country was your father born?",0,Inadequately Described
+,,,,1,At Sea
+,,,,3,Not Stated
+,,,,4,Unknown (for use in economic statistics: the destination or origin of the goods is unknown)
+,,,,5,Unidentified (for use in economic statistics: the country reported on import/export documentation is not recognised)
+,,,,12,Other (please specify)
+,,,,911,"Europe, nfd"
+,,,,912,"Former USSR, nfd"
+,,,,913,"Former Yugoslavia, nfd"
+,,,,914,"Czechoslovakia, nfd"
+,,,,915,"Kurdistan, nfd"
+,,,,916,"East Asia, nfd"
+,,,,917,"Asia, nfd"
+,,,,918,"Africa, nfd"
+,,,,921,"Serbia and Montenegro, nfd"
+,,,,922,"Channel Islands, nfd"
+,,,,924,"Netherlands Antilles, nfd"
+,,,,1000,Oceania and Antarctica
+,,,,1100,Australia (includes External Territories)
+,,,,1101,Australia
+,,,,1102,Norfolk Island
+,,,,1199,"Australian External Territories, nec"
+,,,,1201,New Zealand
+,,,,1300,Melanesia
+,,,,1301,New Caledonia
+,,,,1302,Papua New Guinea
+,,,,1303,Solomon Islands
+,,,,1304,Vanuatu
+,,,,1400,Micronesia
+,,,,1401,Guam
+,,,,1402,Kiribati
+,,,,1403,Marshall Islands
+,,,,1404,"Micronesia, Federated States of"
+,,,,1405,Nauru
+,,,,1406,Northern Mariana Islands
+,,,,1407,Palau
+,,,,1500,Polynesia (excludes Hawaii)
+,,,,1501,Cook Islands
+,,,,1502,Fiji
+,,,,1503,French Polynesia
+,,,,1504,Niue
+,,,,1505,Samoa
+,,,,1506,"Samoa, American"
+,,,,1507,Tokelau
+,,,,1508,Tonga
+,,,,1511,Tuvalu
+,,,,1512,Wallis and Futuna
+,,,,1513,Pitcairn Islands
+,,,,1599,"Polynesia (excludes Hawaii), nec"
+,,,,1600,Antarctica
+,,,,1601,Adelie Land (France)
+,,,,1602,Argentinian Antarctic Territory
+,,,,1603,Australian Antarctic Territory
+,,,,1604,British Antarctic Territory
+,,,,1605,Chilean Antarctic Territory
+,,,,1606,Queen Maud Land (Norway)
+,,,,1607,Ross Dependency (New Zealand)
+,,,,2000,North-West Europe
+,,,,2100,"United Kingdom, Channel Islands and Isle of Man"
+,,,,2102,England
+,,,,2103,Isle of Man
+,,,,2104,Northern Ireland
+,,,,2105,Scotland
+,,,,2106,Wales
+,,,,2107,Guernsey
+,,,,2108,Jersey
+,,,,2201,Ireland
+,,,,2300,Western Europe
+,,,,2301,Austria
+,,,,2302,Belgium
+,,,,2303,France
+,,,,2304,Germany
+,,,,2305,Liechtenstein
+,,,,2306,Luxembourg
+,,,,2307,Monaco
+,,,,2308,Netherlands
+,,,,2311,Switzerland
+,,,,2400,Northern Europe
+,,,,2401,Denmark
+,,,,2402,Faroe Islands
+,,,,2403,Finland
+,,,,2404,Greenland
+,,,,2405,Iceland
+,,,,2406,Norway
+,,,,2407,Sweden
+,,,,2408,Aland Islands
+,,,,3000,Southern and Eastern Europe
+,,,,3100,Southern Europe
+,,,,3101,Andorra
+,,,,3102,Gibraltar
+,,,,3103,Holy See
+,,,,3104,Italy
+,,,,3105,Malta
+,,,,3106,Portugal
+,,,,3107,San Marino
+,,,,3108,Spain
+,,,,3200,South Eastern Europe
+,,,,3201,Albania
+,,,,3202,Bosnia and Herzegovina
+,,,,3203,Bulgaria
+,,,,3204,Croatia
+,,,,3205,Cyprus
+,,,,3206,Former Yugoslav Republic of Macedonia (FYROM)
+,,,,3207,Greece
+,,,,3208,Moldova
+,,,,3211,Romania
+,,,,3212,Slovenia
+,,,,3214,Montenegro
+,,,,3215,Serbia
+,,,,3216,Kosovo
+,,,,3300,Eastern Europe
+,,,,3301,Belarus
+,,,,3302,Czech Republic
+,,,,3303,Estonia
+,,,,3304,Hungary
+,,,,3305,Latvia
+,,,,3306,Lithuania
+,,,,3307,Poland
+,,,,3308,Russian Federation
+,,,,3311,Slovakia
+,,,,3312,Ukraine
+,,,,4000,North Africa and the Middle East
+,,,,4100,North Africa
+,,,,4101,Algeria
+,,,,4102,Egypt
+,,,,4103,Libya
+,,,,4104,Morocco
+,,,,4105,Sudan
+,,,,4106,Tunisia
+,,,,4107,Western Sahara
+,,,,4108,Spanish North Africa
+,,,,4111,South Sudan
+,,,,4200,Middle East
+,,,,4201,Bahrain
+,,,,4202,Gaza Strip and West Bank
+,,,,4203,Iran
+,,,,4204,Iraq
+,,,,4205,Israel
+,,,,4206,Jordan
+,,,,4207,Kuwait
+,,,,4208,Lebanon
+,,,,4211,Oman
+,,,,4212,Qatar
+,,,,4213,Saudi Arabia
+,,,,4214,Syria
+,,,,4215,Turkey
+,,,,4216,United Arab Emirates
+,,,,4217,Yemen
+,,,,5000,South-East Asia
+,,,,5100,Mainland South-East Asia
+,,,,5101,"Myanmar, The Republic of the Union of"
+,,,,5102,Cambodia
+,,,,5103,Laos
+,,,,5104,Thailand
+,,,,5105,Vietnam
+,,,,5200,Maritime South-East Asia
+,,,,5201,Brunei Darussalam
+,,,,5202,Indonesia
+,,,,5203,Malaysia
+,,,,5204,Philippines
+,,,,5205,Singapore
+,,,,5206,Timor-Leste
+,,,,6000,North-East Asia
+,,,,6100,Chinese Asia (includes Mongolia)
+,,,,6101,China (excludes SARs and Taiwan)
+,,,,6102,Hong Kong (SAR of China)
+,,,,6103,Macau (SAR of China)
+,,,,6104,Mongolia
+,,,,6105,Taiwan
+,,,,6200,Japan and the Koreas
+,,,,6201,Japan
+,,,,6202,"Korea, Democratic People's Republic of (North)"
+,,,,6203,"Korea, Republic of (South)"
+,,,,7000,Southern and Central Asia
+,,,,7100,Southern Asia
+,,,,7101,Bangladesh
+,,,,7102,Bhutan
+,,,,7103,India
+,,,,7104,Maldives
+,,,,7105,Nepal
+,,,,7106,Pakistan
+,,,,7107,Sri Lanka
+,,,,7200,Central Asia
+,,,,7201,Afghanistan
+,,,,7202,Armenia
+,,,,7203,Azerbaijan
+,,,,7204,Georgia
+,,,,7205,Kazakhstan
+,,,,7206,Kyrgyzstan
+,,,,7207,Tajikistan
+,,,,7208,Turkmenistan
+,,,,7211,Uzbekistan
+,,,,8000,Americas
+,,,,8100,Northern America
+,,,,8101,Bermuda
+,,,,8102,Canada
+,,,,8103,St Pierre and Miquelon
+,,,,8104,United States of America
+,,,,8200,South America
+,,,,8201,Argentina
+,,,,8202,"Bolivia, Plurinational State of"
+,,,,8203,Brazil
+,,,,8204,Chile
+,,,,8205,Colombia
+,,,,8206,Ecuador
+,,,,8207,Falkland Islands
+,,,,8208,French Guiana
+,,,,8211,Guyana
+,,,,8212,Paraguay
+,,,,8213,Peru
+,,,,8214,Suriname
+,,,,8215,Uruguay
+,,,,8216,"Venezuela, Bolivarian Republic of"
+,,,,8299,"South America, nec"
+,,,,8300,Central America
+,,,,8301,Belize
+,,,,8302,Costa Rica
+,,,,8303,El Salvador
+,,,,8304,Guatemala
+,,,,8305,Honduras
+,,,,8306,Mexico
+,,,,8307,Nicaragua
+,,,,8308,Panama
+,,,,8400,Caribbean
+,,,,8401,Anguilla
+,,,,8402,Antigua and Barbuda
+,,,,8403,Aruba
+,,,,8404,Bahamas
+,,,,8405,Barbados
+,,,,8406,Cayman Islands
+,,,,8407,Cuba
+,,,,8408,Dominica
+,,,,8411,Dominican Republic
+,,,,8412,Grenada
+,,,,8413,Guadeloupe
+,,,,8414,Haiti
+,,,,8415,Jamaica
+,,,,8416,Martinique
+,,,,8417,Montserrat
+,,,,8421,Puerto Rico
+,,,,8422,St Kitts and Nevis
+,,,,8423,St Lucia
+,,,,8424,St Vincent and the Grenadines
+,,,,8425,Trinidad and Tobago
+,,,,8426,Turks and Caicos Islands
+,,,,8427,"Virgin Islands, British"
+,,,,8428,"Virgin Islands, United States"
+,,,,8431,St Barthelemy
+,,,,8432,St Martin (French part)
+,,,,8433,"Bonaire, Sint Eustatius and Saba"
+,,,,8434,Curacao
+,,,,8435,Sint Maarten (Dutch part)
+,,,,9000,Sub-Saharan Africa
+,,,,9100,Central and West Africa
+,,,,9101,Benin
+,,,,9102,Burkina Faso
+,,,,9103,Cameroon
+,,,,9104,Cabo Verde
+,,,,9105,Central African Republic
+,,,,9106,Chad
+,,,,9107,"Congo, Republic of"
+,,,,9108,"Congo, Democratic Republic of"
+,,,,9111,Cote d'Ivoire
+,,,,9112,Equatorial Guinea
+,,,,9113,Gabon
+,,,,9114,Gambia
+,,,,9115,Ghana
+,,,,9116,Guinea
+,,,,9117,Guinea-Bissau
+,,,,9118,Liberia
+,,,,9121,Mali
+,,,,9122,Mauritania
+,,,,9123,Niger
+,,,,9124,Nigeria
+,,,,9125,Sao Tome and Principe
+,,,,9126,Senegal
+,,,,9127,Sierra Leone
+,,,,9128,Togo
+,,,,9200,Southern and East Africa
+,,,,9201,Angola
+,,,,9202,Botswana
+,,,,9203,Burundi
+,,,,9204,Comoros
+,,,,9205,Djibouti
+,,,,9206,Eritrea
+,,,,9207,Ethiopia
+,,,,9208,Kenya
+,,,,9211,Lesotho
+,,,,9212,Madagascar
+,,,,9213,Malawi
+,,,,9214,Mauritius
+,,,,9215,Mayotte
+,,,,9216,Mozambique
+,,,,9217,Namibia
+,,,,9218,Reunion
+,,,,9221,Rwanda
+,,,,9222,St Helena
+,,,,9223,Seychelles
+,,,,9224,Somalia
+,,,,9225,South Africa
+,,,,9226,Swaziland
+,,,,9227,Tanzania
+,,,,9228,Uganda
+,,,,9231,Zambia
+,,,,9232,Zimbabwe
+,,,,9299,"Southern and East Africa, nec"
+,,,,99999,Item skipped
+,304,H3C_other,"H3_3. And, in which country was your father born? Other specify responses",,
+,305,H4,H4. Do you identify yourself as Aboriginal or Torres Strait Islander?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,306,H4a,H4a. What is your ancestry? Please select one.,1,English
+,,,,2,Irish
+,,,,3,Scottish
+,,,,4,Italian
+,,,,5,German
+,,,,6,Chinese
+,,,,7,Australian
+,,,,96,Other (please specify)
+,,,,999,Item skipped
+,307,H4a_other,H4a. What is your ancestry? - Other specify responses,,
+,308,H4b,"H4b. What is your other ancestry, if any? Please select one.",1,English
+,,,,2,Irish
+,,,,3,Scottish
+,,,,4,Italian
+,,,,5,German
+,,,,6,Chinese
+,,,,7,Australian
+,,,,96,Other (please specify)
+,,,,99,No other ancestry
+,,,,999,Item skipped
+,309,H4b_other,"H4b. What is your other ancestry, if any? Other specify responses",,
+,310,H4c_1,H4c_1. How important is your ancestry or ancestries to your identity? (ANCESTRY 1),1,Extremely important
+,,,,2,Very important
+,,,,3,Moderately important
+,,,,4,A little important
+,,,,5,Not at all important
+,,,,999,Item skipped
+,311,H4c_2,H4c_2. How important is your ancestry or ancestries to your identity? (ANCESTRY 2),1,Extremely important
+,,,,2,Very important
+,,,,3,Moderately important
+,,,,4,A little important
+,,,,5,Not at all important
+,,,,999,Item skipped
+,312,H5_1,"H5_1. Did your father have any particular preference for one of the political parties when you were young, say about 14 years old?",1,Liberal (includes UAP)
+,,,,2,Labor (ALP)
+,,,,3,National/ Country (includes Progressive Party)
+,,,,4,Democratic Labor (DLP)
+,,,,5,Australian Democrats
+,,,,6,Other parties
+,,,,7,Greens
+,,,,998,Don't know
+,,,,999,Item skipped
+,313,H5_2,"H5_2. And, did your mother have any particular preference for one of the political parties when you were young, say about 14 years old?",1,Liberal (includes UAP)
+,,,,2,Labor (ALP)
+,,,,3,National/ Country (includes Progressive Party)
+,,,,4,Democratic Labor (DLP)
+,,,,5,Australian Democrats
+,,,,6,Other parties
+,,,,7,Greens
+,,,,998,Don't know
+,,,,999,Item skipped
+,314,H6,H6. What is your religion or faith?,1,Roman Catholic
+,,,,2,Anglican / Church of England
+,,,,3,Uniting Church / Methodist
+,,,,4,Orthodox Church
+,,,,5,Presbyterian
+,,,,6,Other (please specify)
+,,,,7,No religion
+,,,,8,Catholic - not Roman
+,,,,9,Armenian Apostolic
+,,,,10,Baptist
+,,,,11,Brethren
+,,,,12,Churches of Christ
+,,,,13,Latter Day Saints
+,,,,14,Lutheran
+,,,,15,Salvation Army
+,,,,16,Seventh Day Adventist
+,,,,17,Other Protestant
+,,,,18,Other Christian
+,,,,19,Buddhist
+,,,,20,Hebrew/Jewish
+,,,,21,Muslim
+,,,,22,Other Non-Christian
+,,,,23,Hindu
+,,,,24,Pentecostalism
+,,,,96,Christian (Specified)
+,,,,999,Item skipped
+,315,H6_other,H6. What is your religion or faith? - Other specify responses,999,Item Skipped
+,316,H7,"H7. Apart from weddings, funerals and baptisms, about how often do you attend religious services?",1,At least once a week
+,,,,2,At least once a month
+,,,,3,Several times a year
+,,,,4,At least once a year
+,,,,5,Less than once a year
+,,,,6,Never
+,,,,999,Item skipped
+,317,H8,H8. What is your current marital status?,1,Never married
+,,,,2,Now married (including de facto relationships)
+,,,,3,Widowed
+,,,,4,Divorced or separated
+,,,,999,Item skipped
+,318,I1,"I1. Now, for some questions about your partner.What was your partner's main activity last week?",1,Working full-time for pay
+,,,,2,Working part-time for pay
+,,,,3,Unemployed - looking for full-time work
+,,,,4,Unemployed - looking for part-time work
+,,,,5,Retired from paid work
+,,,,6,A full-time school or university student
+,,,,7,Family or caring responsibilities
+,,,,96,Other (please specify)
+,,,,999,Item skipped
+,319,I1_other,I1. What was your partner's main activity last week? (other specify),,
+,320,I2_Work,I2_Work. Does your partner currently or have they ever worked for pay?,999,Item Skipped
+,321,I2_A_r,EMBARGO VARIABLE I2_A. What kind of work does your partner do? Full job titlePLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,322,I2_B_r,EMBARGO VARIABLE I2_B. What are (or were) the main tasks that your partner usually performs? PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,323,I2_Code_4d,I2_Code. What kind of work does (or did) your partner do?  ANZSCO 1-Digit Code. Confidentialised Variable - Please contact ADA to arrange access to 4-digit code.,1,Managers
+,,,,2,Professionals
+,,,,3,Technicians and Trades Workers
+,,,,4,Community and Personal Service Workers
+,,,,5,Clerical and Administrative Workers
+,,,,6,Sales Workers
+,,,,7,Machinery Operators and Drivers
+,,,,8,Labourers
+,,,,9,Other (insufficiently detailed)
+,,,,99997,Does not apply
+,,,,99999,Item Skipped
+,324,I3,I3. Whom does (or did) your partner work for?,1,Self-employed
+,,,,2,Employee in private company or business
+,,,,3,Employee of Federal / State / Local Government
+,,,,4,Employee in family business or farm
+,,,,999,Item skipped
+,325,I4,"I4. As an official part of their job, does (or did) your partner directly supervise the work of other employees or tell other employees what work to do?",1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,326,I5,I5. Does your partner belong to a trade union?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,327,I6,"I6. Generally speaking, does your partner usually think of himself or herself as Liberal, Labor, National or what?",1,Liberal
+,,,,2,Labor
+,,,,3,National Party
+,,,,4,Greens
+,,,,5,Other party (please specify)
+,,,,6,No party
+,,,,7,Australian Democrats
+,,,,8,Christian Democratic Party
+,,,,9,Citizens Electoral Council
+,,,,10,Family First Party
+,,,,11,Pauline Hanson's One Nation
+,,,,12,Republican Party (replaced by Republican Party of Australia)
+,,,,13,"Shooters, Fishers and Farmers Party"
+,,,,14,Fishing Party
+,,,,15,United Australia Party (formerly Palmer's United Party)
+,,,,16,Katter's Australia Party
+,,,,17,Liberal Democrats
+,,,,18,Motoring Enthusiasts Party
+,,,,19,Australian Sports Party (dissolved in 2015)
+,,,,20,Reason Party (formerly The Australian Sex Party)
+,,,,21,The Wikileaks Party (dissolved in 2015)
+,,,,22,Australian Christians
+,,,,23,Derryn Hinch's Justice Party
+,,,,24,Centre Alliance (formerly Nick Xenophon Team)
+,,,,25,Rise Up Australia
+,,,,26,Science Party
+,,,,27,Australian Liberty Alliance
+,,,,28,Pirate Party
+,,,,30,Jacquie Lambie Network
+,,,,31,Arts Party
+,,,,32,Animal Justice Party
+,,,,33,Australian Cyclists Party
+,,,,34,Health Australia Party
+,,,,35,Affordable Housing Party
+,,,,36,Australia First Party
+,,,,37,Australian Better Families
+,,,,38,Australian Conservatives
+,,,,39,Australian People's Party
+,,,,40,Australian Progressives
+,,,,41,Australian Workers Party
+,,,,42,Child Protection Party
+,,,,43,Climate Action! Immigration Action! Accountable Politicians!
+,,,,44,Country Liberals (NT)
+,,,,45,Democratic Labour Party
+,,,,46,Fraser Anning'S Conservative National Party
+,,,,47,Help End Marijuana Prohibition (HEMP) Party
+,,,,48,Independents For Climate Action Now
+,,,,49,Involuntary Medication Objectors (Vaccination/Fluoride) Party
+,,,,50,Labour DLP
+,,,,51,Liberal National Party of Queensland
+,,,,52,Love Australia or Leave
+,,,,53,Non-Custodial Parents Party (Equal Parenting)
+,,,,54,Secular Party of Australia
+,,,,55,Seniors United Party of Australia
+,,,,56,Socialist Alliance
+,,,,57,Socialist Equality Party
+,,,,58,Sustainable Australia
+,,,,59,The Australian Mental Health Party
+,,,,60,The Great Australian Party
+,,,,61,The Small Business Party
+,,,,62,The Together Party
+,,,,63,Victorian Socialists
+,,,,64,VOTEFLUX.ORG | Upgrade Democracy!
+,,,,65,WESTERN AUSTRALIA PARTY
+,,,,66,Yellow Vest Australia
+,,,,67,Australian Citizens Party
+,,,,68,Australian Federation Party
+,,,,69,Australian Values Party
+,,,,70,David Pocock
+,,,,71,Drew Pavlou Democratic Alliance
+,,,,72,"FUSION: Science, Pirate, Secular, Climate Emergency"
+,,,,73,Federal ICAC Now
+,,,,74,Indigenous - Aboriginal Party of Australia
+,,,,75,Informed Medical Options Party
+,,,,76,Rex Patrick Team
+,,,,77,TNL
+,,,,78,The Local Party of Australia
+,,,,95,Swing Voter
+,,,,96,Independent
+,,,,97,Other party (not specified)
+,,,,997,Does not apply
+,,,,999,Item skipped
+,328,I6_other,"I6. Generally speaking, does your partner usually think of himself or herself as Liberal, Labor, National or what? (other specify)",,
+,329,J1,"J1. Do you own outright, or are you buying or renting the dwelling in which you now live?",1,Own outright
+,,,,2,"Own, paying off mortgage"
+,,,,3,Rent from private landlord or real estate agent
+,,,,4,Rent from public housing authority
+,,,,5,"Other (boarding, living at home, etc.)"
+,,,,999,Item skipped
+,330,J2,J2. Do you own any investment properties?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,331,J3,J3. Do you have a self-managed superannuation fund?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,332,J4,J4. Which social class would you say you belong to?,1,Upper class
+,,,,2,Middle class
+,,,,3,Working class
+,,,,4,None
+,,,,999,Item skipped
+,333,J5,J5. Would you say you now live in ... ?,1,A rural area or village
+,,,,2,"A small country town (under 10,000 people)"
+,,,,3,"A larger country town (over 10,000 people)"
+,,,,4,"A large town (over 25,000 people)"
+,,,,5,"A major city (over 100,000 people)"
+,,,,999,Item skipped
+,334,J6,"J6. What is the gross annual income, before tax or other deductions, for you and your family living with you from all sources? Please include any pensions and allowances, and income from interest or dividends.",1,"Less than $15,000 per year"
+,,,,3,"$15,001 to $25,000 per year"
+,,,,5,"$25,001 to $35,000 per year"
+,,,,7,"$35,001 to $45,000 per year"
+,,,,9,"$45,001 to $60,000 per year"
+,,,,11,"$60,001 to $80,000 per year"
+,,,,13,"$80,001 to $100,000 per year"
+,,,,15,"$100,001 to $120,000 per year"
+,,,,17,"$120,001 to $140,000 per year"
+,,,,19,"$140,001 to $160,000 per year"
+,,,,21,"$160,001 to $200,000 per year"
+,,,,24,"$200,001 to $250,000 per year"
+,,,,25,"More than $250,000 per year"
+,,,,999,Item skipped
+,335,J7,J7. Do you own shares in any company listed on the Australian Stock Exchange (shares registered in your name or that of your family company)?,1,"No, don't own any shares"
+,,,,2,"Yes, in one company"
+,,,,3,"Yes, in two to five companies"
+,,,,4,"Yes, in six to 10 companies"
+,,,,5,"Yes, in more than 10 companies"
+,,,,999,Item skipped
+,336,J8_1,J8_1. Do you or your partner receive any of the following benefits from the government? - Family payments (Family Tax Benefit A and B),0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,337,J8_2,J8_2. Do you or your partner receive any of the following benefits from the government? - Child Care Benefit,0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,338,J8_3,J8_3. Do you or your partner receive any of the following benefits from the government? - Unemployment benefits (e.g. Newstart Allowance),0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,339,J8_4,J8_4. Do you or your partner receive any of the following benefits from the government? - Aged Pension,0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,340,J8_5,J8_5. Do you or your partner receive any of the following benefits from the government? - Disability Support Pension,0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,341,J8_6,J8_6. Do you or your partner receive any of the following benefits from the government? - Veterans' Pension,0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,342,J8_7,"J8_7. Do you or your partner receive any of the following benefits from the government? - No, none of the above",0,Not selected
+,,,,1,Selected
+,,,,999,Item Skipped
+,343,J8_8,J8_8. Do you or your partner receive any of the following benefits from the government? - No answer,0,Not selected
+,,,,1,Selected
+,344,J9,"J9. Just to confirm, are you currently enrolled to vote in Australia?",1,"Yes, I am enrolled to vote"
+,,,,2,"No, I am not enrolled to vote"
+,,,,3,I don't know whether I am enrolled
+,,,,999,Item skipped
+,345,W0,W0. Were you enrolled to vote in Australia at the previous federal election in 2019?,1,"Yes, I was enrolled to vote"
+,,,,2,"No, I was not enrolled to vote"
+,,,,3,I don't know whether I was enrolled
+,,,,999,Item skipped
+,346,W1,"W1. Including yourself, how many people aged 18 years or older live in your household?",999,Item skipped
+,347,W2,W2. Is there at least one working fixed line telephone inside your home that is used for making and receiving calls?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,348,W3,"W3. How many mobile phones, in total, do you have that you receive calls on?Specify number:",999,Item skipped
+,349,W4,W4. Does any member of your household access the internet from home?,1,Yes
+,,,,2,No
+,,,,999,Item skipped
+,350,W5,W5. Over the last 12 months did you spend any time doing voluntary work through an organisation or group?,1,"Yes, did voluntary work"
+,,,,2,"No, did not do voluntary work"
+,,,,999,Item skipped
+,351,W6,W6. Would you be prepared to take part in a similar survey at the time of the next Federal election in 2025?,1,Yes
+,,,,2,No
+,,,,999,Item Skipped
+,352,Panel_New,Whether new or existing panellist,1,New in 2022
+,,,,2,Existing panellists
+,353,doutcome,Survey status,0,Incomplete / partial
+,,,,1,Complete
+,,,,2,Household refusal
+,,,,3,Respondent refusal
+,,,,4,Not qualified
+,,,,5,Language difficulty
+,,,,6,Refused age
+,,,,7,Age out of scope
+,,,,8,Location out of scope
+,,,,9,Refused state
+,,,,10,Named respondent deceased
+,,,,11,Not an Australian citizen
+,,,,12,Under 18
+,,,,13,No Australian adult citizens in the household
+,,,,14,Not available to complete the study
+,,,,15,Don't know/refused postcode
+,,,,90,Others
+,,,,91,Over quota - total
+,,,,92,Over quota - gender
+,,,,93,Over quota - age
+,354,devicetype,Online device type,-1,CATI or missing
+,,,,0,desktop or undefined
+,,,,1,mobile
+,,,,2,tablet
+,,,,3,console
+,,,,4,Smart TV
+,,,,97,Others
+,355,devicedets,Online Device type by platform,-1,CATI or missing
+,,,,0,desktop or undefined
+,,,,1,Android
+,,,,2,BlackBerry
+,,,,3,Chromium OS
+,,,,4,Fedora
+,,,,5,FreeBSD
+,,,,6,iOS
+,,,,7,Linux
+,,,,8,Mac OS
+,,,,9,OpenBSD
+,,,,10,Solaris
+,,,,11,Ubuntu
+,,,,12,Windows
+,,,,13,Windows Phone
+,,,,14,PlayStation
+,,,,15,Firefox_OS
+,,,,16,Tizen
+,,,,97,Others
+,356,H2_AGE_GRP1,H2_AGE_GRP1. Age group derived from year of birth.,1,18 to 34
+,,,,2,35 to 44
+,,,,3,45 to 54
+,,,,4,55 years and over
+,,,,999,Item skipped
+,357,H2_AGE_GRP2,H2_AGE_GRP2. Age group derived from year of birth.,1,18 to 24
+,,,,2,25 to 34
+,,,,3,35 to 44
+,,,,4,45 to 54
+,,,,5,55 to 64
+,,,,6,65 to 74
+,,,,7,75 years and over
+,,,,999,Item skipped
+,358,G3_EDU,G3_EDU. Whether have a University-level education,1,University
+,,,,2,Non-University
+,,,,999,Item skipped
+,359,GCCSA,Greater Capital City Statistical Area 2021,-97,Unknown
+,,,,1,Greater Sydney
+,,,,2,Rest of NSW
+,,,,3,Greater Melbourne
+,,,,4,Rest of Vic.
+,,,,5,Greater Brisbane
+,,,,6,Rest of Qld
+,,,,7,Greater Adelaide
+,,,,8,Rest of SA
+,,,,9,Greater Perth
+,,,,10,Rest of WA
+,,,,11,Greater Hobart
+,,,,12,Rest of Tas.
+,,,,13,Greater Darwin
+,,,,14,Rest of NT
+,,,,15,Australian Capital Territory
+,360,LGA_r,EMBARGO VARIABLE LGA_r Local Government Area 2016 PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,361,SA2_r,EMBARGO VARIABLE SA2_r Statistical area 2 PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,9,Restricted Data
+,362,CED_ABS,Commonwealth Electoral Division 2021 - ABS code frame,-97,Unknown
+,,,,101,Banks
+,,,,102,Barton
+,,,,103,Bennelong
+,,,,104,Berowra
+,,,,105,Blaxland
+,,,,106,Bradfield
+,,,,107,Calare
+,,,,108,Chifley
+,,,,109,Cook
+,,,,110,Cowper
+,,,,111,Cunningham
+,,,,112,Dobell
+,,,,113,Eden-Monaro
+,,,,114,Farrer
+,,,,115,Fowler
+,,,,116,Gilmore
+,,,,117,Grayndler
+,,,,118,Greenway
+,,,,119,Hughes
+,,,,120,Hume
+,,,,121,Hunter
+,,,,122,Kingsford Smith
+,,,,123,Lindsay
+,,,,124,Lyne
+,,,,125,Macarthur
+,,,,126,Mackellar
+,,,,127,Macquarie
+,,,,128,McMahon
+,,,,129,Mitchell
+,,,,130,New England
+,,,,131,Newcastle
+,,,,132,North Sydney
+,,,,133,Page
+,,,,134,Parkes
+,,,,135,Parramatta
+,,,,136,Paterson
+,,,,137,Reid
+,,,,138,Richmond
+,,,,139,Riverina
+,,,,140,Robertson
+,,,,141,Shortland
+,,,,142,Sydney
+,,,,143,Warringah
+,,,,144,Watson
+,,,,145,Wentworth
+,,,,146,Werriwa
+,,,,147,Whitlam
+,,,,194,No usual address (NSW)
+,,,,197,Migratory - Offshore - Shipping (NSW)
+,,,,201,Aston
+,,,,202,Ballarat
+,,,,203,Bendigo
+,,,,204,Bruce
+,,,,205,Calwell
+,,,,206,Casey
+,,,,207,Chisholm
+,,,,208,Cooper
+,,,,209,Corangamite
+,,,,210,Corio
+,,,,211,Deakin
+,,,,212,Dunkley
+,,,,213,Flinders
+,,,,214,Fraser
+,,,,215,Gellibrand
+,,,,216,Gippsland
+,,,,217,Goldstein
+,,,,218,Gorton
+,,,,219,Hawke
+,,,,220,Higgins
+,,,,221,Holt
+,,,,222,Hotham
+,,,,223,Indi
+,,,,224,Isaacs
+,,,,225,Jagajaga
+,,,,226,Kooyong
+,,,,227,La Trobe
+,,,,228,Lalor
+,,,,229,Macnamara
+,,,,230,Mallee
+,,,,231,Maribyrnong
+,,,,232,McEwen
+,,,,233,Melbourne
+,,,,234,Menzies
+,,,,235,Monash
+,,,,236,Nicholls
+,,,,237,Scullin
+,,,,238,Wannon
+,,,,239,Wills
+,,,,294,No usual address (Vic.)
+,,,,297,Migratory - Offshore - Shipping (Vic.)
+,,,,301,Blair
+,,,,302,Bonner
+,,,,303,Bowman
+,,,,304,Brisbane
+,,,,305,Capricornia
+,,,,306,Dawson
+,,,,307,Dickson
+,,,,308,Fadden
+,,,,309,Fairfax
+,,,,310,Fisher
+,,,,311,Flynn
+,,,,312,Forde
+,,,,313,Griffith
+,,,,314,Groom
+,,,,315,Herbert
+,,,,316,Hinkler
+,,,,317,Kennedy
+,,,,318,Leichhardt
+,,,,319,Lilley
+,,,,320,Longman
+,,,,321,Maranoa
+,,,,322,McPherson
+,,,,323,Moncrieff
+,,,,324,Moreton
+,,,,325,Oxley
+,,,,326,Petrie
+,,,,327,Rankin
+,,,,328,Ryan
+,,,,329,Wide Bay
+,,,,330,Wright
+,,,,394,No usual address (Qld)
+,,,,397,Migratory - Offshore - Shipping (Qld)
+,,,,401,Adelaide
+,,,,402,Barker
+,,,,403,Boothby
+,,,,404,Grey
+,,,,405,Hindmarsh
+,,,,406,Kingston
+,,,,407,Makin
+,,,,408,Mayo
+,,,,409,Spence
+,,,,410,Sturt
+,,,,494,No usual address (SA)
+,,,,497,Migratory - Offshore - Shipping (SA)
+,,,,501,Brand
+,,,,502,Burt
+,,,,503,Canning
+,,,,504,Cowan
+,,,,505,Curtin
+,,,,506,Durack
+,,,,507,Forrest
+,,,,508,Fremantle
+,,,,509,Hasluck
+,,,,510,Moore
+,,,,511,O'Connor
+,,,,512,Pearce
+,,,,513,Perth
+,,,,514,Swan
+,,,,515,Tangney
+,,,,594,No usual address (WA)
+,,,,597,Migratory - Offshore - Shipping (WA)
+,,,,601,Bass
+,,,,602,Braddon
+,,,,603,Clark
+,,,,604,Franklin
+,,,,605,Lyons
+,,,,694,No usual address (Tas.)
+,,,,697,Migratory - Offshore - Shipping (Tas.)
+,,,,701,Lingiari
+,,,,702,Solomon
+,,,,794,No usual address (NT)
+,,,,797,Migratory - Offshore - Shipping (NT)
+,,,,801,Bean
+,,,,802,Canberra
+,,,,803,Fenner
+,,,,894,No usual address (ACT)
+,,,,897,Migratory - Offshore - Shipping (ACT)
+,,,,994,No usual address (OT)
+,,,,997,Migratory - Offshore - Shipping (OT)
+,363,weight_final,Final GREG weight (adds to Australian 18+ citizen population),,
+,364,weight,Final GREG weight (adds to number of respondents),,

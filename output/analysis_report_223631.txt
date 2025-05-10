@@ -1,0 +1,68 @@
+Bondi Parking Policy Proposal - Analysis Report
+==================================================
+
+Overall Support Statistics:
+------------------------------
+Average Support Level: 3.40
+Support Distribution:
+support_level
+0      3
+2     26
+3     63
+4    102
+5      6
+Name: count, dtype: int64
+
+Analysis by Political Leaning:
+------------------------------
+Centre: 3.06
+Greens: 3.94
+Labor: 3.19
+Liberal: 2.79
+Socialist Alliance: 3.61
+Teal Independent: 3.61
+
+Analysis by Age Group:
+------------------------------
+18-30: 3.76
+31-50: 3.40
+51-70: 3.41
+70+: 3.12
+
+Key Themes and Concerns:
+------------------------------
+Most Common Themes:
+- housing affordability: 44 mentions
+- affordable housing: 44 mentions
+- public transport enhancement: 20 mentions
+- climate resilience: 17 mentions
+- developer accountability: 13 mentions
+
+Impact Analysis:
+------------------------------
+
+Impact On Housing:
+Level 0: 200 responses
+
+Impact On Transport:
+Level 0: 3 responses
+Level 1: 1 responses
+Level 2: 85 responses
+Level 3: 105 responses
+Level 4: 6 responses
+
+Impact On Community:
+Level 0: 3 responses
+Level 2: 31 responses
+Level 3: 105 responses
+Level 4: 60 responses
+Level 5: 1 responses
+
+Sentiment Analysis:
+------------------------------
+Average Sentiment: 15.9% (negative to positive)
+Sentiment Distribution:
+Positive (1% to 50%): 196 responses
+Negative (-49% to 0%): 4 responses
+Very Negative (-100% to -50%): 0 responses
+Very Positive (51% to 100%): 0 responses

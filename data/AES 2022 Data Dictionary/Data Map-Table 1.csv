@@ -1,0 +1,372 @@
+,,,,
+,Data Map,,,
+,Position,Variable,Variable Label,Format SPSS
+,1,ID,ID,A50
+,2,ID_2019,Respondent ID from 2019 data file,A9
+,3,ID_2016,Respondent ID from 2016 data file,A7
+,4,Mode,Mode of survey completion,F1
+,5,IntDate,Date of survey completion,A12
+,6,Panel_retention,Whether panellists was already on panel,F1
+,7,STATE,State,A3
+,8,PCODE_r,EMBARGO VARIABLE PCODE_r Postcode PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,9,sampsrc,Sample source,F1
+,10,accesstype,Online access mode,F3
+,11,PANEL_FLAG,Flag whether the same panellist completed as 2019,F3
+,12,PANEL,PANEL. Did you personally complete the Australian Election Study in 2019?,F3
+,13,CITIZEN,CITIZEN. Just some questions about yourself before we start.Are you currently an Australian citizen?,F3
+,14,AGE,AGE. Recoded age from year of birth,F3
+,15,A1,"A1. Generally speaking, how much interest do you usually have in what's going on in politics?",F3
+,16,A2_1,A2_1. How much attention did you pay to reports about the election campaign in the newspapers?,F3
+,17,A2_2,A2_2. How much attention did you pay to reports about the election campaign on television?,F3
+,18,A2_3,A2_3. How much attention did you pay to reports about the election campaign on the radio?,F3
+,19,A2_4,A2_4. How much attention did you pay to reports about the election campaign on the internet?,F3
+,20,A3,"A3. And, how much interest would you say you took in the election campaign overall?",F2
+,21,A4_1,A4_1. How often did you do the following during the recent election... Discuss politics with others in person (i.e. face to face or over the phone)?,F3
+,22,A4_2,A4_2. How often did you do the following during the recent election... Discuss politics with others online (i.e.through email or on a social network site like Facebook or Twitter)?,F3
+,23,A4_3,A4_3. How often did you do the following during the recent election... Talk to other people to persuade them to vote for a particular party or candidate?,F3
+,24,A4_4,"A4_4. How often did you do the following during the recent election... Show your support for a particular party or candidate by, for example, attending a meeting, putting up a poster, or in some other way?",F3
+,25,A4_5,A4_5. How often did you do the following during the recent election... Go to any political meetings or rallies?,F3
+,26,A4_6,A4_6. How often did you do the following during the recent election... Contribute money to a political party or election candidate?,F3
+,27,A5,A5. Did you watch any of the three televised debates between Scott Morrison and Anthony Albanese?,F3
+,28,A6,"A6. From what you saw or what you heard or read about them, who do you think performed better in the debates - Scott Morrison or Anthony Albanese?",F3
+,29,A7_1,A7_1. Did a candidate or anyone from a political party contact you to persuade you to vote for them - No,F1
+,30,A7_2,"A7_2. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by telephone",F1
+,31,A7_3,"A7_3. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by mail",F1
+,32,A7_4,"A7_4. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, face-to-face",F1
+,33,A7_5,"A7_5. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by text message or SMS",F1
+,34,A7_6,"A7_6. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by email",F1
+,35,A7_7,"A7_7. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Yes, by social network site or other web-based method",F1
+,36,A7_8,A7_8. Did a candidate or anyone from a political party contact you to persuade you to vote for them? Item skipped,F1
+,37,A8_1,A8_1. Which parties or candidates contacted you by any of these means? None,F1
+,38,A8_2,A8_2. Which parties or candidates contacted you by any of these means? Liberal,F1
+,39,A8_3,A8_3. Which parties or candidates contacted you by any of these means? Labor,F1
+,40,A8_4,A8_4. Which parties or candidates contacted you by any of these means? National,F1
+,41,A8_5,A8_5. Which parties or candidates contacted you by any of these means? Greens,F1
+,42,A8_6,A8_6. Which parties or candidates contacted you by any of these means? Other party or candidate,F1
+,43,A8_7,A8_7. Which parties or candidates contacted you by any of these means? Item skipped,F1
+,44,A9,"A9. Do you think that voting at Federal elections should be compulsory, or do you think that people should only have to vote if they want to?",F3
+,45,A10,A10. Would you have voted in the election if voting had not been compulsory?,F3
+,46,A11,"A11. Do you think that the voting age in elections should be lowered to 16, or should it stay at 18?",F3
+,47,A12_Order,A12_Order. A12 response frame randomised,A255
+,48,A12_1,A12_1. Did you read or access any of the following - Party or campaign websites,F1
+,49,A12_2,"A12_2. Did you read or access any of the following - TV or newspaper websites (e.g. ABC Online, SMH site etc)",F1
+,50,A12_3,A12_3. Did you read or access any of the following - Election blogs,F1
+,51,A12_4,A12_4. Did you read or access any of the following - Federal Parliament site,F1
+,52,A12_5,A12_5. Did you read or access any of the following - Australian Electoral Commission site,F1
+,53,A12_6,A12_6. Did you read or access any of the following - Voting advice website (e.g. VoteCompass),F1
+,54,A12_7,A12_7. Did you read or access any of the following - None of the above,F1
+,55,A12_8,A12_8. Did you read or access any of the following - Item skipped,F1
+,56,A12_b,"A12_b. During the election campaign, in a typical week, how many days did you use social media such as Facebook, Twitter, or Whatsapp to follow news about parties and candidates?",F3
+,57,A12_c,"A12_c. And how often during a typical day did you use social media such as Facebook, Twitter, or Whatsapp to follow news about parties and candidates?",F3
+,58,A13_Order,A13_Order. A13 response frame randomised,A255
+,59,A13_1,"A13_1. Did you do any of the following activities online - Signed up to receive information from a party or candidate on Twitter, Facebook, or Instagram",A1
+,60,A13_2,"A13_2. Did you do any of the following activities online - Shared campaign or political content on a blog, Twitter feed or on social network",A1
+,61,A13_3,A13_3. Did you do any of the following activities online - Joined or started a political group on social networking site (e.g. Facebook etc.),A1
+,62,A13_4,A13_4. Did you do any of the following activities online - None of the above,A1
+,63,A13_5,A13_5. Did you do any of the following activities online - Item skipped,A1
+,64,B1,"B1. Generally speaking, do you usually think of yourself as Liberal, Labor, National or what?",F3
+,65,B1_other,"B1. Generally speaking, do you usually think of yourself as Liberal, Labor, National or what? (other specify)",A255
+,66,B2,"B2. Would you call yourself a very strong, fairly strong, or not very strong supporter of that party?",F3
+,67,B3,B3. Would you say you cared a good deal which party won the Federal election or that you did not care very much which party won?,F3
+,68,B4,B4. When did you decide how you would definitely vote in this election?,F3
+,69,B5,"B5. In deciding how you would vote in the election, which was most important to you?",F3
+,70,B6,"B6. Which do you think is better - when the Federal Government has a majority in both the House of Representatives and the Senate, OR when the Federal Government in the House of Representatives does not control the Senate?",F2
+,71,B7,"B7. Considering everything the Labor Party and the Liberal Party stand for, would you say there is....?",F3
+,72,B8_1,"B8_1. Where would you place yourself on a scale from 0 to 10, where 0 means the left and 10 means the right?",F3
+,73,B8_2,"B8_2. Using the same scale, where would you place each of the Federal political parties? Liberal Party",F3
+,74,B8_3,"B8_3. Using the same scale, where would you place each of the Federal political parties? Labor Party (ALP)",F3
+,75,B8_4,"B8_4. Using the same scale, where would you place each of the Federal political parties? National Party",F3
+,76,B8_5,"B8_5. Using the same scale, where would you place each of the Federal political parties? Greens",F3
+,77,B9_1,"B9_1. In the Federal election for the House of Representatives on Saturday 21 May, which party did you vote for first in the House of Representatives?",F3
+,78,B9_1_other,B9_1. Which party did you vote for first in the House of Representatives? (other specify),A255
+,79,B9_2,B9_2. Which party did you vote for in the Senate election?,F3
+,80,B9_2_other,B9_2. Which party did you vote for in the Senate election (other specify),A255
+,81,B10,B10. Voted in person on election day or casted vote before election day,F3
+,82,B11_1,"B11_1. If your first preference was for the Greens or other minor party: Which of the two major parties, the Liberal-National Coalition or the Labor Party, voted for in the House of Representatives",F3
+,83,B11_2,"B11_2. If your first preference was for the Greens or other minor party: Which of the two major parties, the Liberal-National Coalition or the Labor Party, voted for in the Senate",F3
+,84,B12,"B12. In voting for the House of Representatives, did you follow a party 'How to Vote' card or did you decide your own preferences?",F3
+,85,B13,B13. Was there any time during the election campaign when you seriously thought you might give your first preference to another party in the House of Representatives?,F3
+,86,B14,"B14. In the last Federal election in May 2019, when the Liberals were led by Scott Morrison and Labor by Bill Shorten, which party got your first preference then in the House of Representatives election?",F3
+,87,B15_1,"B15_1. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Always voted for the same party",F1
+,88,B15_2,"B15_2. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted Liberal",F1
+,89,B15_3,"B15_3. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted Labor (ALP)",F1
+,90,B15_4,"B15_4. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted National",F1
+,91,B15_5,"B15_5. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted Greens",F1
+,92,B15_6,"B15_6. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Sometimes voted for other party / independent",F1
+,93,B15_7,"B15_7. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Did not vote before this election",F1
+,94,B15_8,"B15_8. Before this current Federal election for the House of Representatives, had you always voted for the same party, or had you sometimes voted for different parties? Item skipped",F1
+,95,B15a_Dummy,"B15a_Dummy.   Liberal National Party, Country Liberal or Liberal Party/ National Party",F3
+,96,B15a,"B15a. Thinking about your last state or territory election, which party did you vote for?",F3
+,97,B16,B16. Some people say that political parties in Australia care what ordinary people think. Others say that political parties in Australia don't care what ordinary people think. Where would you place your view on this scale from 1 to 5?,F3
+,98,B17,"B17. Where would you place your view on this scale from 1 to 5, where 1 means that political parties are necessary to make our political system work, and 5 means that political parties are not needed in Australia?",F3
+,99,B18_1,"B18_1. We would like to know what you think about the Liberal Party on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",F3
+,100,B18_2,"B18_2. We would like to know what you think about the Labor Party (ALP) on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",F3
+,101,B18_3,"B18_3. We would like to know what you think about the National Party on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",F3
+,102,B18_4,"B18_4. We would like to know what you think about the Greens on a scale from 0 to 10, where 0 means you strongly dislike that party and 10 means that you strongly like that party. Please give a rating of 5 if you are neutral or don't know.",F3
+,103,B19_1,B19_1. Keeps its promises - Liberal-National Coalition,F3
+,104,B19_2,B19_2. Keeps its promises - Labor Party,F3
+,105,B20_1,B20_1. Capable of strong government - Liberal-National Coalition,F3
+,106,B20_2,B20_2. Capable of strong government - Labor Party,F3
+,107,B21_1,B21_1. United or divided - Liberal-National Coalition,F3
+,108,B21_2,B21_2. United or divided - Labor Party,F3
+,109,C1_1,"C1_1. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Scott Morrison",F3
+,110,C1_2,"C1_2. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Anthony Albanese",F3
+,111,C1_3,"C1_3. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Barnaby Joyce",F3
+,112,C1_4,"C1_4. Again using a scale from 0 to 10, please show how much you like or dislike the party leaders - Adam Bandt",F3
+,113,C2_Order,C2_Order. C2 statements randomised,A255
+,114,C2_1,C2_1. How well does the following statement describe Scott Morrison? Intelligent,F3
+,115,C2_2,C2_2. How well does the following statement describe Scott Morrison? Compassionate,F3
+,116,C2_3,C2_3. How well does the following statement describe Scott Morrison? Competent,F3
+,117,C2_4,C2_4. How well does the following statement describe Scott Morrison? Sensible,F3
+,118,C2_5,C2_5. How well does the following statement describe Scott Morrison? Provides strong leadership,F3
+,119,C2_6,C2_6. How well does the following statement describe Scott Morrison? Honest,F3
+,120,C2_7,C2_7. How well does the following statement describe Scott Morrison? Knowledgeable,F3
+,121,C2_8,C2_8. How well does the following statement describe Scott Morrison? Inspiring,F3
+,122,C2_9,C2_9. How well does the following statement describe Scott Morrison? Trustworthy,F3
+,123,C3_Order,C3_Order. C3 statements randomised,A255
+,124,C3_1,C3_1. How well does the following statement describe Anthony Albanese? Intelligent,F3
+,125,C3_2,C3_2. How well does the following statement describe Anthony Albanese? Compassionate,F3
+,126,C3_3,C3_3. How well does the following statement describe Anthony Albanese? Competent,F3
+,127,C3_4,C3_4. How well does the following statement describe Anthony Albanese? Sensible,F3
+,128,C3_5,C3_5. How well does the following statement describe Anthony Albanese? Provides strong leadership,F3
+,129,C3_6,C3_6. How well does the following statement describe Anthony Albanese? Honest,F3
+,130,C3_7,C3_7. How well does the following statement describe Anthony Albanese? Knowledgeable,F3
+,131,C3_8,C3_8. How well does the following statement describe Anthony Albanese? Inspiring,F3
+,132,C3_9,C3_9. How well does the following statement describe Anthony Albanese? Trustworthy,F3
+,133,C5,"C5. On the whole, are you very satisfied, fairly satisfied, not very satisfied or not at all satisfied with the way democracy works in Australia?",F3
+,134,C6,"C6. In general, do you feel that the people in government are too often interested in looking after themselves, or do you feel that they can be trusted to do the right thing nearly all the time?",F3
+,135,C7,"C7. Would you say the government is run by a few big interests looking out for themselves, or that it is run for the benefit of all the people?",F3
+,136,C8_1,"C8_1. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Contacted a politician or government official by email",F3
+,137,C8_2,"C8_2. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Contacted a politician or government official either in person, or in writing",F3
+,138,C8_3,"C8_3. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Taken part in a protest, march or demonstration",F3
+,139,C8_4,"C8_4. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Worked together with people who shared the same concern",F3
+,140,C8_5,"C8_5. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Signed a written petition",F3
+,141,C8_6,"C8_6. Over the past five years or so, have you done any of the following things to express your views about something the government should or should not be doing? Signed an online or e-petition",F3
+,142,C8B_1,C8B_1. Did you contact a politician or government official to? express an opinion,F3
+,143,C8B_2,C8B_2. Did you contact a politician or government official to? seek information,F3
+,144,C8B_3,C8B_3. Did you contact a politician or government official to? seek help on a problem you had,F3
+,145,C8B_4,C8B_4. Did you contact a politician or government official to? Item skipped.,F3
+,146,C9,C9. Some people say that Federal politicians know what ordinary people think. Others say that Federal politicians don't know much about what ordinary people think. Where would you place your view on this scale from 1 to 5?,F3
+,147,C10,"C10. Some people say it makes a big difference who is in power. Others say it doesn't make any difference who is in power. Using the scale below, where would you place yourself?",F3
+,148,C11,"C11. Some people say that no matter who people vote for, it won't make any difference to what happens. Others say that who people vote for can make a big difference to what happens. Using the scale below, where would you place yourself?",F3
+,149,C12A_1,C12A_1. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion? A national body to investigate claims of government corruption :,F3
+,150,C12A_2,C12A_2. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion?Limiting financial donations to political parties :,F3
+,151,C12A_3,C12A_3. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion?All political parties to select more women candidates :,F3
+,152,C12A_4,C12A_4. Some people say that the following suggestions would improve Australian democracy. Others say they would not. To what extent do you support or oppose each suggestion?Laws to protect AustraliansÆ human rights :,F3
+,153,C13_Order,C13_Order. C13 statements randomised,A255
+,154,C13_1,"C13_1. please say whether you strongly agree, agree, disagree or strongly disagree - The people instead of politicians should make our most important policy decisions",F3
+,155,C13_2,"C13_2. Please say whether you strongly agree, agree, disagree or strongly disagree - Politicians in the government are corrupt",F3
+,156,C13_3,"C13_3. Please say whether you strongly agree, agree, disagree or strongly disagree - Politicians make decisions that harm the interests of the ordinary people",F3
+,157,C13_4,"C13_4. Please say whether you strongly agree, agree, disagree or strongly disagree - The ordinary people should have more influence in political decision-making than big companies that only want to make profits",F3
+,158,D1_Order,D1_Order. D1 statements randomised,A255
+,159,D1_1,"D1_1. When you were deciding about how to vote, how important was each of these issues to you personally? Taxation",F3
+,160,D1_2,"D1_2. When you were deciding about how to vote, how important was each of these issues to you personally? Immigration",F3
+,161,D1_3,"D1_3. When you were deciding about how to vote, how important was each of these issues to you personally? Education",F3
+,162,D1_4,"D1_4. When you were deciding about how to vote, how important was each of these issues to you personally? The environment",F3
+,163,D1_6,"D1_6. When you were deciding about how to vote, how important was each of these issues to you personally? Health and Medicare",F3
+,164,D1_7,"D1_7. When you were deciding about how to vote, how important was each of these issues to you personally? Refugees and asylum seekers",F3
+,165,D1_8,"D1_8. When you were deciding about how to vote, how important was each of these issues to you personally? Global warming",F3
+,166,D1_10,"D1_10. When you were deciding about how to vote, how important was each of these issues to you personally? Management of the economy",F3
+,167,D1_11,"D1_11. When you were deciding about how to vote, how important was each of these issues to you personally?The COVID-19 pandemic :",F3
+,168,D1_12,"D1_12. When you were deciding about how to vote, how important was each of these issues to you personally? The cost of living :",F3
+,169,D1_13,"D1_13. When you were deciding about how to vote, how important was each of these issues to you personally? National security :",F3
+,170,D2_Order,D2_Order. D2 statements randomised,A255
+,171,D2_1,"D2_1. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Taxation",F3
+,172,D2_2,"D2_2. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Immigration",F3
+,173,D2_3,"D2_3. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Education",F3
+,174,D2_4,"D2_4. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? The environment",F3
+,175,D2_6,"D2_6. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Health and Medicare",F3
+,176,D2_7,"D2_7. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Refugees and asylum seekers",F3
+,177,D2_8,"D2_8. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Global warming",F3
+,178,D2_10,"D2_10. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? Management of the economy",F3
+,179,D2_11,"D2_11. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? The COVID-19 pandemic :",F3
+,180,D2_12,"D2_12. Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? The cost of living :",F3
+,181,D2_13,"D2_13.Whose policies, the Labor Party's or the Liberal-National Coalition's, would you say come closer to your own views on each of these issues? National security :",F3
+,182,D3_1_Order,D3_1_Order. D3_1 response frame randomised,A255
+,183,D3_1,"D3_1. Still thinking about the same 10 issues, which of these issues was the most important to you and your family during the election campaign?",F3
+,184,D3_2_Order,D3_2_Order. D3_2 response frame randomised,A256
+,185,D3_2,D3_2. Which was the second most important issue to you and your family?,F3
+,186,D4_1,D4_1. How does the financial situation of your household now compare with what it was 12 months ago?,F3
+,187,D4_2,D4_2. How does the general economic situation in Australia now compare with what it was 12 months ago?,F3
+,188,D5_1,"D5_1. Compared with 12 months ago, would you say that the Federal government's policies have had a good effect, a bad effect, or that they really have not made much difference to the financial situation of your household?",F3
+,189,D5_2,"D5_2. Compared with 12 months ago, would you say that the Federal government's policies have had a good effect, a bad effect, or that they really have not made much difference on the general economic situation in Australia as a whole?",F3
+,190,D6_1,"D6_1. Compared to now, what do you think the financial situation of your household will be in 12 months time?",F3
+,191,D6_2,"D6_2. Compared to now, what do you think the general economic situation in Australia as a whole will be in 12 months time?",F3
+,192,D7_1,"D7_1. Do you think that, 12 months from now, the Federal government's policies will have had a good effect, a bad effect, or that they really will have not made much difference to the financial situation of your household?",F3
+,193,D7_2,"D7_2. Do you think that, 12 months from now, the Federal government's policies will have had a good effect, a bad effect, or that they really will have not made much difference on the general economic situation in Australia as a whole?",F3
+,194,D8_Order,D8_Order. D8 statements randomised,A255
+,195,D8_1,D8_1. Should there be more or less public expenditure in the following area? Health,F3
+,196,D8_2,D8_2. Should there be more or less public expenditure in the following area? Education,F3
+,197,D8_3,D8_3. Should there be more or less public expenditure in the following area? Unemployment benefits,F3
+,198,D8_4,D8_4. Should there be more or less public expenditure in the following area? Defence,F3
+,199,D8_5,D8_5. Should there be more or less public expenditure in the following area? Old-age pensions,F3
+,200,D8_6,D8_6. Should there be more or less public expenditure in the following area? Business and industry,F3
+,201,D8_7,D8_7. Should there be more or less public expenditure in the following area? Police and law enforcement,F3
+,202,D8_8,D8_8. Should there be more or less public expenditure in the following area? The National Disability Insurance Scheme,F3
+,203,D8_9,D8_9. Should there be more or less public expenditure in the following area? Public transport infrastructure,F3
+,204,D8_10,D8_10. Should there be more or less public expenditure in the following area? Child care,F3
+,205,D9_1,"D9_1. If you lost your job, how easy or difficult would it be to find another job in the next 12 months?",F3
+,206,D9_2,"D9_2. If your spouse / partner lost their job, how easy or difficult would it be for them to find another job in the next 12 months?",F3
+,207,D10_Order,D10_Order. D10 statements randomised,A255
+,208,D10_1,"D10_1. Do you strongly agree, agree, disagree or strongly disagree with the following statement? High income tax makes people less willing to work hard",F3
+,209,D10_2,"D10_2. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The trade unions in this country have too much power",F3
+,210,D10_3,"D10_3. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Big business in this country has too much power",F3
+,211,D10_4,"D10_4. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Income and wealth should be redistributed towards ordinary working people",F3
+,212,D10_5,"D10_5. Do you strongly agree, agree, disagree or strongly disagree with the following statement? There should be stricter laws to regulate the activities of trade unions",F3
+,213,D10_6,"D10_6. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The government should take measures to reduce differences in income levels",F3
+,214,D12,D12. Some people feel that government should make much greater efforts to make people's incomes more equal. Other people feel that government should be much less concerned about how equal people's incomes are. Where would you place yourself on this scale?,F3
+,215,D15,"D15. To the best of your knowledge, have you or anyone living with you been infected with the coronavirus?",F3
+,216,D16_1,D16_1. How has the coronavirus pandemic affected Australia in Social cohesion or inclusiveness :,F3
+,217,D16_2,D16_2. How has the coronavirus pandemic affected Australia in Individual rights and freedom :,F3
+,218,D16_3,D16_3. How has the coronavirus pandemic affected Australia in the functioning of democracy:,F3
+,219,D16_4,D16_4. How has the coronavirus pandemic affected Australia in your personal economic circumstances :,F3
+,220,D17_1,D17_1. How well has your state or territory government handled the pandemic?,F3
+,221,D17_2,D17_2. How well has the Commonwealth government handled the pandemic?,F3
+,222,E1,"E1. If the government had a choice between reducing taxes or spending more on social services, which do you think it should do?",F3
+,223,E2_Order,E2_Order. E2 statements randomised,A255
+,224,E2_1,"E2_1. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Equal opportunities for migrants",F3
+,225,E2_2,"E2_2. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? The right to show nudity and sex in films and magazines",F3
+,226,E2_3,"E2_3. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Aboriginal land rights",F3
+,227,E2_4,"E2_4. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Equal opportunities for women",F3
+,228,E2_5,"E2_5. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? The number of migrants allowed into Australia at the present time",F3
+,229,E2_6,"E2_6. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Government help for Indigenous Australians",F3
+,230,E2_7,"E2_7. Do you think the following change that has been happening in Australia over the years has gone too far, not gone far enough, or is it about right? Building closer relations with Asia",F3
+,231,E3,E3. Which one of these statements comes closest to how you feel about abortion in Australia?,F3
+,232,E4,E4. Did you personally favour or oppose same sex couples being given the same rights to marry as couples consisting of a man and a woman?,F3
+,233,E6_Order,E6_Order. E6 statements randomised,A255
+,234,E6_1,"E6_1. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The death penalty should be reintroduced for murder",F3
+,235,E6_2,"E6_2. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The smoking of marijuana should NOT be a criminal offence",F3
+,236,E6_3,"E6_3. Do you strongly agree, agree, disagree or strongly disagree with the following statement? People who break the law should be given stiffer sentences",F3
+,237,E6_4,"E6_4. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Women should be given preferential treatment when applying for jobs and promotions",F3
+,238,E6_5,"E6_5. Do you strongly agree, agree, disagree or strongly disagree with the following statement? All boats carrying asylum seekers should be turned back",F3
+,239,E6_6,"E6_6. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Terminally ill patients should be able to end their own lives with medical assistance",F3
+,240,E6_7,"E6_7. Do you strongly agree, agree, disagree or strongly disagree with the following statement? The government should increase opportunities for women in business and industry",F3
+,241,E6_8,"E6_8. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Pill testing should be allowed at music festivals",F3
+,242,E7,E7. If a referendum were held to recognise Indigenous Australians in the Constitution would you support or oppose such a change to the Constitution?,F3
+,243,E8_1_Order,E8_1_Order. E8_1 response frame randomised,A255
+,244,E8_1,"E8_1. Here is a list of four aims that different people would give priority. If you had to choose among these four aims, which would be your fir",F3
+,245,E8_2_Order,E8_2_Order. E8_2 response frame randomised,A255
+,246,E8_2,E8_2. Which would be your second choice?,F3
+,247,E9_Order,E9_Order. E9 statements randomised,A255
+,248,E9_1,"E9_1. Please say whether you strongly agree, agree, disagree or strongly disagree with each of these statements. - Many women interpret innocent remarks or acts as being sexist",F3
+,249,E9_2,"E9_2. Please say whether you strongly agree, agree, disagree or strongly disagree with each of these statements. - Women fail to appreciate what men do for them",F3
+,250,E9_3,"E9_3. Please say whether you strongly agree, agree, disagree or strongly disagree with each of these statements. - Women seek to gain power by getting control over men",F3
+,251,F1,F1. How important do you feel the Queen and the Royal Family are to Australia?,F3
+,252,F2,"F2. Do you think that Australia should become a republic with an Australian head of state, or should the Queen be retained as head of state?",F3
+,253,F3,F3. How important do you think the Australian alliance with the United States under the ANZUS treaty is for protecting Australia's security?,F3
+,254,F4,"F4. If Australia's security were threatened by some other country, how much trust do you feel Australia can have in the United States to come to Australia's defence?",F3
+,255,F5_Order,F5_Order. F5 statements randomised,A255
+,256,F5_1,"F5_1. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Japan",F3
+,257,F5_2,"F5_2. In your opinion, are any of the following countries likely to pose a threat to Australia's security? United States",F3
+,258,F5_3,"F5_3. In your opinion, are any of the following countries likely to pose a threat to Australia's security? China",F3
+,259,F5_4,"F5_4. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Vietnam",F3
+,260,F5_5,"F5_5. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Malaysia",F3
+,261,F5_6,"F5_6. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Indonesia",F3
+,262,F5_7,"F5_7. In your opinion, are any of the following countries likely to pose a threat to Australia's security? Russia",F3
+,263,F6_Order,F6_Order. F6 statements randomised,A255
+,264,F6_1,"F6_1. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia's defence is stronger now than it was 10 years ago",F3
+,265,F6_2,"F6_2. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia would be able to defend itself successfully if it were ever attacked",F3
+,266,F6_3,"F6_3. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia's trading future lies in Asia",F3
+,267,F6_4,"F6_4. Do you strongly agree, agree, disagree or strongly disagree with the following statement? Australia should provide military assistance for the war on terrorism",F3
+,268,F7,F7. Do you think the number of immigrants allowed into Australia nowadays should be reduced or increased?,F3
+,269,F8_Order,F8_Order. F8 statements randomised,A255
+,270,F8_1,F8_1. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants increase the crime rate,F3
+,271,F8_2,F8_2. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants are generally good for Australia's economy,F3
+,272,F8_3,F8_3. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants take jobs away from people who are born in Australia,F3
+,273,F8_4,F8_4. There are different opinions about the effects that immigrants have on Australia. How much do you agree or disagree with each of the following statements? Immigrants make Australia more open to new ideas and cultures,F3
+,274,F9,F9. How serious a threat do you think global warming will pose to you or your way of life in your lifetime?,F3
+,275,F10_Order,F10_Order. F10 statements randomised,A255
+,276,F10_1,F10_1. Do you think the following statement is true or false? Australia became a federation in 1901,F3
+,277,F10_2,F10_2. Do you think the following statement is true or false? There are 75 members of the House of Representatives,F3
+,278,F10_3,F10_3. Do you think the following statement is true or false? The Constitution can only be changed by the High Court,F3
+,279,F10_4,F10_4. Do you think the following statement is true or false? The Senate election is based on proportional representation,F3
+,280,F10_5,F10_5. Do you think the following statement is true or false? No one may stand for Federal parliament unless they pay a deposit,F3
+,281,F10_6,F10_6. Do you think the following statement is true or false? The longest time allowed between Federal elections for the House of Representatives is four years,F3
+,282,G1,G1. How old were you when you left secondary school?,F3
+,283,G2,"G2. In all, how many years of tertiary study have you completed since you left secondary school?",F3
+,284,G3,"G3. Have you obtained a trade qualification, a degree or a diploma, or any other qualification since leaving school? What is your highest qualification?If you are qualified, please select your highest qualification.",F3
+,285,G4,"G4. Now some questions about the work you are doing now. Last week, what were you mainly doing?",F3
+,286,G4_other,"G4. Last week, what were you mainly doing? (other specify)",A255
+,287,G5_Work,G5_Work. Do you currently or have you ever worked for pay?,A3
+,288,G5_Code,G5_Code. What kind of work do you do? ANZSCO 1-Digit Code. Confidentialised Variable - Please contact ADA to arrange access to 4-digit code.,F5
+,289,G5_A_r,EMBARGO VARIABLE G5_A_r G5_A. What kind of work do you do? Full job title PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,290,G5_B_r,EMBARGO VARIABLE G5_B. What are (or were) the main tasks that you usually perform? PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,291,G5_C_r,EMBARGO VARIABLE G5_C. What kind of business or industry is (or was) that in? PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,292,G5_D,G5_D. Which of the following best describes the position that you hold (or held most recently)?,F3
+,293,G5_E,G5_E. Whom do (or did) you work for?,F3
+,294,G5_F,"G5_F. As an official part of your job, do (or did) you directly supervise the work of other employees or tell other employees what work to do?",F3
+,295,G6,G6. Do you belong to a trade union?,F3
+,296,H1,H1. Are you male or female?,F3
+,297,H1b,H1b. Which of the following options best describes how you think of yourself?,F3
+,298,H2,H2. In what year were you born?,F8
+,299,H3_1,H3_1. In which country were you born?,F5
+,300,H3A_other,H3_1. In which country were you born? Other specify responses,A255
+,301,H3_2,H3_2. In which country was your mother born?,F5
+,302,H3B_other,H3_2. In which country was your mother born? Other specify responses,A255
+,303,H3_3,"H3_3. And, in which country was your father born?",F5
+,304,H3C_other,"H3_3. And, in which country was your father born? Other specify responses",A255
+,305,H4,H4. Do you identify yourself as Aboriginal or Torres Strait Islander?,F2
+,306,H4a,H4a. What is your ancestry? Please select one.,F3
+,307,H4a_other,H4a. What is your ancestry? - Other specify responses,A255
+,308,H4b,"H4b. What is your other ancestry, if any? Please select one.",F3
+,309,H4b_other,"H4b. What is your other ancestry, if any? Other specify responses",A255
+,310,H4c_1,H4c_1. How important is your ancestry or ancestries to your identity? (ANCESTRY 1),F3
+,311,H4c_2,H4c_2. How important is your ancestry or ancestries to your identity? (ANCESTRY 2),F3
+,312,H5_1,"H5_1. Did your father have any particular preference for one of the political parties when you were young, say about 14 years old?",F3
+,313,H5_2,"H5_2. And, did your mother have any particular preference for one of the political parties when you were young, say about 14 years old?",F4
+,314,H6,H6. What is your religion or faith?,F4
+,315,H6_other,H6. What is your religion or faith? - Other specify responses,A255
+,316,H7,"H7. Apart from weddings, funerals and baptisms, about how often do you attend religious services?",F3
+,317,H8,H8. What is your current marital status?,F3
+,318,I1,"I1. Now, for some questions about your partner.What was your partner's main activity last week?",F3
+,319,I1_other,I1. What was your partner's main activity last week? (other specify),A255
+,320,I2_Work,I2_Work. Does your partner currently or have they ever worked for pay?,A3
+,321,I2_A_r,EMBARGO VARIABLE I2_A. What kind of work does your partner do? Full job titlePLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,322,I2_B_r,EMBARGO VARIABLE I2_B. What are (or were) the main tasks that your partner usually performs? PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,323,I2_Code_4d,I2_Code. What kind of work does (or did) your partner do?  ANZSCO 1-Digit Code. Confidentialised Variable - Please contact ADA to arrange access to 4-digit code.,F5
+,324,I3,I3. Whom does (or did) your partner work for?,F3
+,325,I4,"I4. As an official part of their job, does (or did) your partner directly supervise the work of other employees or tell other employees what work to do?",F3
+,326,I5,I5. Does your partner belong to a trade union?,F3
+,327,I6,"I6. Generally speaking, does your partner usually think of himself or herself as Liberal, Labor, National or what?",F3
+,328,I6_other,"I6. Generally speaking, does your partner usually think of himself or herself as Liberal, Labor, National or what? (other specify)",A255
+,329,J1,"J1. Do you own outright, or are you buying or renting the dwelling in which you now live?",F3
+,330,J2,J2. Do you own any investment properties?,F3
+,331,J3,J3. Do you have a self-managed superannuation fund?,F3
+,332,J4,J4. Which social class would you say you belong to?,F3
+,333,J5,J5. Would you say you now live in ... ?,F3
+,334,J6,"J6. What is the gross annual income, before tax or other deductions, for you and your family living with you from all sources? Please include any pensions and allowances, and income from interest or dividends.",F3
+,335,J7,J7. Do you own shares in any company listed on the Australian Stock Exchange (shares registered in your name or that of your family company)?,F3
+,336,J8_1,J8_1. Do you or your partner receive any of the following benefits from the government? - Family payments (Family Tax Benefit A and B),F3
+,337,J8_2,J8_2. Do you or your partner receive any of the following benefits from the government? - Child Care Benefit,F3
+,338,J8_3,J8_3. Do you or your partner receive any of the following benefits from the government? - Unemployment benefits (e.g. Newstart Allowance),F3
+,339,J8_4,J8_4. Do you or your partner receive any of the following benefits from the government? - Aged Pension,F3
+,340,J8_5,J8_5. Do you or your partner receive any of the following benefits from the government? - Disability Support Pension,F3
+,341,J8_6,J8_6. Do you or your partner receive any of the following benefits from the government? - Veterans' Pension,F3
+,342,J8_7,"J8_7. Do you or your partner receive any of the following benefits from the government? - No, none of the above",F3
+,343,J8_8,J8_8. Do you or your partner receive any of the following benefits from the government? - No answer,F3
+,344,J9,"J9. Just to confirm, are you currently enrolled to vote in Australia?",F3
+,345,W0,W0. Were you enrolled to vote in Australia at the previous federal election in 2019?,F3
+,346,W1,"W1. Including yourself, how many people aged 18 years or older live in your household?",F3
+,347,W2,W2. Is there at least one working fixed line telephone inside your home that is used for making and receiving calls?,F3
+,348,W3,"W3. How many mobile phones, in total, do you have that you receive calls on?Specify number:",F3
+,349,W4,W4. Does any member of your household access the internet from home?,F3
+,350,W5,W5. Over the last 12 months did you spend any time doing voluntary work through an organisation or group?,F3
+,351,W6,W6. Would you be prepared to take part in a similar survey at the time of the next Federal election in 2025?,A3
+,352,Panel_New,Whether new or existing panellist,F1
+,353,doutcome,Survey status,F2
+,354,devicetype,Online device type,F2
+,355,devicedets,Online Device type by platform,F2
+,356,H2_AGE_GRP1,H2_AGE_GRP1. Age group derived from year of birth.,F3
+,357,H2_AGE_GRP2,H2_AGE_GRP2. Age group derived from year of birth.,F3
+,358,G3_EDU,G3_EDU. Whether have a University-level education,F3
+,359,GCCSA,Greater Capital City Statistical Area 2021,F8
+,360,LGA_r,EMBARGO VARIABLE LGA_r Local Government Area 2016 PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,361,SA2_r,EMBARGO VARIABLE SA2_r Statistical area 2 PLEASE CONTACT ADA TO REQUEST RESTRICTED DATA,F8.2
+,362,CED_ABS,Commonwealth Electoral Division 2021 - ABS code frame,F8
+,363,weight_final,Final GREG weight (adds to Australian 18+ citizen population),F8
+,364,weight,Final GREG weight (adds to number of respondents),F8
+,365,dem_state,State,F8.0
+,366,dem_region,Part of state,F8.0
+,367,dem_house22,"B9_1. In the Federal election for the House of Representatives on Saturday 21 May, which party did you vote for first in the House of Representatives?",F8.0
+,368,weight_final,Final GREG weight (adds to Australian 18+ citizen population),F8.0
+,369,weight,Final GREG weight (adds to number of respondents),F8.0

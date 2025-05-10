@@ -1,0 +1,201 @@
+name,age,gender,location,income,tenure,occupation,education,transport,political_leaning,trust,issues,engagement
+Lauren,69,Male,Queens Park,"$130,268",Renter in sharehouse,Student,TAFE Certificate,Train,Greens,Medium-high,"Housing affordability, Rent pressure",Active in neighbourhood committees
+Joseph,77,Male,Bondi Junction,"$73,707",Homeowner,Tradie,Postgraduate degree,Bus + Walking,Labor,Medium-high,"Traffic, Developer accountability, Rent pressure, Noise control",Posts in community Facebook groups
+James,56,Female,Bondi Beach,"$28,792",Student housing,Delivery driver,TAFE Certificate,Bus + Walking,Liberal,Low-medium,"Urban density, Rent pressure, Public space",Attends community forums
+Jodi,71,Female,Bondi Beach,"$60,757",Renter in sharehouse,HR manager,TAFE Certificate,Bus,Liberal,High,"Street safety, Housing affordability, Noise control",Reads local planning updates
+Blake,77,Male,Randwick,"$58,044",Owner (duplex),Artist,No formal qualification,Bus + Walking,Labor,Low,"Public space, Cycleways, Traffic, Noise control",Writes to council
+Nicholas,58,Non-binary,Randwick,"$50,535",Student housing,Accountant,No formal qualification,Ute,Socialist Alliance,Low-medium,"Heritage protection, Traffic, Cycleways, Urban density",Engages on Reddit
+Edward,31,Non-binary,Randwick,"$20,206",Owner (duplex),Consultant,TAFE Certificate,Train,Labor,High,"Noise control, Traffic",Engages on Reddit
+Rhonda,76,Non-binary,Tamarama,"$42,299",Homeowner,Consultant,Postgraduate degree,Bus + Walking,Centre,High,"Cycleways, Traffic, Street safety",Posts in community Facebook groups
+Albert,20,Non-binary,Tamarama,"$41,959",Mortgage holder,Teacher,Apprenticeship,Walk,Labor,Medium-high,"Street safety, Public space, Climate resilience",Writes to council
+Kathryn,20,Male,North Bondi,"$105,616",Private renter,Engineer,No formal qualification,Bus,Liberal,High,"Rent pressure, Youth housing, Developer accountability",Attends community forums
+Rachael,49,Non-binary,Bondi Beach,"$72,662",Mortgage holder,Designer,High School,Car,Socialist Alliance,Low-medium,"Heritage protection, Traffic, Youth housing",Completes surveys
+James,84,Non-binary,Bronte,"$31,411",Owner (duplex),Software developer,No formal qualification,Car,Liberal,Low,"Housing affordability, Public space, Cycleways, Street safety",Active in neighbourhood committees
+Roger,77,Male,Dover Heights,"$51,616",Owner (apartment),Public servant,Postgraduate degree,Walk,Greens,Low,"Public space, Traffic",Reads local planning updates
+George,55,Female,Bronte,"$146,063",Owner (apartment),Teacher,High School,Bus + Walking,Centre,Medium,"Rent pressure, Urban density, Climate resilience",Occasionally signs petitions
+Christine,65,Non-binary,Bronte,"$106,416",Private renter,Public servant,High School,Train,Socialist Alliance,Low-medium,"Street safety, Heritage protection, Urban density, Rent pressure",Completes surveys
+Kelly,21,Non-binary,Bondi Junction,"$125,983",Private renter,Public servant,Bachelor’s degree,Walk,Socialist Alliance,Medium-high,"Traffic, Rent pressure",Occasionally signs petitions
+Melissa,49,Non-binary,Bondi Junction,"$138,015",Mortgage holder,Accountant,No formal qualification,Scooter,Liberal,Medium-high,"Heritage protection, Housing affordability, Cycleways",Active in neighbourhood committees
+Rachel,50,Male,Tamarama,"$125,647",Owner (duplex),Artist,TAFE Certificate,Ute,Liberal,Medium-high,"Noise control, Street safety, Traffic",Attends community forums
+Ryan,32,Female,Dover Heights,"$140,607",Owner (duplex),HR manager,Apprenticeship,Train,Labor,Medium,"Rent pressure, Public space, Youth housing, Climate resilience",Active in neighbourhood committees
+Regina,70,Male,Waverley,"$107,235",Owner (apartment),Artist,Bachelor’s degree,Train,Teal Independent,Low-medium,"Rent pressure, Public space, Noise control",Occasionally signs petitions
+Samantha,79,Non-binary,Randwick,"$120,235",Renter in sharehouse,Hospitality worker,TAFE Certificate,Car,Liberal,Low,"Heritage protection, Urban density",Attends community forums
+Bruce,74,Male,North Bondi,"$64,078",Private renter,Delivery driver,Apprenticeship,Bike,Centre,High,"Youth housing, Rent pressure, Traffic",Attends community forums
+Christopher,86,Female,Bondi Beach,"$60,158",Homeowner,Consultant,High School,Car,Centre,Low-medium,"Climate resilience, Noise control, Public space, Urban density",Completes surveys
+James,60,Male,Bronte,"$117,856",Private renter,Designer,TAFE Certificate,Bus,Centre,Medium-high,"Developer accountability, Heritage protection, Cycleways",Posts in community Facebook groups
+Cody,24,Female,North Bondi,"$58,513",Renter in sharehouse,Engineer,Postgraduate degree,Car + Train,Teal Independent,Low,"Developer accountability, Noise control",Engages on Reddit
+Amy,41,Non-binary,North Bondi,"$64,811",Private renter,Student,Postgraduate degree,Ute,Labor,Medium-high,"Traffic, Climate resilience",Completes surveys
+Robert,26,Non-binary,Bondi Beach,"$74,098",Homeowner,HR manager,Postgraduate degree,Walk,Greens,High,"Rent pressure, Street safety",Engages on Reddit
+William,31,Non-binary,North Bondi,"$43,714",Owner (duplex),Artist,High School,Bus,Teal Independent,Low,"Rent pressure, Cycleways, Street safety",Writes to council
+Sarah,22,Male,North Bondi,"$74,693",Mortgage holder,Designer,Postgraduate degree,Car,Socialist Alliance,High,"Youth housing, Housing affordability",Completes surveys
+Scott,36,Non-binary,Bronte,"$106,188",Renter in sharehouse,Accountant,Bachelor’s degree,Bike,Teal Independent,Low-medium,"Traffic, Urban density, Youth housing, Developer accountability",Active in neighbourhood committees
+Amy,50,Female,North Bondi,"$134,821",Homeowner,Public servant,Postgraduate degree,Walk,Socialist Alliance,Low-medium,"Urban density, Climate resilience, Noise control, Youth housing",Attends community forums
+Austin,32,Non-binary,Bondi Junction,"$127,892",Owner (apartment),Tradie,High School,Ute,Labor,Medium-high,"Housing affordability, Street safety, Rent pressure",Writes to council
+Douglas,45,Male,Randwick,"$24,835",Mortgage holder,Tradie,No formal qualification,Bus + Walking,Labor,Low-medium,"Heritage protection, Youth housing",Completes surveys
+Adam,22,Non-binary,Queens Park,"$144,704",Owner (apartment),Hospitality worker,TAFE Certificate,Car,Greens,Low-medium,"Cycleways, Youth housing, Urban density",Reads local planning updates
+Jennifer,86,Non-binary,North Bondi,"$124,293",Mortgage holder,Retail assistant,Postgraduate degree,Walk,Centre,Medium,"Youth housing, Cycleways, Traffic",Posts in community Facebook groups
+Kimberly,49,Female,Queens Park,"$144,454",Homeowner,Consultant,TAFE Certificate,Scooter,Socialist Alliance,Medium-high,"Developer accountability, Cycleways, Climate resilience, Rent pressure",Engages on Reddit
+Anne,31,Female,Bronte,"$79,494",Owner (apartment),Public servant,TAFE Certificate,Scooter,Liberal,Medium,"Climate resilience, Public space, Developer accountability",Completes surveys
+William,22,Male,Bondi Beach,"$134,825",Private renter,Consultant,No formal qualification,Bike,Centre,Medium,"Urban density, Noise control, Housing affordability",Active in neighbourhood committees
+Jared,84,Non-binary,Dover Heights,"$48,732",Homeowner,Nurse,High School,Walk,Centre,Medium,"Street safety, Climate resilience, Heritage protection",Attends community forums
+Ann,62,Non-binary,Randwick,"$43,321",Private renter,HR manager,No formal qualification,Scooter,Socialist Alliance,Medium-high,"Traffic, Climate resilience, Noise control, Urban density",Engages on Reddit
+Christopher,73,Female,Waverley,"$87,661",Homeowner,Artist,TAFE Certificate,Car + Train,Greens,Medium-high,"Developer accountability, Rent pressure, Heritage protection, Cycleways",Posts in community Facebook groups
+Timothy,34,Non-binary,Tamarama,"$76,793",Owner (apartment),Public servant,No formal qualification,Car,Centre,High,"Noise control, Youth housing",Completes surveys
+Mary,59,Male,North Bondi,"$82,981",Student housing,Consultant,TAFE Certificate,Car + Train,Greens,Low-medium,"Heritage protection, Climate resilience, Street safety",Attends community forums
+Jacob,41,Non-binary,Randwick,"$33,046",Mortgage holder,Nurse,Postgraduate degree,Bike,Socialist Alliance,Medium,"Developer accountability, Public space, Climate resilience, Traffic",Active in neighbourhood committees
+Jennifer,43,Non-binary,North Bondi,"$26,469",Homeowner,Tradie,Bachelor’s degree,Train,Teal Independent,Low,"Traffic, Youth housing",Posts in community Facebook groups
+Brianna,23,Female,Queens Park,"$85,545",Renter in sharehouse,Student,TAFE Certificate,Bus,Centre,Medium,"Cycleways, Heritage protection",Occasionally signs petitions
+Brian,79,Female,North Bondi,"$28,567",Mortgage holder,Teacher,TAFE Certificate,Train,Greens,Low,"Traffic, Heritage protection, Climate resilience",Completes surveys
+Scott,43,Female,Bondi Beach,"$36,984",Renter in sharehouse,Consultant,No formal qualification,Bus,Socialist Alliance,Medium-high,"Street safety, Cycleways",Active in neighbourhood committees
+Charles,68,Non-binary,Bronte,"$61,157",Owner (apartment),Nurse,High School,Car + Train,Liberal,High,"Traffic, Street safety, Rent pressure, Youth housing",Engages on Reddit
+Renee,50,Female,Bondi Beach,"$39,029",Homeowner,Consultant,Postgraduate degree,Car,Socialist Alliance,Low-medium,"Heritage protection, Traffic, Housing affordability, Street safety",Completes surveys
+John,53,Female,North Bondi,"$91,315",Mortgage holder,Delivery driver,TAFE Certificate,Car + Train,Socialist Alliance,Medium,"Public space, Rent pressure, Climate resilience",Occasionally signs petitions
+Tony,89,Non-binary,Bondi Junction,"$127,099",Owner (duplex),Consultant,No formal qualification,Scooter,Greens,Low-medium,"Developer accountability, Street safety, Cycleways",Attends community forums
+Amanda,74,Male,Tamarama,"$57,430",Mortgage holder,Designer,Postgraduate degree,Bus + Walking,Centre,Low,"Heritage protection, Noise control, Youth housing",Writes to council
+Rebecca,24,Female,Dover Heights,"$141,178",Private renter,Engineer,High School,Train,Socialist Alliance,Low,"Climate resilience, Urban density, Developer accountability, Traffic",Writes to council
+Brenda,66,Non-binary,Bondi Junction,"$66,163",Private renter,Hospitality worker,Bachelor’s degree,Scooter,Socialist Alliance,High,"Rent pressure, Traffic, Cycleways, Heritage protection",Active in neighbourhood committees
+Gabriel,47,Male,Bondi Junction,"$106,444",Renter in sharehouse,Delivery driver,High School,Bus,Labor,Medium-high,"Cycleways, Youth housing, Rent pressure, Public space",Occasionally signs petitions
+David,72,Non-binary,Bronte,"$98,623",Homeowner,Consultant,High School,Bus,Teal Independent,Low,"Cycleways, Urban density, Heritage protection, Public space",Attends community forums
+Patrick,84,Non-binary,Bondi Junction,"$105,595",Owner (duplex),Designer,TAFE Certificate,Train,Socialist Alliance,Medium-high,"Youth housing, Cycleways",Reads local planning updates
+Abigail,46,Female,Dover Heights,"$62,880",Owner (duplex),Retail assistant,Bachelor’s degree,Bus,Greens,High,"Housing affordability, Urban density",Active in neighbourhood committees
+Zachary,47,Non-binary,Waverley,"$106,143",Private renter,Accountant,High School,Car,Socialist Alliance,Low,"Urban density, Housing affordability, Public space",Occasionally signs petitions
+Jose,54,Non-binary,Tamarama,"$117,425",Renter in sharehouse,Consultant,Bachelor’s degree,Bus + Walking,Socialist Alliance,Medium,"Urban density, Cycleways",Attends community forums
+Jacob,57,Female,Randwick,"$67,924",Owner (duplex),Consultant,Postgraduate degree,Car,Liberal,Low-medium,"Developer accountability, Climate resilience, Rent pressure",Completes surveys
+Deanna,57,Non-binary,Bondi Beach,"$111,248",Mortgage holder,Student,High School,Scooter,Liberal,Low-medium,"Climate resilience, Public space",Completes surveys
+Justin,43,Female,North Bondi,"$120,424",Private renter,Designer,No formal qualification,Car,Labor,Low-medium,"Housing affordability, Noise control, Urban density, Cycleways",Attends community forums
+Micheal,29,Non-binary,North Bondi,"$145,995",Mortgage holder,Engineer,No formal qualification,Car,Liberal,Low,"Noise control, Heritage protection, Cycleways, Traffic",Posts in community Facebook groups
+Charles,29,Non-binary,Randwick,"$142,732",Homeowner,HR manager,TAFE Certificate,Ute,Labor,Medium,"Rent pressure, Youth housing",Writes to council
+James,56,Non-binary,Dover Heights,"$37,850",Homeowner,Student,No formal qualification,Car + Train,Greens,High,"Urban density, Rent pressure",Posts in community Facebook groups
+Billy,30,Female,Bondi Junction,"$114,223",Renter in sharehouse,Consultant,Bachelor’s degree,Bus,Greens,Medium,"Youth housing, Public space, Heritage protection",Occasionally signs petitions
+Bruce,79,Male,Randwick,"$53,039",Student housing,HR manager,No formal qualification,Bus + Walking,Teal Independent,Low-medium,"Climate resilience, Urban density",Attends community forums
+Sean,32,Male,Randwick,"$109,431",Student housing,Public servant,High School,Walk,Centre,Low-medium,"Cycleways, Rent pressure, Housing affordability, Traffic",Reads local planning updates
+Leah,21,Non-binary,Queens Park,"$76,979",Renter in sharehouse,HR manager,Apprenticeship,Walk,Greens,Low-medium,"Cycleways, Noise control, Public space",Occasionally signs petitions
+Susan,71,Non-binary,Waverley,"$137,424",Private renter,Nurse,Bachelor’s degree,Car,Centre,Medium-high,"Heritage protection, Noise control, Rent pressure",Posts in community Facebook groups
+Sara,85,Female,North Bondi,"$130,177",Mortgage holder,Teacher,High School,Bus + Walking,Greens,Low,"Urban density, Cycleways, Climate resilience",Active in neighbourhood committees
+Eric,22,Female,Dover Heights,"$114,661",Renter in sharehouse,Public servant,Postgraduate degree,Walk,Centre,Low,"Noise control, Climate resilience, Cycleways",Active in neighbourhood committees
+Nathan,36,Male,Randwick,"$125,228",Mortgage holder,Artist,No formal qualification,Walk,Liberal,High,"Developer accountability, Heritage protection, Cycleways, Youth housing",Writes to council
+John,27,Non-binary,North Bondi,"$56,509",Owner (duplex),HR manager,TAFE Certificate,Bike,Liberal,Low-medium,"Noise control, Street safety",Active in neighbourhood committees
+Rachel,87,Non-binary,Waverley,"$49,257",Private renter,Accountant,Bachelor’s degree,Walk,Centre,High,"Public space, Street safety, Developer accountability",Completes surveys
+John,67,Female,Bondi Beach,"$110,874",Mortgage holder,Software developer,Postgraduate degree,Ute,Centre,Medium-high,"Public space, Urban density",Occasionally signs petitions
+Victoria,56,Non-binary,Waverley,"$121,148",Renter in sharehouse,Engineer,Bachelor’s degree,Bus,Socialist Alliance,High,"Youth housing, Traffic, Heritage protection",Occasionally signs petitions
+Jennifer,76,Female,Bronte,"$83,416",Renter in sharehouse,Nurse,High School,Car,Liberal,High,"Heritage protection, Noise control, Urban density",Reads local planning updates
+Arthur,63,Male,Bondi Junction,"$56,444",Renter in sharehouse,Designer,High School,Bus,Teal Independent,Medium-high,"Rent pressure, Heritage protection",Active in neighbourhood committees
+Bradley,77,Non-binary,Tamarama,"$25,109",Renter in sharehouse,Retail assistant,TAFE Certificate,Car + Train,Greens,Low-medium,"Rent pressure, Urban density",Reads local planning updates
+Paul,58,Non-binary,Tamarama,"$89,298",Private renter,Hospitality worker,Bachelor’s degree,Bus + Walking,Socialist Alliance,High,"Street safety, Cycleways",Occasionally signs petitions
+Christine,43,Female,Waverley,"$128,737",Owner (apartment),Student,TAFE Certificate,Bus,Liberal,Medium,"Public space, Traffic, Cycleways, Heritage protection",Posts in community Facebook groups
+Paul,25,Female,Bondi Beach,"$33,629",Owner (duplex),Engineer,High School,Bike,Teal Independent,Medium,"Developer accountability, Urban density, Youth housing",Writes to council
+Gregory,36,Non-binary,Bondi Beach,"$90,316",Renter in sharehouse,Student,Postgraduate degree,Ute,Greens,High,"Youth housing, Climate resilience, Urban density",Completes surveys
+Virginia,78,Male,Tamarama,"$75,230",Owner (duplex),Hospitality worker,Bachelor’s degree,Car,Socialist Alliance,Low-medium,"Street safety, Housing affordability, Traffic, Rent pressure",Completes surveys
+Mckenzie,53,Female,North Bondi,"$51,585",Student housing,Accountant,TAFE Certificate,Bike,Socialist Alliance,Medium,"Urban density, Cycleways, Climate resilience, Rent pressure",Reads local planning updates
+Monica,59,Female,Dover Heights,"$53,142",Renter in sharehouse,Retail assistant,Apprenticeship,Bus + Walking,Socialist Alliance,High,"Developer accountability, Heritage protection",Reads local planning updates
+Michaela,83,Non-binary,North Bondi,"$139,044",Owner (duplex),Hospitality worker,Bachelor’s degree,Car + Train,Teal Independent,Low-medium,"Developer accountability, Housing affordability, Youth housing, Cycleways",Posts in community Facebook groups
+Tami,22,Non-binary,Bondi Junction,"$128,856",Owner (apartment),Software developer,Bachelor’s degree,Bus + Walking,Greens,Low-medium,"Urban density, Traffic, Rent pressure, Street safety",Writes to council
+Joshua,19,Male,North Bondi,"$111,155",Homeowner,Artist,No formal qualification,Ute,Greens,Low-medium,"Youth housing, Developer accountability",Active in neighbourhood committees
+Elizabeth,60,Female,Dover Heights,"$65,272",Homeowner,Artist,No formal qualification,Ute,Greens,Medium,"Housing affordability, Street safety, Traffic, Rent pressure",Reads local planning updates
+Crystal,25,Female,North Bondi,"$143,008",Owner (duplex),Designer,Postgraduate degree,Scooter,Centre,Medium,"Public space, Noise control",Posts in community Facebook groups
+Edward,63,Male,Bondi Junction,"$51,890",Owner (duplex),Delivery driver,Postgraduate degree,Walk,Labor,Medium,"Heritage protection, Street safety, Cycleways",Occasionally signs petitions
+Krista,48,Male,Bondi Beach,"$146,561",Renter in sharehouse,Tradie,Apprenticeship,Bike,Socialist Alliance,Medium-high,"Heritage protection, Noise control, Urban density",Engages on Reddit
+Michael,32,Male,Waverley,"$120,494",Renter in sharehouse,Nurse,Bachelor’s degree,Bus + Walking,Labor,Low,"Rent pressure, Housing affordability",Completes surveys
+Daniel,43,Female,Tamarama,"$112,059",Renter in sharehouse,Artist,TAFE Certificate,Bus + Walking,Teal Independent,Low-medium,"Heritage protection, Youth housing, Housing affordability",Engages on Reddit
+Breanna,64,Male,Randwick,"$148,803",Mortgage holder,Nurse,Bachelor’s degree,Walk,Centre,Medium-high,"Noise control, Rent pressure, Housing affordability",Reads local planning updates
+Sarah,24,Non-binary,Waverley,"$92,588",Owner (duplex),Student,No formal qualification,Car + Train,Teal Independent,High,"Heritage protection, Cycleways, Developer accountability",Occasionally signs petitions
+Hailey,26,Female,Randwick,"$148,782",Homeowner,Designer,TAFE Certificate,Bus + Walking,Centre,Medium,"Developer accountability, Housing affordability",Writes to council
+Ann,36,Female,Bondi Junction,"$127,958",Homeowner,Retail assistant,No formal qualification,Train,Teal Independent,Medium,"Heritage protection, Traffic",Posts in community Facebook groups
+Tammy,74,Female,Randwick,"$119,073",Mortgage holder,Student,Postgraduate degree,Bus,Greens,Medium,"Heritage protection, Public space, Traffic",Writes to council
+Cheryl,49,Non-binary,Bondi Beach,"$131,335",Renter in sharehouse,Hospitality worker,Bachelor’s degree,Train,Labor,Low,"Street safety, Youth housing, Heritage protection, Developer accountability",Completes surveys
+Lauren,49,Male,Queens Park,"$76,549",Homeowner,Nurse,Apprenticeship,Train,Socialist Alliance,Medium,"Rent pressure, Youth housing, Climate resilience, Public space",Writes to council
+Tara,53,Male,Randwick,"$48,982",Homeowner,Delivery driver,Apprenticeship,Bus + Walking,Teal Independent,Low,"Urban density, Rent pressure, Traffic, Heritage protection",Reads local planning updates
+Jody,87,Female,Dover Heights,"$147,431",Owner (duplex),Hospitality worker,Postgraduate degree,Scooter,Teal Independent,Medium,"Developer accountability, Noise control",Posts in community Facebook groups
+Diana,82,Non-binary,Bronte,"$58,067",Owner (apartment),Student,TAFE Certificate,Bike,Liberal,Medium-high,"Street safety, Developer accountability, Climate resilience",Completes surveys
+Cheryl,47,Female,Tamarama,"$72,290",Owner (duplex),Software developer,Apprenticeship,Bus + Walking,Centre,Medium-high,"Heritage protection, Climate resilience, Public space",Occasionally signs petitions
+Spencer,71,Male,Bondi Beach,"$93,822",Owner (apartment),Hospitality worker,Apprenticeship,Scooter,Socialist Alliance,Low-medium,"Cycleways, Developer accountability, Housing affordability, Heritage protection",Reads local planning updates
+Matthew,62,Male,Bondi Beach,"$140,465",Renter in sharehouse,Public servant,Apprenticeship,Bus,Teal Independent,Medium-high,"Cycleways, Urban density, Climate resilience, Noise control",Active in neighbourhood committees
+Jillian,26,Non-binary,North Bondi,"$90,984",Student housing,Delivery driver,Apprenticeship,Train,Teal Independent,Low,"Street safety, Urban density, Traffic, Noise control",Writes to council
+Jacob,80,Male,Bondi Beach,"$77,022",Owner (apartment),Artist,High School,Ute,Greens,High,"Cycleways, Rent pressure, Youth housing",Engages on Reddit
+Joshua,38,Female,Waverley,"$126,297",Owner (duplex),Retail assistant,No formal qualification,Walk,Liberal,Medium,"Heritage protection, Climate resilience",Occasionally signs petitions
+Ricky,69,Non-binary,North Bondi,"$109,881",Owner (apartment),Software developer,TAFE Certificate,Bike,Teal Independent,Medium,"Street safety, Youth housing, Climate resilience, Urban density",Posts in community Facebook groups
+Veronica,58,Male,Dover Heights,"$69,723",Renter in sharehouse,Hospitality worker,TAFE Certificate,Bus,Liberal,High,"Cycleways, Rent pressure",Engages on Reddit
+James,62,Non-binary,North Bondi,"$50,111",Student housing,Hospitality worker,Postgraduate degree,Car + Train,Centre,Low,"Rent pressure, Noise control, Traffic, Climate resilience",Attends community forums
+Kevin,28,Non-binary,Bronte,"$123,814",Mortgage holder,Public servant,High School,Walk,Centre,Medium,"Cycleways, Public space, Climate resilience",Attends community forums
+Brandon,85,Female,Randwick,"$79,560",Private renter,Consultant,Apprenticeship,Bus,Liberal,Low-medium,"Heritage protection, Housing affordability, Rent pressure, Street safety",Posts in community Facebook groups
+Jodi,57,Female,Waverley,"$65,000",Private renter,Designer,High School,Bus + Walking,Liberal,High,"Noise control, Rent pressure, Climate resilience",Engages on Reddit
+Heidi,29,Male,Dover Heights,"$120,500",Renter in sharehouse,Delivery driver,Postgraduate degree,Car + Train,Socialist Alliance,High,"Youth housing, Street safety, Housing affordability, Heritage protection",Engages on Reddit
+Darrell,69,Non-binary,Dover Heights,"$64,638",Owner (duplex),Nurse,Bachelor’s degree,Scooter,Greens,Low-medium,"Rent pressure, Traffic",Occasionally signs petitions
+James,25,Female,Queens Park,"$42,656",Student housing,Retail assistant,High School,Car,Teal Independent,Medium-high,"Heritage protection, Cycleways, Housing affordability",Occasionally signs petitions
+Sandra,26,Female,Tamarama,"$55,851",Private renter,Delivery driver,Apprenticeship,Bus + Walking,Liberal,Low-medium,"Youth housing, Housing affordability",Reads local planning updates
+Donald,37,Female,Queens Park,"$86,549",Mortgage holder,Consultant,Postgraduate degree,Scooter,Centre,Low-medium,"Youth housing, Developer accountability, Street safety",Occasionally signs petitions
+Wendy,75,Non-binary,Bondi Beach,"$113,059",Owner (apartment),Designer,TAFE Certificate,Bus,Greens,High,"Climate resilience, Urban density, Developer accountability, Rent pressure",Reads local planning updates
+Amber,81,Non-binary,Bondi Beach,"$25,469",Owner (duplex),Hospitality worker,No formal qualification,Bus,Teal Independent,Low,"Traffic, Heritage protection, Street safety, Youth housing",Engages on Reddit
+Robert,87,Non-binary,Waverley,"$34,472",Homeowner,Retail assistant,No formal qualification,Bike,Centre,Medium,"Traffic, Cycleways, Youth housing",Completes surveys
+Douglas,59,Non-binary,Bronte,"$114,788",Renter in sharehouse,Retail assistant,Bachelor’s degree,Car,Centre,Medium,"Public space, Youth housing",Attends community forums
+Tamara,58,Female,Randwick,"$27,710",Student housing,Designer,No formal qualification,Bike,Centre,High,"Heritage protection, Public space, Youth housing",Reads local planning updates
+Jose,62,Non-binary,Bondi Beach,"$60,785",Homeowner,Engineer,No formal qualification,Walk,Teal Independent,Medium,"Housing affordability, Developer accountability",Active in neighbourhood committees
+Johnathan,31,Male,North Bondi,"$38,745",Renter in sharehouse,Accountant,Postgraduate degree,Train,Liberal,Low-medium,"Urban density, Traffic",Occasionally signs petitions
+Stephanie,85,Non-binary,Randwick,"$149,350",Owner (apartment),Student,No formal qualification,Car,Centre,Low-medium,"Youth housing, Street safety, Cycleways",Writes to council
+Jessica,82,Female,North Bondi,"$146,468",Homeowner,Tradie,No formal qualification,Bus,Liberal,Medium,"Public space, Housing affordability, Developer accountability, Rent pressure",Posts in community Facebook groups
+Sharon,81,Non-binary,North Bondi,"$32,819",Homeowner,HR manager,Bachelor’s degree,Bike,Socialist Alliance,Low-medium,"Climate resilience, Public space, Developer accountability, Street safety",Active in neighbourhood committees
+Brendan,20,Male,Bondi Beach,"$38,658",Owner (apartment),Student,Bachelor’s degree,Ute,Labor,Medium-high,"Youth housing, Noise control, Housing affordability",Occasionally signs petitions
+Crystal,89,Non-binary,Randwick,"$41,038",Owner (duplex),Delivery driver,TAFE Certificate,Bike,Socialist Alliance,High,"Public space, Rent pressure, Youth housing",Active in neighbourhood committees
+Ryan,49,Non-binary,North Bondi,"$87,843",Owner (apartment),Tradie,Apprenticeship,Scooter,Greens,Low,"Urban density, Street safety, Heritage protection, Cycleways",Engages on Reddit
+Robert,76,Non-binary,North Bondi,"$29,752",Mortgage holder,Hospitality worker,Bachelor’s degree,Bus + Walking,Teal Independent,Medium,"Climate resilience, Developer accountability, Housing affordability",Writes to council
+William,64,Male,North Bondi,"$101,623",Homeowner,Tradie,High School,Walk,Teal Independent,Medium,"Rent pressure, Climate resilience, Noise control",Engages on Reddit
+Kelly,65,Female,Bondi Junction,"$92,516",Student housing,Engineer,Apprenticeship,Train,Labor,High,"Heritage protection, Urban density",Engages on Reddit
+Roger,80,Non-binary,Bondi Beach,"$118,745",Private renter,HR manager,Apprenticeship,Walk,Greens,Low,"Developer accountability, Traffic",Completes surveys
+Ethan,23,Non-binary,Waverley,"$78,810",Mortgage holder,Accountant,Apprenticeship,Scooter,Socialist Alliance,High,"Climate resilience, Rent pressure",Active in neighbourhood committees
+Sara,68,Non-binary,Bronte,"$44,264",Student housing,Software developer,Postgraduate degree,Ute,Socialist Alliance,Low,"Heritage protection, Traffic, Youth housing, Housing affordability",Posts in community Facebook groups
+Mark,81,Male,Queens Park,"$84,307",Private renter,Delivery driver,High School,Walk,Greens,Low,"Developer accountability, Noise control, Street safety, Heritage protection",Engages on Reddit
+Meghan,33,Male,Bondi Junction,"$71,631",Owner (apartment),Public servant,High School,Bus,Centre,Low-medium,"Traffic, Developer accountability",Writes to council
+Chelsea,82,Male,Waverley,"$52,174",Student housing,Tradie,Bachelor’s degree,Bus + Walking,Greens,Medium,"Traffic, Urban density",Reads local planning updates
+Steven,45,Female,Bronte,"$31,093",Student housing,Accountant,TAFE Certificate,Ute,Labor,Low,"Street safety, Climate resilience, Heritage protection, Youth housing",Active in neighbourhood committees
+Patty,82,Male,Bondi Junction,"$115,074",Owner (apartment),Nurse,Postgraduate degree,Bike,Labor,Low-medium,"Developer accountability, Public space",Occasionally signs petitions
+Susan,66,Female,Tamarama,"$112,541",Private renter,Teacher,Postgraduate degree,Car,Labor,Low,"Cycleways, Youth housing",Occasionally signs petitions
+Christina,63,Male,Bondi Junction,"$64,199",Student housing,Nurse,Bachelor’s degree,Car + Train,Centre,Low-medium,"Youth housing, Noise control",Attends community forums
+Elizabeth,64,Non-binary,Bondi Junction,"$42,190",Student housing,Accountant,TAFE Certificate,Bus,Teal Independent,Low,"Rent pressure, Noise control, Urban density, Heritage protection",Engages on Reddit
+James,58,Non-binary,Dover Heights,"$123,358",Renter in sharehouse,Teacher,TAFE Certificate,Bus,Greens,Medium-high,"Public space, Climate resilience",Occasionally signs petitions
+Leah,19,Male,Tamarama,"$53,154",Owner (apartment),Designer,TAFE Certificate,Car,Labor,High,"Cycleways, Traffic, Youth housing, Street safety",Reads local planning updates
+Juan,38,Female,Dover Heights,"$141,251",Mortgage holder,Artist,No formal qualification,Walk,Socialist Alliance,Medium,"Public space, Noise control, Urban density",Posts in community Facebook groups
+Kathleen,50,Non-binary,Dover Heights,"$108,503",Student housing,Retail assistant,Bachelor’s degree,Walk,Labor,Low,"Youth housing, Housing affordability, Public space, Rent pressure",Posts in community Facebook groups
+Mitchell,55,Male,Queens Park,"$20,929",Student housing,Designer,Bachelor’s degree,Scooter,Labor,High,"Noise control, Housing affordability",Attends community forums
+Christian,81,Non-binary,Bronte,"$46,417",Owner (apartment),Engineer,Postgraduate degree,Walk,Socialist Alliance,Medium,"Rent pressure, Youth housing",Occasionally signs petitions
+Andrew,76,Non-binary,Bondi Beach,"$120,240",Renter in sharehouse,Tradie,Bachelor’s degree,Walk,Centre,Low,"Heritage protection, Rent pressure",Writes to council
+William,63,Non-binary,North Bondi,"$94,027",Mortgage holder,Student,Bachelor’s degree,Train,Labor,High,"Noise control, Climate resilience, Heritage protection, Rent pressure",Attends community forums
+Peter,41,Female,Bronte,"$97,988",Owner (duplex),Retail assistant,Bachelor’s degree,Walk,Labor,Low-medium,"Youth housing, Climate resilience, Housing affordability",Completes surveys
+Nathan,22,Male,Queens Park,"$66,099",Private renter,Delivery driver,TAFE Certificate,Scooter,Labor,Medium-high,"Rent pressure, Public space, Youth housing, Housing affordability",Engages on Reddit
+Christopher,32,Non-binary,Randwick,"$124,946",Homeowner,Hospitality worker,High School,Walk,Socialist Alliance,Medium-high,"Traffic, Rent pressure, Youth housing",Posts in community Facebook groups
+Mary,89,Non-binary,Tamarama,"$41,826",Mortgage holder,Retail assistant,Postgraduate degree,Ute,Liberal,Low-medium,"Rent pressure, Heritage protection, Developer accountability",Attends community forums
+Kevin,74,Female,Bronte,"$97,842",Homeowner,Designer,TAFE Certificate,Car,Socialist Alliance,Medium-high,"Traffic, Street safety",Posts in community Facebook groups
+Sheila,53,Non-binary,Dover Heights,"$35,038",Owner (duplex),Teacher,TAFE Certificate,Bike,Socialist Alliance,Medium-high,"Public space, Cycleways, Climate resilience, Developer accountability",Reads local planning updates
+Emily,33,Female,Dover Heights,"$131,041",Homeowner,Artist,Bachelor’s degree,Bus,Greens,Medium-high,"Traffic, Street safety, Cycleways",Occasionally signs petitions
+Brittney,36,Male,Randwick,"$133,365",Owner (duplex),Hospitality worker,Apprenticeship,Bike,Socialist Alliance,High,"Developer accountability, Heritage protection, Street safety",Active in neighbourhood committees
+Keith,29,Non-binary,Dover Heights,"$57,713",Homeowner,HR manager,High School,Bus + Walking,Teal Independent,Low,"Public space, Cycleways, Developer accountability, Street safety",Posts in community Facebook groups
+Clayton,23,Male,Randwick,"$75,103",Renter in sharehouse,Public servant,High School,Bus + Walking,Labor,Medium-high,"Youth housing, Climate resilience, Housing affordability, Noise control",Active in neighbourhood committees
+Richard,73,Non-binary,North Bondi,"$128,944",Homeowner,Student,TAFE Certificate,Car,Teal Independent,Medium-high,"Noise control, Traffic",Reads local planning updates
+Steven,28,Male,Bondi Beach,"$131,022",Private renter,Delivery driver,No formal qualification,Walk,Teal Independent,Medium-high,"Youth housing, Traffic, Climate resilience, Street safety",Writes to council
+Jason,88,Male,Dover Heights,"$47,364",Renter in sharehouse,Software developer,TAFE Certificate,Bus + Walking,Labor,Medium-high,"Street safety, Rent pressure, Heritage protection",Active in neighbourhood committees
+Matthew,24,Female,Bronte,"$82,491",Owner (apartment),Public servant,Bachelor’s degree,Walk,Teal Independent,Low,"Public space, Cycleways",Writes to council
+Amy,63,Male,North Bondi,"$137,861",Homeowner,Tradie,No formal qualification,Bike,Socialist Alliance,Medium,"Climate resilience, Traffic, Developer accountability, Urban density",Writes to council
+Jennifer,77,Female,Tamarama,"$64,864",Student housing,Student,Bachelor’s degree,Car,Teal Independent,Medium,"Youth housing, Street safety, Cycleways, Housing affordability",Writes to council
+Mario,24,Male,North Bondi,"$40,963",Renter in sharehouse,Student,Bachelor’s degree,Train,Labor,Medium-high,"Traffic, Housing affordability",Posts in community Facebook groups
+Jennifer,46,Female,Dover Heights,"$51,131",Renter in sharehouse,HR manager,Bachelor’s degree,Ute,Teal Independent,Medium,"Heritage protection, Housing affordability, Noise control",Posts in community Facebook groups
+Matthew,76,Female,Waverley,"$128,905",Private renter,Consultant,No formal qualification,Train,Greens,Low-medium,"Traffic, Public space",Posts in community Facebook groups
+Amy,63,Female,Bondi Junction,"$36,241",Renter in sharehouse,Software developer,Bachelor’s degree,Bus + Walking,Greens,Low,"Housing affordability, Street safety, Cycleways",Occasionally signs petitions
+Maria,20,Female,Tamarama,"$86,652",Student housing,Artist,High School,Car,Labor,Medium-high,"Housing affordability, Developer accountability",Attends community forums
+Carolyn,28,Male,Randwick,"$83,761",Mortgage holder,Student,Apprenticeship,Scooter,Liberal,Medium,"Rent pressure, Developer accountability, Climate resilience",Occasionally signs petitions
+Deborah,25,Female,Bondi Beach,"$131,086",Owner (apartment),Hospitality worker,High School,Ute,Labor,Medium-high,"Street safety, Housing affordability, Youth housing",Completes surveys
+Jerry,59,Female,Waverley,"$63,463",Mortgage holder,Tradie,Postgraduate degree,Bus + Walking,Centre,Medium-high,"Urban density, Public space",Posts in community Facebook groups
+Maria,88,Male,Bronte,"$29,171",Student housing,Retail assistant,Apprenticeship,Train,Greens,Low,"Noise control, Rent pressure, Street safety, Developer accountability",Reads local planning updates
+Meredith,82,Female,Bondi Junction,"$35,417",Homeowner,Artist,Bachelor’s degree,Bike,Liberal,Medium-high,"Street safety, Climate resilience, Cycleways, Youth housing",Occasionally signs petitions
+Heather,28,Non-binary,North Bondi,"$42,626",Student housing,Consultant,High School,Train,Centre,High,"Housing affordability, Urban density, Traffic, Street safety",Engages on Reddit
+Steve,25,Male,Bronte,"$114,319",Owner (duplex),Delivery driver,Bachelor’s degree,Bus + Walking,Greens,High,"Youth housing, Noise control, Heritage protection",Active in neighbourhood committees
+Courtney,21,Non-binary,Dover Heights,"$142,808",Private renter,Student,Postgraduate degree,Car + Train,Teal Independent,Low-medium,"Youth housing, Street safety",Engages on Reddit
+Natasha,55,Male,Bondi Beach,"$58,402",Mortgage holder,Tradie,Bachelor’s degree,Scooter,Greens,High,"Developer accountability, Heritage protection, Street safety, Cycleways",Attends community forums
+Lauren,74,Female,Tamarama,"$105,731",Owner (duplex),Designer,Apprenticeship,Walk,Socialist Alliance,Low-medium,"Public space, Cycleways",Posts in community Facebook groups
+Shane,34,Non-binary,Randwick,"$140,442",Renter in sharehouse,Retail assistant,Apprenticeship,Car,Labor,Low,"Public space, Heritage protection, Developer accountability, Noise control",Engages on Reddit
+Jacob,74,Male,Dover Heights,"$33,050",Private renter,Artist,No formal qualification,Scooter,Socialist Alliance,High,"Noise control, Cycleways",Active in neighbourhood committees
+Claire,85,Female,Bondi Junction,"$90,482",Mortgage holder,Software developer,High School,Car + Train,Socialist Alliance,Medium,"Noise control, Developer accountability",Completes surveys
+Matthew,82,Male,Tamarama,"$119,303",Renter in sharehouse,Delivery driver,High School,Train,Teal Independent,Medium-high,"Public space, Noise control, Youth housing, Housing affordability",Engages on Reddit
+Sean,73,Non-binary,Bronte,"$31,889",Owner (duplex),Nurse,High School,Bus,Teal Independent,High,"Street safety, Youth housing",Attends community forums
+Diana,76,Male,Dover Heights,"$138,639",Private renter,Nurse,Apprenticeship,Walk,Greens,Medium,"Public space, Heritage protection, Traffic",Active in neighbourhood committees
+Desiree,37,Male,Queens Park,"$75,633",Owner (duplex),Consultant,No formal qualification,Bus + Walking,Liberal,Low-medium,"Climate resilience, Street safety, Youth housing",Posts in community Facebook groups
+David,66,Non-binary,Bondi Junction,"$146,155",Owner (duplex),Engineer,High School,Bus,Labor,Medium-high,"Cycleways, Climate resilience, Public space",Reads local planning updates
+James,58,Female,Bondi Beach,"$84,619",Mortgage holder,Software developer,High School,Bus,Socialist Alliance,Low-medium,"Climate resilience, Traffic, Public space",Writes to council
