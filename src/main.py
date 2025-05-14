@@ -19,6 +19,179 @@ import csv
 # Load environment variables
 load_dotenv()
 
+# --- Mapping Dictionaries ---
+# Tenure
+tenure = {
+    1: "Own outright",
+    2: "Own, paying off mortgage",
+    3: "Rent from private landlord or real estate agent",
+    4: "Rent from public housing authority",
+    5: "Other (boarding, living at home, etc.)",
+    999: "Item skipped"
+}
+# Job Type
+job_type = {
+    1: 'Upper managerial',
+    2: 'Middle managerial',
+    3: 'Lower managerial',
+    4: 'Supervisory',
+    5: 'Non-supervisory',
+    999: 'Item skipped'
+}
+# Job Tenure
+job_tenure = {
+    1: 'Self-employed',
+    2: 'Employee in private company or business',
+    3: 'Employee of Federal / State / Local Government',
+    4: 'Employee in family business or farm',
+    999: 'Item skipped'
+}
+# Education Level
+edu_level = {
+    1: "Bachelor degree or higher",
+    2: "Advanced diploma or diploma",
+    3: "Certificate III/IV",
+    4: "Year 12 or equivalent",
+    5: "Year 11 or below",
+    6: "No formal education",
+    999: "Item skipped"
+}
+# Marital Status
+marital_status = {
+    1: "Never married",
+    2: "Married",
+    3: "Widowed",
+    4: "Divorced/Separated",
+    5: "De facto",
+    999: "Item skipped"
+}
+# Partner Activity
+partner_activity = {
+    1: "Working full-time",
+    2: "Working part-time",
+    3: "Caring responsibilities",
+    4: "Retired",
+    5: "Student",
+    6: "Unemployed",
+    999: "Item skipped"
+}
+# Household Size
+household_size = {
+    1: "1 person",
+    2: "2 people",
+    3: "3 people",
+    4: "4 people",
+    5: "5 or more",
+    999: "Item skipped"
+}
+# Family Payments
+family_payments = {
+    1: "Yes",
+    2: "No",
+    999: "Item skipped"
+}
+# Child Care Benefit
+child_care_benefit = {
+    1: "Yes",
+    2: "No",
+    999: "Item skipped"
+}
+# Investment Properties
+investment_properties = {
+    1: "Yes",
+    2: "No",
+    999: "Item skipped"
+}
+# Transport Infrastructure
+transport_infrastructure = {
+    1: "Much more than now",
+    2: "Somewhat more than now",
+    3: "The same as now",
+    4: "Somewhat less than now",
+    5: "Much less than now",
+    999: "Item skipped"
+}
+# Political Leaning
+political_leaning = {
+    1: "Liberal",
+    2: "Labor",
+    3: "National Party",
+    4: "Greens",
+    **{i: "Other party" for i in range(5, 98)},
+    999: "Item skipped"
+}
+# Trust in Government
+trust_gov = {
+    1: "Usually look after themselves",
+    2: "Sometimes look after themselves",
+    3: "Sometimes can be trusted to do the right thing",
+    4: "Usually can be trusted to do the right thing",
+    999: "Item skipped"
+}
+# Issues and Engagement Dictionaries (as in merge.py)
+issues_dict = {
+    "D1_1": "Taxation",
+    "D1_2": "Immigration",
+    "D1_3": "Education",
+    "D1_4": "The environment",
+    "D1_6": "Health and Medicare",
+    "D1_7": "Refugees and asylum seekers",
+    "D1_8": "Global warming",
+    "D1_10": "Management of the economy",
+    "D1_11": "The COVID-19 pandemic",
+    "D1_12": "The cost of living",
+    "D1_13": "National security"
+}
+engagement_dict = {
+    "A1": "Interest in politics",
+    "A2_1": "Attention to newspapers",
+    "A2_2": "Attention to television",
+    "A2_3": "Attention to radio",
+    "A2_4": "Attention to internet",
+    "A4_1": "Discussed politics in person",
+    "A4_2": "Discussed politics online",
+    "A4_3": "Persuaded others to vote",
+    "A4_4": "Showed support for a party",
+    "A4_5": "Attended political meetings",
+    "A4_6": "Contributed money",
+    "A7_1": "No candidate contact",
+    "A7_2": "Contact by telephone",
+    "A7_3": "Contact by mail",
+    "A7_4": "Contact face-to-face",
+    "A7_5": "Contact by SMS",
+    "A7_6": "Contact by email",
+    "A7_7": "Contact via social network"
+}
+
+def get_mapping_dict(variable_name):
+    mapping_dict = {
+        # Engagement Dictionary
+        'A1': {1: 'A good deal', 2: 'Some', 3: 'Not much', 4: 'None', 999: 'Item skipped'},
+        'A2_1': {1: 'A good deal', 2: 'Some', 3: 'Not much', 4: 'None at all', 999: 'Item skipped'},
+        'A2_2': {1: 'A good deal', 2: 'Some', 3: 'Not much', 4: 'None at all', 999: 'Item skipped'},
+        'A2_3': {1: 'A good deal', 2: 'Some', 3: 'Not much', 4: 'None at all', 999: 'Item skipped'},
+        'A2_4': {1: 'A good deal', 2: 'Some', 3: 'Not much', 4: 'None at all', 999: 'Item skipped'},
+        'A4_1': {1: 'Frequently', 2: 'Occasionally', 3: 'Rarely', 4: 'Not at all', 999: 'Item skipped'},
+        'A4_2': {1: 'Frequently', 2: 'Occasionally', 3: 'Rarely', 4: 'Not at all', 999: 'Item skipped'},
+        'A4_3': {1: 'Frequently', 2: 'Occasionally', 3: 'Rarely', 4: 'Not at all', 999: 'Item skipped'},
+        'A4_4': {1: 'Frequently', 2: 'Occasionally', 3: 'Rarely', 4: 'Not at all', 999: 'Item skipped'},
+        'A4_5': {1: 'Frequently', 2: 'Occasionally', 3: 'Rarely', 4: 'Not at all', 999: 'Item skipped'},
+        'A4_6': {1: 'Frequently', 2: 'Occasionally', 3: 'Rarely', 4: 'Not at all', 999: 'Item skipped'},
+        # Issues Dictionary
+        'D1_1': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_2': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_3': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_4': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_6': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_7': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_8': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_10': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_11': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_12': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+        'D1_13': {1: 'Extremely important', 2: 'Quite important', 3: 'Not very important', 999: 'Item skipped'},
+    }
+    return mapping_dict.get(variable_name, {})
+
 class SurveyResponse(BaseModel):
     """Model for structured survey responses."""
     support_level: int  # 1-5 scale
@@ -30,7 +203,7 @@ class SurveyResponse(BaseModel):
 
 class PersonaResponse(BaseModel):
     """Model for complete persona response including both narrative and survey data."""
-    persona_details: Dict[str, str]
+    persona_details: Dict[str, Any]  # Changed from Dict[str, str] to Dict[str, Any] to handle lists
     narrative_response: str
     survey_response: SurveyResponse
     timestamp: str
@@ -45,13 +218,185 @@ class Persona(BaseModel):
     location: str
     income: str
     tenure: str
+    job_tenure: str
     occupation: str
     education: str
     transport: str
+    marital_status: str
+    partner_activity: str
+    household_size: str
+    family_payments: str
+    child_care_benefit: str
+    investment_properties: str
+    transport_infrastructure: str
     political_leaning: str
     trust: str
     issues: List[str]
     engagement: str
+
+import csv
+import numpy as np
+import pandas as pd
+
+def read_abs_data(file_path: str) -> pd.DataFrame:
+    columns = [
+        "SA2 (UR)",
+        "AGE5P Age in Five Year Groups",
+        "SEXP Sex",
+        "FPIP Parent Indicator",
+        "MSTP Registered Marital Status",
+        "1-digit level ANCP Ancestry Multi Response",
+        "INCP Total Personal Income (weekly)",
+        "Negative income",
+        "Nil income",
+        "$1-$149 ($1-$7,799)",
+        "$150-$299 ($7,800-$15,599)",
+        "$300-$399 ($15,600-$20,799)",
+        "$400-$499 ($20,800-$25,999)",
+        "$500-$649 ($26,000-$33,799)",
+        "$650-$799 ($33,800-$41,599)",
+        "$800-$999 ($41,600-$51,999)",
+        "$1,000-$1,249 ($52,000-$64,999)",
+        "$1,250-$1,499 ($65,000-$77,999)",
+        "$1,500-$1,749 ($78,000-$90,999)",
+        "$1,750-$1,999 ($91,000-$103,999)",
+        "$2,000-$2,999 ($104,000-$155,999)",
+        "$3,000-$3,499 ($156,000-$181,999)",
+        "$3,500 or more ($182,000 or more)",
+        "Not stated",
+        "Not applicable",
+        "Total"
+    ]
+    df = pd.read_csv(
+        file_path,
+        skiprows=10,
+        header=None,
+        names=columns,
+        encoding='utf-8',
+        skipinitialspace=True,
+        on_bad_lines='warn',
+        quoting=csv.QUOTE_MINIMAL,
+        sep=',',
+        engine='python'
+    )
+    for col in columns[:6]:
+        df[col] = df[col].replace('', np.nan).ffill()
+    for col in columns[6:]:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+    df = df.dropna(how='all', subset=columns[6:])
+    print("Successfully loaded ABS dataset.")
+    return df
+
+def map_age_to_abs_age(age, abs_to_aes_age):
+    for abs_cat, (min_age, max_age) in abs_to_aes_age.items():
+        if pd.notnull(age) and min_age <= age <= max_age:
+            return abs_cat
+    return None
+
+abs_to_aes_age = {
+    "0-4 years" : (0, 4),
+    "5-9 years" : (5, 9),
+    "10-14 years" : (10, 14),
+    "15-19 years" : (15, 19),
+    "20-24 years": (20, 24),
+    "25-29 years": (25, 29),
+    "30-34 years": (30, 34),
+    "35-39 years": (35, 39),
+    "40-44 years": (40, 44),
+    "45-49 years": (45, 49),
+    "50-54 years": (50, 54),
+    "55-59 years": (55, 59),
+    "60-64 years": (60, 64),
+    "65-69 years": (65, 69),
+    "70-74 years": (70, 74),
+    "75-79 years": (75, 79),
+    "80-84 years": (80, 84),
+    "85-89 years": (85, 89),
+    "90-95 years": (90, 95),
+    "96-99 years": (96, 99),
+    "100 years and over": (100, 120)
+}
+
+abs_to_aes_sex = {
+    "Male" : 1,
+    "Female" : 2,
+}
+
+abs_to_aes_marital = {
+    "Never married" : 1,
+    "Married" : 2,
+    "Separated" : 4,
+    "Widowed" : 3,
+    "Divorced" : 4
+}
+
+def map_income_to_abs_income(aes_income, abs_to_aes_income):
+    for abs_cat, aes_val in abs_to_aes_income.items():
+        if isinstance(aes_val, tuple):
+            if pd.notnull(aes_income) and aes_val[0] <= aes_income <= aes_val[1]:
+                return abs_cat
+        elif aes_income == aes_val:
+            return abs_cat
+    return None
+
+abs_to_aes_income = {
+    'Negative income' : 1,
+    'Nil income' : 1, 
+    '$1-$149 ($1-$7,799)' : 1, 
+    '$150-$299 ($7,800-$15,599)' : 1,
+    '$300-$399 ($15,600-$20,799)' : 3,
+    '$400-$499 ($20,800-$25,999)' : 3,
+    '$500-$649 ($26,000-$33,799)' : 5,
+    '$650-$799 ($33,800-$41,599)' : 7,
+    '$800-$999 ($41,600-$51,999)' : 9,
+    '$1,000-$1,249 ($52,000-$64,999)' : 9,
+    '$1,250-$1,499 ($65,000-$77,999)' : 11,
+    '$1,500-$1,749 ($78,000-$90,999)' : 13,
+    '$1,750-$1,999 ($91,000-$103,999)' : 13,
+    '$2,000-$2,999 ($104,000-$155,999)' : (15, 17),
+    '$3,000-$3,499 ($156,000-$181,999)' : 19,
+    '$3,500 or more ($182,000 or more)' : (21, 25),
+    'Not stated' : 999,
+    'Not applicable' : 999
+}
+
+def sample_personas_major_city(
+    merged, N,
+    strata_cols=["ABS_AGE_CATEGORY", "ABS_SEX", "ABS_MARITAL", "ABS_INCOME"],
+    major_city_col="J5",
+    major_city_value=5
+):
+    """
+    Sample N personas from the merged frame, ensuring each persona is from a major city (J5 == 5)
+    and excluding any personas with 'Total' location.
+    """
+    strata_weights = merged.groupby(strata_cols)['weight'].first().reset_index()
+    strata_probs = strata_weights['weight'] / strata_weights['weight'].sum()
+    personas = []
+    attempts = 0
+    max_attempts = N * 10
+    while len(personas) < N and attempts < max_attempts:
+        stratum = strata_weights.sample(
+            n=1,
+            weights=strata_probs
+        ).iloc[0]
+        matches = merged
+        for col in strata_cols:
+            matches = matches[matches[col] == stratum[col]]
+        matches = matches[matches[major_city_col] == major_city_value]
+        # Exclude matches with 'Total' location
+        matches = matches[matches['SA2 (UR)'] != 'Total']
+        if not matches.empty:
+            persona = matches.sample(n=1)
+            personas.append(persona)
+        attempts += 1
+    if len(personas) < N:
+        print(f"Warning: Only {len(personas)} personas could be sampled with {major_city_col} == {major_city_value} after {max_attempts} attempts.")
+    if personas:
+        personas_df = pd.concat(personas, ignore_index=True)
+    else:
+        personas_df = pd.DataFrame()
+    return personas_df
 
 def analyze_sentiment(text: str) -> float:
     """
@@ -131,8 +476,8 @@ def create_sentiment_analysis(data: pd.DataFrame, output_dir: str, timestamp: st
     # Convert sentiment scores to -100 to +100 scale
     data['sentiment_percentage'] = (data['sentiment_score'] * 100).round(0)
     
-    # Convert age to numeric for proper sorting
-    data['age'] = pd.to_numeric(data['age'])
+    # Extract numeric age from age range (e.g., "45-49 years" -> 45)
+    data['age_numeric'] = data['age'].str.extract(r'(\d+)').astype(int)
     
     # Sentiment by political leaning
     plt.figure(figsize=(10, 6))
@@ -147,7 +492,7 @@ def create_sentiment_analysis(data: pd.DataFrame, output_dir: str, timestamp: st
     
     # Sentiment by age group
     plt.figure(figsize=(10, 6))
-    sns.boxplot(x='age', y='sentiment_percentage', data=data.sort_values('age'))
+    sns.boxplot(x='age', y='sentiment_percentage', data=data.sort_values('age_numeric'))
     plt.title('Sentiment Distribution by Age')
     plt.ylabel('Sentiment (-100% to +100%)\n(-100%=Very Negative, 0%=Neutral, +100%=Very Positive)')
     plt.ylim(-100, 100)
@@ -358,7 +703,9 @@ def generate_analysis_report(data: pd.DataFrame, output_dir: str, timestamp: str
         # Analysis by age group
         f.write("Analysis by Age Group:\n")
         f.write("-" * 30 + "\n")
-        data['age_group'] = pd.cut(data['age'].astype(int), 
+        # Extract the first number from age ranges (e.g., "45-49 years" -> 45)
+        data['age_numeric'] = data['age'].str.extract(r'(\d+)').astype(float)
+        data['age_group'] = pd.cut(data['age_numeric'], 
                                   bins=[0, 30, 50, 70, 100],
                                   labels=['18-30', '31-50', '51-70', '70+'])
         age_stats = data.groupby('age_group', observed=True)['support_level'].mean()
@@ -419,14 +766,22 @@ def load_personas(file_path: str) -> List[Persona]:
             gender=row['gender'],
             location=row['location'],
             income=row['income'],
-            tenure=row['tenure'],
+            tenure=str(row['tenure']),
+            job_tenure=str(row['job_tenure']),
             occupation=row['occupation'],
             education=row['education'],
             transport=row['transport'],
-            political_leaning=row['political_leaning'],
-            trust=row['trust'],
+            marital_status=str(row['marital_status']),
+            partner_activity=str(row['partner_activity']),
+            household_size=str(row['household_size']),
+            family_payments=str(row['family_payments']),
+            child_care_benefit=str(row['child_care_benefit']),
+            investment_properties=str(row['investment_properties']),
+            transport_infrastructure=str(row['transport_infrastructure']),
+            political_leaning=str(row['political_leaning']),
+            trust=str(row['trust']),
             issues=row['issues'].split(', ') if isinstance(row['issues'], str) else [],
-            engagement=row['engagement']
+            engagement=str(row['engagement'])
         )
         personas.append(persona)
     
@@ -504,28 +859,49 @@ def generate_persona_response(persona: Persona, client: OpenAI) -> PersonaRespon
     Returns:
         PersonaResponse: Complete response including both narrative and survey data
     """
-    prompt = f"""You are simulating the response of a fictional but demographically grounded persona for use in a synthetic civic focus group. This persona is based on Australian Census data and local electoral trends.
+    # Build persona details string, excluding Unknown and Item skipped values
+    persona_details = []
+    for field, value in [
+        ("Name", persona.name),
+        ("Age", persona.age),
+        ("Gender", persona.gender),
+        ("Location", f"{persona.location}, NSW"),
+        ("Income", persona.income),
+        ("Tenure", persona.tenure),
+        ("Job Tenure", persona.job_tenure),
+        ("Occupation", persona.occupation),
+        ("Education", persona.education),
+        ("Transport Mode", persona.transport),
+        ("Marital Status", persona.marital_status),
+        ("Partner Activity", persona.partner_activity),
+        ("Household Size", persona.household_size),
+        ("Family Payments", persona.family_payments),
+        ("Child Care Benefit", persona.child_care_benefit),
+        ("Investment Properties", persona.investment_properties),
+        ("Transport Infrastructure", persona.transport_infrastructure),
+        ("Political Leaning", persona.political_leaning),
+        ("Trust in Government", persona.trust),
+        ("Key Issues", ', '.join(persona.issues)),
+        ("Engagement Level", persona.engagement)
+    ]:
+        if value and value not in ["Unknown", "Item skipped"]:
+            persona_details.append(f"- {field}: {value}")
+
+    prompt = f"""You are simulating the response of a fictional but demographically grounded persona for use in a synthetic civic focus group. This persona is based on Australian Census data and local electoral trends. 
+    You should use the language of the persona your are simulating. 
+    Consider the tone and language of the persona you are simulating. 
+    Consider the issues that the persona you are simulating is concerned about. 
+    What are their life circumstances? How would it impact their current lifestyle?
 
 Persona Details:
-- Name: {persona.name}
-- Age: {persona.age}  
-- Gender: {persona.gender}  
-- Location: {persona.location}, NSW  
-- Income: {persona.income}  
-- Tenure: {persona.tenure}  
-- Occupation: {persona.occupation}  
-- Education: {persona.education}  
-- Transport Mode: {persona.transport}  
-- Political Leaning: {persona.political_leaning}  
-- Trust in Government: {persona.trust}  
-- Key Issues: {', '.join(persona.issues)}  
-- Engagement Level: {persona.engagement}
+{chr(10).join(persona_details)}
 
 You have been asked to react to the following **local proposal**:
 
 > "Waverley Council is considering a policy that would remove minimum parking requirements for new apartment developments in Bondi. This means developers could build fewer or no car spaces if they believe it suits the residents' needs."
 
-IMPORTANT: Based on your demographic profile, you should take a strong position on this issue. Consider how your background might lead you to have extreme views:
+IMPORTANT: Based on your Australian demographic profile, you should take a strong position on this issue. 
+Consider how your background might lead you to your views, you are free to be as moderate or extreme as you like:
 
 - If you're a car-dependent commuter, you might strongly oppose this policy
 - If you're a young renter who doesn't own a car, you might strongly support it
@@ -533,6 +909,17 @@ IMPORTANT: Based on your demographic profile, you should take a strong position 
 - If you're worried about parking in your neighborhood, you might see this as a major threat
 - If you're environmentally conscious, you might view this as essential for sustainability
 - If you're a property owner, you might be concerned about impacts on property values
+- If you have investment properties, you might be concerned about property values
+- If you have children and receive family payments, you might be concerned about housing affordability
+- If you're in a larger household, you might be more concerned about parking availability
+- If you're retired, you might be more concerned about community impact
+
+BACKGROUND:
+	Liberal Party: A center-right party advocating for free-market policies, individual liberties, and limited government intervention.
+	Labor Party: A center-left party focused on social justice, workers' rights, and government involvement in healthcare and education.
+    National Party: A conservative, rural-focused party promoting agricultural interests and regional development.
+	Greens: A progressive party emphasizing environmental protection, social equality, and climate action.
+	One Nation: A right-wing nationalist party advocating for stricter immigration controls and Australian sovereignty.
 
 Please provide:
 
@@ -570,7 +957,13 @@ Impact on Transport: [1-5]
 Impact on Community: [1-5]
 Key Concerns: [comma-separated list]
 Suggested Improvements: [comma-separated list]"""
-    
+
+    # Print the prompt for the first persona only
+    if persona.name == "Persona_0":
+        print("\n=== First Prompt Sent to OpenAI ===")
+        print(prompt)
+        print("=== End of Prompt ===\n")
+
     response = client.chat.completions.create(
         model="gpt-4-turbo-preview",
         messages=[
@@ -579,28 +972,40 @@ Suggested Improvements: [comma-separated list]"""
         ],
         temperature=0.7  # Add some variation to responses
     )
-    
     response_text = response.choices[0].message.content
-    
     # Split the response into narrative and survey parts
     parts = response_text.split('SURVEY RESPONSE:')
     narrative = parts[0].replace('NARRATIVE RESPONSE:', '').strip()
     survey = parts[1].strip() if len(parts) > 1 else ""
-    
     # Parse the survey response
     survey_response = parse_survey_response(survey)
-    
     # Analyze sentiment and extract themes
     sentiment_score = analyze_sentiment(narrative)
     key_themes = extract_key_themes(narrative, client)
-    
+    # Return all persona details in persona_details
     return PersonaResponse(
         persona_details={
             "name": persona.name,
             "age": persona.age,
+            "gender": getattr(persona, 'gender', ''),
             "location": persona.location,
-            "occupation": persona.occupation,
-            "political_leaning": persona.political_leaning
+            "income": getattr(persona, 'income', ''),
+            "tenure": getattr(persona, 'tenure', ''),
+            "job_tenure": getattr(persona, 'job_tenure', ''),
+            "occupation": getattr(persona, 'occupation', ''),
+            "education": getattr(persona, 'education', ''),
+            "transport": getattr(persona, 'transport', ''),
+            "marital_status": getattr(persona, 'marital_status', ''),
+            "partner_activity": getattr(persona, 'partner_activity', ''),
+            "household_size": getattr(persona, 'household_size', ''),
+            "family_payments": getattr(persona, 'family_payments', ''),
+            "child_care_benefit": getattr(persona, 'child_care_benefit', ''),
+            "investment_properties": getattr(persona, 'investment_properties', ''),
+            "transport_infrastructure": getattr(persona, 'transport_infrastructure', ''),
+            "political_leaning": getattr(persona, 'political_leaning', ''),
+            "trust": getattr(persona, 'trust', ''),
+            "issues": persona.issues,
+            "engagement": getattr(persona, 'engagement', '')
         },
         narrative_response=narrative,
         survey_response=survey_response,
@@ -617,27 +1022,38 @@ def save_responses(responses: List[PersonaResponse], output_dir: str = "output")
         responses (List[PersonaResponse]): List of persona responses
         output_dir (str): Directory to save the responses
     """
-    # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
-    
-    # Generate timestamp for all files
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    
-    # Save all responses in a single JSON file
     json_filepath = os.path.join(output_dir, f"responses_{timestamp}.json")
-    
     with open(json_filepath, 'w') as f:
         json.dump([response.model_dump() for response in responses], f, indent=2)
-    
     # Create DataFrame for analysis
     summary_data = []
     for response in responses:
+        persona = response.persona_details
+        # Add all persona fields if present
         summary_data.append({
-            "name": response.persona_details["name"],
-            "age": response.persona_details["age"],
-            "location": response.persona_details["location"],
-            "occupation": response.persona_details["occupation"],
-            "political_leaning": response.persona_details["political_leaning"],
+            "name": persona.get("name", ""),
+            "age": persona.get("age", ""),
+            "gender": persona.get("gender", ""),
+            "location": persona.get("location", ""),
+            "income": persona.get("income", ""),
+            "tenure": persona.get("tenure", ""),
+            "job_tenure": persona.get("job_tenure", ""),
+            "occupation": persona.get("occupation", ""),
+            "education": persona.get("education", ""),
+            "transport": persona.get("transport", ""),
+            "marital_status": persona.get("marital_status", ""),
+            "partner_activity": persona.get("partner_activity", ""),
+            "household_size": persona.get("household_size", ""),
+            "family_payments": persona.get("family_payments", ""),
+            "child_care_benefit": persona.get("child_care_benefit", ""),
+            "investment_properties": persona.get("investment_properties", ""),
+            "transport_infrastructure": persona.get("transport_infrastructure", ""),
+            "political_leaning": persona.get("political_leaning", ""),
+            "trust": persona.get("trust", ""),
+            "issues": ', '.join(persona.get("issues", [])),
+            "engagement": persona.get("engagement", ""),
             "support_level": response.survey_response.support_level,
             "impact_on_housing": response.survey_response.impact_on_housing,
             "impact_on_transport": response.survey_response.impact_on_transport,
@@ -645,12 +1061,18 @@ def save_responses(responses: List[PersonaResponse], output_dir: str = "output")
             "key_concerns": ", ".join(response.survey_response.key_concerns),
             "suggested_improvements": ", ".join(response.survey_response.suggested_improvements),
             "sentiment_score": response.sentiment_score,
-            "key_themes": response.key_themes
+            "key_themes": ", ".join(response.key_themes) if response.key_themes else ""
         })
-    
     summary_df = pd.DataFrame(summary_data)
     summary_df.to_csv(os.path.join(output_dir, f"responses_summary_{timestamp}.csv"), index=False)
-    
+    # Save personas as well
+    persona_objects = []
+    for response in responses:
+        # Try to reconstruct Persona from persona_details
+        persona_dict = response.persona_details.copy()
+        persona_dict['issues'] = persona_dict.get('issues', [])
+        persona_objects.append(Persona(**persona_dict))
+    save_personas_csv(persona_objects, output_dir, timestamp)
     # Generate visualizations and analysis
     create_heatmap(summary_df, output_dir, timestamp)
     create_sentiment_analysis(summary_df, output_dir, timestamp)
@@ -661,7 +1083,6 @@ def save_responses(responses: List[PersonaResponse], output_dir: str = "output")
     create_correlation_analysis(summary_df, output_dir, timestamp)
     create_concern_analysis(summary_df, output_dir, timestamp)
     generate_analysis_report(summary_df, output_dir, timestamp)
-    
     return timestamp
 
 def regenerate_plots(data_file: str, output_dir: str = "output"):
@@ -737,7 +1158,7 @@ def generate_synthetic_personas(aes_file: str, abs_file: str, num_personas: int 
     toy_data = aes_data.sample(n=sample_size, random_state=42)
 
     # Select relevant columns
-    selected_cols = ["AGE", "H1", "STATE", "J6", "A1", "B9_1", "B1", "weight_final"]
+    selected_cols = ["AGE", "H1", "STATE", "J6", "B9_1", "B1", "weight_final"]
     toy_data = toy_data[selected_cols]
 
     # Merge AES and ABS data on common demographic variables
@@ -981,65 +1402,32 @@ def generate_aes_persona_response(persona: pd.Series, client: OpenAI) -> Persona
     Returns:
         PersonaResponse: Complete response including both narrative and survey data
     """
-    # Map AES/ABS variables to our persona format
+    # Extract all possible fields, defaulting to 'Unknown' or '' if missing
     persona_details = {
-        "name": f"Persona_{persona.name}",  # Using index as identifier
-        "age": str(persona['AGE']),
-        "location": persona['STATE'],
-        "occupation": "Not specified",  # We might need to map this from other variables
-        "political_leaning": persona['B1']  # Political party preference
+        "name": f"Persona_{persona.name}",
+        "age": str(persona.get('AGE', 'Unknown')),
+        "gender": str(persona.get('H1', 'Unknown')),
+        "location": str(persona.get('STATE', 'Unknown')),
+        "income": str(persona.get('J6', 'Unknown')),
+        "tenure": str(persona.get('J1', 'Unknown')),
+        "job_tenure": str(persona.get('G5_E', 'Unknown')),
+        "occupation": str(persona.get('G5_D', 'Unknown')),
+        "education": str(persona.get('G3', 'Unknown')),
+        "transport": str(persona.get('transport', 'Unknown')),
+        "marital_status": str(persona.get('H8', 'Unknown')),
+        "partner_activity": str(persona.get('G7_1', 'Unknown')),
+        "household_size": str(persona.get('G7_2', 'Unknown')),
+        "family_payments": str(persona.get('G7_3', 'Unknown')),
+        "child_care_benefit": str(persona.get('G7_4', 'Unknown')),
+        "investment_properties": str(persona.get('G7_5', 'Unknown')),
+        "transport_infrastructure": str(persona.get('G7_6', 'Unknown')),
+        "political_leaning": str(persona.get('B1', 'Unknown')),
+        "trust": str(persona.get('C6', 'Unknown')),
+        "issues": str(persona.get('issues', '')),
+        "engagement": str(persona.get('engagement', ''))
     }
-    
-    prompt = f"""You are simulating the response of a fictional but demographically grounded persona for use in a synthetic civic focus group. This persona is based on Australian Electoral Study (AES) and ABS Census data.
+    prompt = f"""You are simulating the response of a fictional but demographically grounded persona for use in a synthetic civic focus group. This persona is based on Australian Electoral Study (AES) and ABS Census data.\n\nPersona Details:\n- Name: {persona_details['name']}\n- Age: {persona_details['age']}\n- Gender: {persona_details['gender']}\n- Location: {persona_details['location']}\n- Income: {persona_details['income']}\n- Tenure: {persona_details['tenure']}\n- Job Tenure: {persona_details['job_tenure']}\n- Occupation: {persona_details['occupation']}\n- Education: {persona_details['education']}\n- Transport: {persona_details['transport']}\n- Marital Status: {persona_details['marital_status']}\n- Partner Activity: {persona_details['partner_activity']}\n- Household Size: {persona_details['household_size']}\n- Family Payments: {persona_details['family_payments']}\n- Child Care Benefit: {persona_details['child_care_benefit']}\n- Investment Properties: {persona_details['investment_properties']}\n- Transport Infrastructure: {persona_details['transport_infrastructure']}\n- Political Leaning: {persona_details['political_leaning']}\n- Trust in Government: {persona_details['trust']}\n- Key Issues: {persona_details['issues']}\n- Engagement Level: {persona_details['engagement']}\n\nYou have been asked to react to the following **local proposal**:\n\n> \"Waverley Council is considering a policy that would remove minimum parking requirements for new apartment developments in Bondi. This means developers could build fewer or no car spaces if they believe it suits the residents' needs.\"\n\nIMPORTANT: Based on your demographic profile, you should take a strong position on this issue. Consider how your background might lead you to have extreme views:\n\n- If you're a car-dependent commuter, you might strongly oppose this policy\n- If you're a young renter who doesn't own a car, you might strongly support it\n- If you're concerned about housing affordability, you might see this as a crucial step\n- If you're worried about parking in your neighborhood, you might see this as a major threat\n- If you're environmentally conscious, you might view this as essential for sustainability\n- If you're a property owner, you might be concerned about impacts on property values\n- If you have investment properties, you might be concerned about property values\n- If you have children and receive family payments, you might be concerned about housing affordability\n- If you're in a larger household, you might be more concerned about parking availability\n- If you're retired, you might be more concerned about community impact\n\nPlease provide:\n\n1. A short narrative response (2-3 sentences) that reflects:\n   - A clear, strong position on the policy (either strongly support or strongly oppose)\n   - Why — in your own words, as someone with this background\n   - What specific impacts you're most concerned about\n\n2. A structured survey response with the following:\n   - Support Level (1-5, where 1 is strongly oppose and 5 is strongly support)\n   - Impact on Housing Affordability (1-5, where 1 is very negative and 5 is very positive)\n   - Impact on Transport (1-5, where 1 is very negative and 5 is very positive)\n   - Impact on Community (1-5, where 1 is very negative and 5 is very positive)\n   - Key Concerns (comma-separated list)\n   - Suggested Improvements (comma-separated list)\n\nFormat your response as follows:\n\nNARRATIVE RESPONSE:\n[Your narrative response here]\n\nSURVEY RESPONSE:\nSupport Level: [1-5]\nImpact on Housing: [1-5]\nImpact on Transport: [1-5]\nImpact on Community: [1-5]\nKey Concerns: [comma-separated list]\nSuggested Improvements: [comma-separated list]"""
 
-Persona Details:
-- Age: {persona['AGE']}
-- Gender: {persona['H1']}
-- Location: {persona['STATE']}
-- Income Level: {persona['J6']}
-- Political Preference: {persona['B1']}
-
-You have been asked to react to the following **local proposal**:
-
-> "Waverley Council is considering a policy that would remove minimum parking requirements for new apartment developments in Bondi. This means developers could build fewer or no car spaces if they believe it suits the residents' needs."
-
-IMPORTANT: Based on your demographic profile, you should take a strong position on this issue. Consider how your background might lead you to have extreme views:
-
-- If you're a car-dependent commuter, you might strongly oppose this policy
-- If you're a young renter who doesn't own a car, you might strongly support it
-- If you're concerned about housing affordability, you might see this as a crucial step
-- If you're worried about parking in your neighborhood, you might see this as a major threat
-- If you're environmentally conscious, you might view this as essential for sustainability
-- If you're a property owner, you might be concerned about impacts on property values
-
-Please provide:
-
-1. A short narrative response (2-3 sentences) that reflects:
-   - A clear, strong position on the policy (either strongly support or strongly oppose)
-   - Why — in your own words, as someone with this background
-   - What specific impacts you're most concerned about
-
-2. A structured survey response with the following:
-   - Support Level (1-5, where 1 is strongly oppose and 5 is strongly support)
-   - Impact on Housing Affordability (1-5, where 1 is very negative and 5 is very positive)
-   - Impact on Transport (1-5, where 1 is very negative and 5 is very positive)
-   - Impact on Community (1-5, where 1 is very negative and 5 is very positive)
-   - Key Concerns (comma-separated list)
-   - Suggested Improvements (comma-separated list)
-
-Format your response as follows:
-
-NARRATIVE RESPONSE:
-[Your narrative response here]
-
-SURVEY RESPONSE:
-Support Level: [1-5]
-Impact on Housing: [1-5]
-Impact on Transport: [1-5]
-Impact on Community: [1-5]
-Key Concerns: [comma-separated list]
-Suggested Improvements: [comma-separated list]"""
-    
     response = client.chat.completions.create(
         model="gpt-4-turbo-preview",
         messages=[
@@ -1048,21 +1436,16 @@ Suggested Improvements: [comma-separated list]"""
         ],
         temperature=0.7
     )
-    
     response_text = response.choices[0].message.content
-    
     # Split the response into narrative and survey parts
     parts = response_text.split('SURVEY RESPONSE:')
     narrative = parts[0].replace('NARRATIVE RESPONSE:', '').strip()
     survey = parts[1].strip() if len(parts) > 1 else ""
-    
     # Parse the survey response
     survey_response = parse_survey_response(survey)
-    
     # Analyze sentiment and extract themes
     sentiment_score = analyze_sentiment(narrative)
     key_themes = extract_key_themes(narrative, client)
-    
     return PersonaResponse(
         persona_details=persona_details,
         narrative_response=narrative,
@@ -1072,19 +1455,347 @@ Suggested Improvements: [comma-separated list]"""
         key_themes=key_themes
     )
 
+def row_to_persona(row, personas_df=None):
+    def safe_int(val):
+        try:
+            return int(val)
+        except (ValueError, TypeError):
+            return None
+
+    return Persona(
+        name=f"Persona_{row.name}",
+        age=row.get('ABS_AGE_CATEGORY', 'Unknown'),
+        gender=row.get('ABS_SEX', 'Unknown'),
+        location=row.get('SA2 (UR)', 'Unknown'),
+        income=row.get('ABS_INCOME', 'Unknown'),
+        tenure=tenure.get(safe_int(row.get('J1')), 'Unknown'),
+        job_tenure=job_tenure.get(safe_int(row.get('G5_E')), 'Unknown'),
+        occupation=job_type.get(safe_int(row.get('G5_D')), 'Unknown'),
+        education=edu_level.get(safe_int(row.get('G3')), 'Unknown'),
+        marital_status=marital_status.get(safe_int(row.get('H8')), 'Unknown'),
+        partner_activity=partner_activity.get(safe_int(row.get('I1')), 'Unknown'),
+        household_size=household_size.get(safe_int(row.get('W1')), 'Unknown'),
+        family_payments=family_payments.get(safe_int(row.get('J8_1')), 'Unknown'),
+        child_care_benefit=child_care_benefit.get(safe_int(row.get('J8_2')), 'Unknown'),
+        investment_properties=investment_properties.get(safe_int(row.get('J2')), 'Unknown'),
+        transport_infrastructure=transport_infrastructure.get(safe_int(row.get('D8_9')), 'Unknown'),
+        political_leaning=political_leaning.get(safe_int(row.get('B9_1')), 'Unknown'),
+        trust=trust_gov.get(safe_int(row.get('C6')), 'Unknown'),
+        issues=construct_issues_list(row, personas_df) if personas_df is not None else [],
+        engagement=construct_engagement_string(row, personas_df) if personas_df is not None else "Unknown"
+    )
+
+# --- Engagement and Issues String Construction Functions ---
+def construct_engagement_string(row, personas_df):
+    engagement_str = "I engage in politics in the following way: "
+    parts = []
+    for key, description in engagement_dict.items():
+        answer_value = personas_df.at[row.name, key] if key in personas_df.columns else 999
+        answer_text = get_mapping_dict(key).get(answer_value, "Unknown")
+        if answer_text not in ["Item skipped", "Unknown"]:
+            parts.append(f"{description}, {answer_text}")
+    if parts:
+        engagement_str += "; ".join(parts)
+    else:
+        engagement_str = "No significant engagement reported."
+    return engagement_str
+
+def construct_issues_list(row, personas_df):
+    parts = []
+    for key, description in issues_dict.items():
+        answer_value = personas_df.at[row.name, key] if key in personas_df.columns else 999
+        answer_text = get_mapping_dict(key).get(answer_value, "Unknown")
+        if answer_text not in ["Item skipped", "Unknown"]:
+            parts.append(f"{description}, {answer_text}")
+    return parts
+
+
+def construct_issues_string(row, personas_df):
+    issues_str = "How I feel about the following Issues include: "
+    parts = []
+    for key, description in issues_dict.items():
+        answer_value = personas_df.at[row.name, key] if key in personas_df.columns else 999
+        answer_text = get_mapping_dict(key).get(answer_value, "Unknown")
+        if answer_text not in ["Item skipped", "Unknown"]:
+            parts.append(f"{description}, {answer_text}")
+    if parts:
+        issues_str += "; ".join(parts)
+    else:
+        issues_str = "No significant issues reported."
+    return issues_str
+# --- End Engagement/Issues Functions ---
+
+def persona_to_dict(persona):
+    # Helper to convert Persona object to dict for CSV
+    return {
+        'name': persona.name,
+        'age': persona.age,
+        'gender': getattr(persona, 'gender', ''),
+        'location': persona.location,
+        'income': getattr(persona, 'income', ''),
+        'tenure': getattr(persona, 'tenure', ''),
+        'job_tenure': getattr(persona, 'job_tenure', ''),
+        'occupation': getattr(persona, 'occupation', ''),
+        'education': getattr(persona, 'education', ''),
+        'transport': getattr(persona, 'transport', ''),
+        'marital_status': getattr(persona, 'marital_status', ''),
+        'partner_activity': getattr(persona, 'partner_activity', ''),
+        'household_size': getattr(persona, 'household_size', ''),
+        'family_payments': getattr(persona, 'family_payments', ''),
+        'child_care_benefit': getattr(persona, 'child_care_benefit', ''),
+        'investment_properties': getattr(persona, 'investment_properties', ''),
+        'transport_infrastructure': getattr(persona, 'transport_infrastructure', ''),
+        'political_leaning': getattr(persona, 'political_leaning', ''),
+        'trust': getattr(persona, 'trust', ''),
+        'issues': ', '.join(getattr(persona, 'issues', [])),
+        'engagement': getattr(persona, 'engagement', '')
+    }
+
+# --- Update persona construction with missing field check ---
+def construct_persona_with_check(row, personas_df=None):
+    def safe_int(val):
+        try:
+            return int(val)
+        except (ValueError, TypeError):
+            return None
+
+    def get_value(mapping_dict, key, default='Unknown'):
+        value = mapping_dict.get(safe_int(row.get(key)), default)
+        return value if value != 'Item skipped' else default
+
+    persona = Persona(
+        name=f"Persona_{row.name}",
+        age=row.get('ABS_AGE_CATEGORY', 'Unknown'),
+        gender=row.get('ABS_SEX', 'Unknown'),
+        location=row.get('SA2 (UR)', 'Unknown'),
+        income=row.get('ABS_INCOME', 'Unknown'),
+        tenure=get_value(tenure, 'J1'),
+        job_tenure=get_value(job_tenure, 'G5_E'),
+        occupation=get_value(job_type, 'G5_D'),
+        education=get_value(edu_level, 'G3'),
+        transport=random_car_ownership(),  # Use random_car_ownership for transport
+        marital_status=get_value(marital_status, 'H8'),
+        partner_activity=get_value(partner_activity, 'I1'),
+        household_size=get_value(household_size, 'W1'),
+        family_payments=get_value(family_payments, 'J8_1'),
+        child_care_benefit=get_value(child_care_benefit, 'J8_2'),
+        investment_properties=get_value(investment_properties, 'J2'),
+        transport_infrastructure=get_value(transport_infrastructure, 'D8_9'),
+        political_leaning=get_value(political_leaning, 'B9_1'),
+        trust=get_value(trust_gov, 'C6'),
+        issues=construct_issues_list(row, personas_df) if personas_df is not None else [],
+        engagement=construct_engagement_string(row, personas_df) if personas_df is not None else "Unknown"
+    )
+    # Check for missing fields
+    missing = []
+    for field in ['name','age','gender','location','income','tenure','job_tenure','occupation','education','transport','marital_status','partner_activity','household_size','family_payments','child_care_benefit','investment_properties','transport_infrastructure','political_leaning','trust','issues','engagement']:
+        val = getattr(persona, field, None)
+        if val in [None, '', 'Unknown', [], ['Unknown']]:
+            missing.append(field)
+    if missing:
+        print(f"[WARNING] Persona {persona.name} has missing fields: {', '.join(missing)}")
+    return persona
+
+def random_car_ownership():
+    # Updated probabilities based on the table
+    probabilities = [0.179, 0.456, 0.236, 0.068, 0.061]  # Waverley percentages
+    
+    # Car ownership categories
+    car_ownership = ["No motor vehicles", "1 motor vehicle", "2 motor vehicles", 
+                     "3 or more motor vehicles", "Not stated"]
+    
+    # Randomly choose based on probabilities
+    return np.random.choice(car_ownership, p=probabilities)
+
+def save_personas_csv(personas: List[Persona], output_dir: str, timestamp: str) -> None:
+    """Save personas to a CSV file."""
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Convert personas to list of dictionaries
+    persona_dicts = [persona_to_dict(persona) for persona in personas]
+    
+    # Create DataFrame and save to CSV
+    df = pd.DataFrame(persona_dicts)
+    output_file = os.path.join(output_dir, f'personas_{timestamp}.csv')
+    df.to_csv(output_file, index=False)
+    print(f"Saved personas to {output_file}")
+
 def main():
     """Main function to process personas and generate responses."""
     print("\nVoxPop Personas Analysis Menu:")
-    print("1. Run full analysis with new responses")
-    print("2. Regenerate plots from existing data")
-    print("3. Generate synthetic personas from AES/ABS data")
-    print("4. Create toy datasets from large AES/ABS data")
-    print("5. Test AES/ABS persona generation")
-    print("6. Exit")
+    print("1. Run full ABS/AES harmonization and persona generation pipeline")
+    print("2. Run full analysis with new responses")
+    print("3. Regenerate plots from existing data")
+    print("4. Generate synthetic personas from AES/ABS data")
+    print("5. Create toy datasets from large AES/ABS data")
+    print("6. Test AES/ABS persona generation")
+    print("7. Exit")
     
-    choice = input("\nEnter your choice (1-6): ")
+    choice = input("\nEnter your choice (1-7): ")
     
     if choice == "1":
+        print("\nRunning full ABS/AES harmonization and persona generation pipeline...\n")
+        # 1. Read and harmonize data
+        abs_data = read_abs_data("data/Personas_wide.csv")
+        aes_data = pd.read_csv("data/aes22_unrestricted_v3.csv", low_memory=False)
+        
+        # 2. Harmonize AES data
+        print("Harmonizing AES data...")
+        aes_data['ABS_AGE_CATEGORY'] = aes_data['AGE'].apply(lambda x: map_age_to_abs_age(x, abs_to_aes_age))
+        aes_code_to_abs_sex = {v: k for k, v in abs_to_aes_sex.items()}
+        aes_data['ABS_SEX'] = aes_data['H1'].map(aes_code_to_abs_sex)
+        aes_data['ABS_MARITAL'] = aes_data['H8'].map({v: k for k, v in abs_to_aes_marital.items()})
+        aes_data['ABS_INCOME'] = aes_data['J6'].apply(lambda x: map_income_to_abs_income(x, abs_to_aes_income))
+        
+        # Check unique values after mapping
+        print("Unique AGE values in AES:", aes_data['AGE'].unique())
+        print("Unique H1 (sex) values in AES:", aes_data['H1'].unique())
+        print("Unique H8 (marital) values in AES:", aes_data['H8'].unique())
+        print("Unique J6 (income) values in AES:", aes_data['J6'].unique())
+
+        print("Unique ABS_AGE_CATEGORY after mapping:", aes_data['ABS_AGE_CATEGORY'].unique())
+        print("Unique ABS_SEX after mapping:", aes_data['ABS_SEX'].unique())
+        print("Unique ABS_MARITAL after mapping:", aes_data['ABS_MARITAL'].unique())
+        print("Unique ABS_INCOME after mapping:", aes_data['ABS_INCOME'].unique())
+        
+        # Drop rows with missing values in key columns
+        aes_data_harmonized = aes_data.dropna(subset=['ABS_AGE_CATEGORY', 'ABS_SEX', 'ABS_MARITAL', 'ABS_INCOME'])
+        print(f"After harmonization: {len(aes_data_harmonized)} rows in AES data")
+        print("Columns after harmonization:", aes_data_harmonized.columns.tolist())
+        
+        # After harmonization
+        output_dir = "output"
+        os.makedirs(output_dir, exist_ok=True)
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        aes_harmonized_path = os.path.join(output_dir, f"aes_data_harmonized_{timestamp}.csv")
+        aes_data_harmonized.to_csv(aes_harmonized_path, index=False)
+        print(f"Harmonized AES data saved to: {aes_harmonized_path}")
+        
+        # 3. Prepare ABS data for merge
+        print("Preparing ABS data for merge...")
+        # Define the income columns as in ABS
+        income_cols = [
+            "Negative income",
+            "Nil income",
+            "$1-$149 ($1-$7,799)",
+            "$150-$299 ($7,800-$15,599)",
+            "$300-$399 ($15,600-$20,799)",
+            "$400-$499 ($20,800-$25,999)",
+            "$500-$649 ($26,000-$33,799)",
+            "$650-$799 ($33,800-$41,599)",
+            "$800-$999 ($41,600-$51,999)",
+            "$1,000-$1,249 ($52,000-$64,999)",
+            "$1,250-$1,499 ($65,000-$77,999)",
+            "$1,500-$1,749 ($78,000-$90,999)",
+            "$1,750-$1,999 ($91,000-$103,999)",
+            "$2,000-$2,999 ($104,000-$155,999)",
+            "$3,000-$3,499 ($156,000-$181,999)",
+            "$3,500 or more ($182,000 or more)",
+            "Not stated",
+            "Not applicable"
+        ]
+        # Filter out rows where all income columns sum to zero or NaN
+        income_sums = abs_data[income_cols].sum(axis=1)
+        filtered_abs_data = abs_data[income_sums > 0.0].copy()
+        # Melt the ABS data to long format
+        melted = filtered_abs_data.melt(
+            id_vars=[
+                "SA2 (UR)",
+                "AGE5P Age in Five Year Groups",
+                "SEXP Sex",
+                "FPIP Parent Indicator",
+                "MSTP Registered Marital Status",
+                "1-digit level ANCP Ancestry Multi Response"
+            ],
+            value_vars=income_cols,
+            var_name="Income Level",
+            value_name="weight"
+        )
+        # Keep only rows with positive weights
+        poststrat_frame = melted[melted['weight'] > 0].copy()
+        print(poststrat_frame.head())
+        print(f"Number of strata (demographics x income): {len(poststrat_frame)}")
+        
+        # 4. Merge datasets
+        print("Merging datasets...")
+        poststrat_for_merge = poststrat_frame.rename(columns={
+            "AGE5P Age in Five Year Groups": "ABS_AGE_CATEGORY",
+            "SEXP Sex": "ABS_SEX",
+            "MSTP Registered Marital Status": "ABS_MARITAL",
+            "Income Level": "ABS_INCOME"
+        })
+
+        merged = pd.merge(
+            poststrat_for_merge,
+            aes_data_harmonized,
+            on=["ABS_AGE_CATEGORY", "ABS_SEX", "ABS_MARITAL", "ABS_INCOME"],
+            how="inner"
+        )
+
+        # Fix weight columns
+        if 'weight_x' in merged.columns:
+            merged = merged.rename(columns={'weight_x': 'weight'})
+        if 'weight_y' in merged.columns:
+            merged = merged.drop(columns=['weight_y'])
+
+        print(f"Merge successful. Result has {len(merged)} rows")
+        print("Columns after merge:", merged.columns.tolist())
+        
+        # After merging
+        merged_path = os.path.join(output_dir, f"merged_data_{timestamp}.csv")
+        merged.to_csv(merged_path, index=False)
+        print(f"Merged data saved to: {merged_path}")
+        
+        # 5. Sample personas (major city filter ON by default)
+        N = 1000  # For quick test
+        print(f"\nSampling {N} personas...")
+        personas_df = sample_personas_major_city(merged, N)
+        print(f"Successfully sampled {len(personas_df)} personas")
+        print("Columns in personas_df:", personas_df.columns.tolist())
+        
+        # 6. Construct Persona objects
+        print("\nConstructing Persona objects...")
+        persona_objects = [construct_persona_with_check(row, personas_df) for _, row in personas_df.iterrows()]
+        
+        # 7. Print results
+        print("\nGenerated Personas:")
+        for persona in persona_objects:
+            print(f"\n{persona}")
+        print("\nPipeline complete.\n")
+
+        # --- NEW: Generate LLM responses, print, and save analysis (was Step 2) ---
+        proceed = input("\nGenerate LLM responses and analysis for these personas? (y/n): ")
+        if proceed.lower() == 'y':
+            # Initialize OpenAI client
+            client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+            responses = []
+            for persona in persona_objects:
+                response = generate_persona_response(persona, client)
+                responses.append(response)
+                print(f"\nPersona Profile:")
+                print(f"Name: {response.persona_details['name']}")
+                print(f"Age: {response.persona_details['age']}")
+                print(f"Location: {response.persona_details['location']}")
+                print(f"Occupation: {response.persona_details['occupation']}")
+                print(f"Political Leaning: {response.persona_details['political_leaning']}")
+                print("\nNarrative Response:")
+                print(response.narrative_response)
+                print("\nSurvey Response:")
+                print(f"Support Level: {response.survey_response.support_level}")
+                print(f"Impact on Housing: {response.survey_response.impact_on_housing}")
+                print(f"Impact on Transport: {response.survey_response.impact_on_transport}")
+                print(f"Impact on Community: {response.survey_response.impact_on_community}")
+                print(f"Key Concerns: {', '.join(response.survey_response.key_concerns)}")
+                print(f"Suggested Improvements: {', '.join(response.survey_response.suggested_improvements)}")
+                print("\nAnalysis:")
+                print(f"Sentiment Score: {response.sentiment_score:.2f}")
+                print(f"Key Themes: {', '.join(response.key_themes)}")
+                print("=" * 80)
+            # Save responses and generate analysis/plots
+            timestamp = save_responses(responses)
+            print(f"\nAnalysis complete. Files saved with timestamp: {timestamp}")
+    elif choice == "2":
         # Initialize OpenAI client
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         
@@ -1129,7 +1840,7 @@ def main():
         timestamp = save_responses(responses)
         print(f"\nAnalysis complete. Files saved with timestamp: {timestamp}")
         
-    elif choice == "2":
+    elif choice == "3":
         # List available data files
         data_files = [f for f in os.listdir("output") if f.startswith("responses_summary_") and f.endswith(".csv")]
         if not data_files:
@@ -1147,11 +1858,12 @@ def main():
         try:
             file_index = int(file_choice) - 1
             selected_file = os.path.join("output", data_files[file_index])
+            print('Selected file: ', file_index, selected_file)
             regenerate_plots(selected_file)
         except (ValueError, IndexError):
             print("\nInvalid selection. Please try again.")
             
-    elif choice == "3":
+    elif choice == "4":
         # Get input file paths
         aes_file = input("\nEnter path to AES data file: ")
         abs_file = input("Enter path to ABS data file: ")
@@ -1168,13 +1880,13 @@ def main():
         # Generate synthetic personas
         synthetic_personas, poststrat_frame = generate_synthetic_personas(aes_file, abs_file, num_personas, sample_size)
             
-    elif choice == "4":
+    elif choice == "5":
         # Create toy datasets with default paths
         aes_file, abs_file = create_toy_datasets()
         if aes_file and abs_file:
-            print("\nToy datasets created successfully. You can now use these files with option 3.")
+            print("\nToy datasets created successfully. You can now use these files with option 4.")
             
-    elif choice == "5":
+    elif choice == "6":
         # Get input file paths
         poststrat_file = input("\nEnter path to post-stratification frame: ")
         
@@ -1233,7 +1945,7 @@ def main():
         timestamp = save_responses(responses)
         print(f"\nAnalysis complete. Files saved with timestamp: {timestamp}")
             
-    elif choice == "6":
+    elif choice == "7":
         print("\nExiting program.")
         return
         
