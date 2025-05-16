@@ -1,0 +1,45 @@
+ml_models_config:
+  categories_classifier:
+    model_name: facebook/bart-large-mnli
+    batch_size: 16
+    gpt_classification_prompt: 'Analyze the following post and suggest a single category
+      that best describes its main topic.
+
+      The category should be concise (1-3 words) and reflect the primary subject matter.
+
+      Return only the category name, nothing else.
+
+
+      Post: {text}'
+theme_mapping:
+  Cost of living:
+  - Cost_of_Living
+  Housing:
+    Housing Affordability:
+    - Affordable_Housing
+    - Development_Balance
+  Economy:
+  - Property_Devaluation
+  - Quality_of_Life
+  Healthcare:
+  - Livability
+  Crime:
+  - Community_Disruption
+  - Community_Balance
+  Politics:
+    Political Impact:
+    - Ideological_Influence
+    - Community_Sentiment
+  Infrastructure:
+    Parking/Transport:
+    - Parking_Scarcity
+    - Vehicle_Dependency
+    - Public_Transport
+    - Infrastructure_Strain
+  General Topics:
+    Sustainability:
+    - Carbon_Footprint
+    - Eco_Living
+    - Green_Policy
+    Social Equity:
+    - Marginalized_Groups
