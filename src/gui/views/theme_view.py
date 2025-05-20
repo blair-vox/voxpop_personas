@@ -43,25 +43,43 @@ def render_theme_analysis(controller) -> None:
     st.subheader("Sentiment Analysis")
     if 'sentiment_by_theme' in analysis_results:
         df = pd.DataFrame(analysis_results['sentiment_by_theme'])
-        fig = px.box(
-            df,
-            x='theme',
-            y='sentiment',
-            title='Sentiment Distribution by Theme',
-            labels={'theme': 'Theme', 'sentiment': 'Sentiment Score'}
-        )
-        st.plotly_chart(fig)
+        st.write("[DEBUG] Sentiment DataFrame columns:", df.columns.tolist())
+        st.write("[DEBUG] Sentiment DataFrame head:", df.head())
+        if df.empty:
+            st.error("Sentiment DataFrame is empty. No sentiment data to plot.")
+        elif 'theme' not in df.columns or 'sentiment' not in df.columns:
+            st.error(f"Sentiment DataFrame missing required columns. Columns present: {df.columns.tolist()}")
+        else:
+            fig = px.box(
+                df,
+                x='theme',
+                y='sentiment',
+                title='Sentiment Distribution by Theme',
+                labels={'theme': 'Theme', 'sentiment': 'Sentiment Score'}
+            )
+            st.plotly_chart(fig)
     
     # Display impact analysis
     st.subheader("Impact Analysis")
     if 'impact_by_theme' in analysis_results:
         impact_df = pd.DataFrame(analysis_results['impact_by_theme'])
-        for impact_type in ['housing', 'transport', 'community']:
-            fig = px.box(
-                impact_df,
-                x='theme',
-                y=f'impact_{impact_type}',
-                title=f'Impact on {impact_type.title()} by Theme',
-                labels={'theme': 'Theme', f'impact_{impact_type}': f'Impact Score'}
-            )
-            st.plotly_chart(fig) 
+        st.write("[DEBUG] Impact DataFrame columns:", impact_df.columns.tolist())
+        st.write("[DEBUG] Impact DataFrame head:", impact_df.head())
+        if impact_df.empty:
+            st.error("Impact DataFrame is empty. No impact data to plot.")
+        elif 'theme' not in impact_df.columns:
+            st.error(f"Impact DataFrame missing 'theme' column. Columns present: {impact_df.columns.tolist()}")
+        else:
+            for impact_type in ['housing', 'transport', 'community']:
+                col_name = f'impact_{impact_type}'
+                if col_name not in impact_df.columns:
+                    st.warning(f"Impact DataFrame missing '{col_name}' column. Skipping plot for {impact_type}.")
+                    continue
+                fig = px.box(
+                    impact_df,
+                    x='theme',
+                    y=col_name,
+                    title=f'Impact on {impact_type.title()} by Theme',
+                    labels={'theme': 'Theme', col_name: 'Impact Score'}
+                )
+                st.plotly_chart(fig) 

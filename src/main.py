@@ -35,6 +35,8 @@ from analysis.visualization import (
     generate_analysis_report
 )
 from config.mappings import abs_to_aes_age, abs_to_aes_income, abs_to_aes_sex, abs_to_aes_marital
+from pipeline.persona_pipeline import run_new_pipeline
+from utils.persona_utils import generate_synthetic_personas, draw_weighted_personas, validate_demographic_distribution
 
 # Load environment variables
 load_dotenv()
@@ -96,7 +98,9 @@ def generate_synthetic_personas(aes_file: str, abs_file: str, num_personas: int 
     abs_data = read_abs_data(abs_file)
     
     # 1. Harmonize AES data
-    print("Harmonizing AES data...")
+    print("\n=== Data Harmonization ===")
+    print("Original AES data shape:", aes_data.shape)
+    
     aes_data['ABS_AGE_CATEGORY'] = aes_data['AGE'].apply(lambda x: map_age_to_abs_age(x, abs_to_aes_age))
     aes_code_to_abs_sex = {v: k for k, v in abs_to_aes_sex.items()}
     aes_data['ABS_SEX'] = aes_data['H1'].map(aes_code_to_abs_sex)
@@ -108,8 +112,14 @@ def generate_synthetic_personas(aes_file: str, abs_file: str, num_personas: int 
     aes_data_harmonized = aes_data.dropna(subset=['ABS_AGE_CATEGORY', 'ABS_SEX', 'ABS_MARITAL', 'ABS_INCOME'])
     print(f"After harmonization: {len(aes_data_harmonized)} rows in AES data")
     
+    # Print first row of harmonized data
+    print("\nFirst row of harmonized AES data:")
+    first_row = aes_data_harmonized.iloc[0]
+    for col in ['AGE', 'ABS_AGE_CATEGORY', 'H1', 'ABS_SEX', 'H8', 'ABS_MARITAL', 'J6', 'ABS_INCOME']:
+        print(f"{col}: {first_row[col]}")
+    
     # 2. Prepare ABS data for merge
-    print("Preparing ABS data for merge...")
+    print("\n=== ABS Data Preparation ===")
     # Define the income columns as in ABS
     income_cols = [
         "Negative income", "Nil income", "$1-$149 ($1-$7,799)", "$150-$299 ($7,800-$15,599)",
@@ -143,7 +153,7 @@ def generate_synthetic_personas(aes_file: str, abs_file: str, num_personas: int 
     poststrat_frame = melted[melted['weight'] > 0].copy()
     
     # 3. Merge datasets
-    print("Merging datasets...")
+    print("\n=== Dataset Merge ===")
     poststrat_for_merge = poststrat_frame.rename(columns={
         "AGE5P Age in Five Year Groups": "ABS_AGE_CATEGORY",
         "SEXP Sex": "ABS_SEX",
@@ -167,14 +177,28 @@ def generate_synthetic_personas(aes_file: str, abs_file: str, num_personas: int 
     print(f"Merge successful. Result has {len(merged)} rows")
     
     # 4. Sample personas
-    print(f"\nSampling {num_personas} personas...")
+    print(f"\n=== Persona Sampling ===")
     synthetic_personas = sample_personas_major_city(merged, num_personas)
     print(f"Successfully sampled {len(synthetic_personas)} personas")
     
+    # Print first persona's raw data
+    print("\nFirst persona's raw data:")
+    first_persona = synthetic_personas.iloc[0]
+    for col in synthetic_personas.columns:
+        print(f"{col}: {first_persona[col]}")
+    
     # 5. Create poststratification frame
+    print("\n=== Persona Construction ===")
     poststrat_frame = pd.DataFrame()
-    for _, row in synthetic_personas.iterrows():
+    for i, row in synthetic_personas.iterrows():
+        print(f"\nConstructing persona {i+1}:")
         persona = construct_persona_with_check(row, synthetic_personas)
+        print("Constructed persona attributes:")
+        for field in ['name', 'age', 'gender', 'location', 'income', 'tenure', 'job_tenure', 
+                     'occupation', 'education', 'transport', 'marital_status', 'partner_activity', 
+                     'household_size', 'family_payments', 'child_care_benefit', 'investment_properties', 
+                     'transport_infrastructure', 'political_leaning', 'trust', 'issues', 'engagement']:
+            print(f"{field}: {getattr(persona, field, 'Unknown')}")
         poststrat_frame = pd.concat([poststrat_frame, pd.DataFrame([persona.model_dump()])], ignore_index=True)
     
     return synthetic_personas, poststrat_frame
@@ -262,111 +286,6 @@ def main():
     else:
         # Run new code (current pipeline)
         run_new_pipeline(num_personas)
-
-def run_new_pipeline(num_personas):
-    # Central configuration
-    client = OpenAI()
-    output_dir = "output"
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-        print(f"Created output directory: {output_dir}")
-
-    # Generate synthetic personas
-    synthetic_personas_df, poststrat_frame = generate_synthetic_personas(
-        aes_file="data/aes22_unrestricted_v3.csv",
-        abs_file="data/Personas_wide.csv",
-        num_personas=num_personas
-    )
-
-    # Draw weighted personas
-    personas_df_for_response = draw_weighted_personas(poststrat_frame, num_personas=num_personas)
-
-    # Validate demographic distribution
-    validate_demographic_distribution(personas_df_for_response)
-
-    # Generate responses for each persona
-    responses = []
-    for _, row_data in personas_df_for_response.iterrows():
-        issues_val = row_data.get('issues', [])
-        if isinstance(issues_val, str):
-            try:
-                parsed_issues = ast.literal_eval(issues_val)
-                if isinstance(parsed_issues, list):
-                    issues_val = parsed_issues
-                else:
-                    issues_val = [str(parsed_issues)]
-            except (ValueError, SyntaxError):
-                issues_val = [str(issues_val)]
-        elif not isinstance(issues_val, list):
-            issues_val = [str(issues_val)]
-
-        current_persona = Persona(
-            name=str(row_data.get('name', f"Persona_{row_data.name}")),
-            age=str(row_data.get('age', 'Unknown')),
-            gender=str(row_data.get('gender', 'Unknown')),
-            location=str(row_data.get('location', 'Unknown')),
-            income=str(row_data.get('income', 'Unknown')),
-            tenure=str(row_data.get('tenure', 'Unknown')),
-            job_tenure=str(row_data.get('job_tenure', 'Unknown')),
-            occupation=str(row_data.get('occupation', 'Unknown')),
-            education=str(row_data.get('education', 'Unknown')),
-            transport=str(row_data.get('transport', 'Unknown')),
-            marital_status=str(row_data.get('marital_status', 'Unknown')),
-            partner_activity=str(row_data.get('partner_activity', 'Unknown')),
-            household_size=str(row_data.get('household_size', 'Unknown')),
-            family_payments=str(row_data.get('family_payments', 'Unknown')),
-            child_care_benefit=str(row_data.get('child_care_benefit', 'Unknown')),
-            investment_properties=str(row_data.get('investment_properties', 'Unknown')),
-            transport_infrastructure=str(row_data.get('transport_infrastructure', 'Unknown')),
-            political_leaning=str(row_data.get('political_leaning', 'Unknown')),
-            trust=str(row_data.get('trust', 'Unknown')),
-            issues=issues_val,
-            engagement=str(row_data.get('engagement', 'Unknown'))
-        )
-        response = generate_persona_response(current_persona, client)
-        responses.append(response)
-
-    # Save responses and generate analysis
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    combined_responses_file_path = save_responses_with_canonical_themes(responses, client, output_dir=output_dir)
-
-    try:
-        all_responses_df = pd.read_json(combined_responses_file_path)
-        print(f"Successfully loaded combined responses from {combined_responses_file_path} for visualization.")
-        if 'survey_response' in all_responses_df.columns and not all_responses_df.empty and isinstance(all_responses_df['survey_response'].iloc[0], dict):
-            print("Flattening survey_response data for correlation analysis...")
-            survey_data_df = pd.json_normalize(all_responses_df['survey_response'])
-            all_responses_df = pd.concat([
-                all_responses_df.drop(columns=['survey_response']),
-                survey_data_df
-            ], axis=1)
-            print(f"Columns after flattening: {all_responses_df.columns.tolist()}")
-    except Exception as e:
-        print(f"Error loading or processing combined responses JSON for visualization: {e}")
-        all_responses_df = pd.DataFrame([r.model_dump() for r in responses])
-        if 'survey_response' in all_responses_df.columns and not all_responses_df.empty and isinstance(all_responses_df['survey_response'].iloc[0], dict):
-            try:
-                print("Flattening survey_response data in fallback...")
-                survey_data_df = pd.json_normalize(all_responses_df['survey_response'])
-                all_responses_df = pd.concat([
-                    all_responses_df.drop(columns=['survey_response']),
-                    survey_data_df
-                ], axis=1)
-            except Exception as ex_fallback:
-                print(f"Error flattening survey_response in fallback: {ex_fallback}")
-
-    if not all_responses_df.empty:
-        create_heatmap(all_responses_df, output_dir, timestamp)
-        create_sentiment_analysis(all_responses_df, output_dir, timestamp)
-        create_impact_analysis(all_responses_df, output_dir, timestamp)
-        create_theme_analysis(all_responses_df, output_dir, timestamp)
-        create_location_analysis(all_responses_df, output_dir, timestamp)
-        create_occupation_analysis(all_responses_df, output_dir, timestamp)
-        create_correlation_analysis(all_responses_df, output_dir, timestamp)
-        create_concern_analysis(all_responses_df, output_dir, timestamp)
-        generate_analysis_report(all_responses_df, output_dir, timestamp)
-    else:
-        print("Skipping visualizations as the responses DataFrame is empty.")
 
 if __name__ == "__main__":
     main() 

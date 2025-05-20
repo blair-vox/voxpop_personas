@@ -25,7 +25,9 @@ def main():
     st.title("VoxPop Personas")
     
     # Initialize controller
-    controller = PersonaController()
+    if 'controller' not in st.session_state:
+        st.session_state['controller'] = PersonaController()
+    controller = st.session_state['controller']
     
     # Sidebar navigation
     st.sidebar.title("Navigation")
