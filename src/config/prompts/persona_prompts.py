@@ -15,7 +15,7 @@ Persona Details:
 
 You have been asked to react to the following **local proposal**:
 
-> "Waverley Council is considering a policy that would remove minimum parking requirements for new apartment developments in Bondi. This means developers could build fewer or no car spaces if they believe it suits the residents' needs."
+> {question}
 
 IMPORTANT: Based on your Australian demographic profile, you should take a strong position on this issue. 
 Consider how your background might lead you to your views, you are free to be as moderate or extreme as you like:

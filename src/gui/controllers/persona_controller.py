@@ -6,6 +6,7 @@ import pandas as pd
 from datetime import datetime
 from openai import OpenAI
 import ast
+import streamlit as st
 
 from models.persona import Persona, PersonaResponse
 from generation.persona_gen import (
@@ -21,18 +22,20 @@ class PersonaController:
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.client = OpenAI()
     
-    def generate_personas(self, num_personas: int, random_state: Optional[int] = None) -> List[PersonaResponse]:
+    def generate_personas(self, num_personas: int, random_state: Optional[int] = None, custom_prompt: Optional[str] = None, question: Optional[str] = None) -> List[PersonaResponse]:
         """
         Generate a specified number of personas using the main pipeline.
         
         Args:
             num_personas (int): Number of personas to generate
             random_state (Optional[int]): Random state for reproducibility. If None, uses current time.
+            custom_prompt (Optional[str]): Custom prompt to use for persona generation
+            question (Optional[str]): The local proposal/question to include in the prompt
         
         Returns:
             List[PersonaResponse]: List of generated persona responses
         """
-        responses = run_new_pipeline(num_personas, random_state=random_state)
+        responses = run_new_pipeline(num_personas, random_state=random_state, custom_prompt=custom_prompt, question=question)
         self.current_responses = responses
         return responses
     

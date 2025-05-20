@@ -9,6 +9,7 @@ import pandas as pd
 from openai import OpenAI
 from textblob import TextBlob
 import re
+import uuid
 
 from models.persona import Persona, PersonaResponse, SurveyResponse
 from config.prompts.persona_prompts import SYSTEM_PROMPT, PERSONA_TEMPLATE, THEME_EXTRACTION_PROMPT
@@ -239,104 +240,123 @@ def map_themes_to_canonical(
                 result.append({"canonical": "Other", "original": theme})
         return result
 
-def generate_persona_response(persona: Persona, client: OpenAI) -> PersonaResponse:
-    """Generate response for a persona."""
-    # Format persona details for the prompt
-    persona_details = {
-        'name': persona.name,
-        'age': persona.age,
-        'gender': persona.gender,
-        'location': persona.location,
-        'income': persona.income,
-        'tenure': persona.tenure,
-        'job_tenure': persona.job_tenure,
-        'occupation': persona.occupation,
-        'education': persona.education,
-        'transport': persona.transport,
-        'marital_status': persona.marital_status,
-        'partner_activity': persona.partner_activity,
-        'household_size': persona.household_size,
-        'family_payments': persona.family_payments,
-        'child_care_benefit': persona.child_care_benefit,
-        'investment_properties': persona.investment_properties,
-        'transport_infrastructure': persona.transport_infrastructure,
-        'political_leaning': persona.political_leaning,
-        'trust': persona.trust,
-        'issues': persona.issues,
-        'engagement': persona.engagement
-    }
+def generate_persona_response(persona: Persona, client: OpenAI, custom_prompt: Optional[str] = None, question: Optional[str] = None) -> PersonaResponse:
+    """
+    Generate a response for a given persona using the LLM.
+    
+    Args:
+        persona (Persona): The persona to generate a response for
+        client (OpenAI): The OpenAI client to use
+        custom_prompt (Optional[str]): Custom prompt to use instead of the default
+        question (Optional[str]): The local proposal/question to include in the prompt
+    
+    Returns:
+        PersonaResponse: The generated response
+    """
+    # Use custom prompt if provided, otherwise use default
+    prompt = custom_prompt if custom_prompt else PERSONA_TEMPLATE
+
+    # Use provided question or default
+    default_question = (
+        "Waverley Council is considering a policy that would remove minimum parking requirements for new apartment developments in Bondi. "
+        "This means developers could build fewer or no car spaces if they believe it suits the residents' needs."
+    )
+    question_text = question if question is not None else default_question
+
+    # Format the prompt with persona details and question
+    formatted_prompt = prompt.format(persona_details=persona.model_dump(), question=question_text)
     
     # Generate response using OpenAI
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4-turbo-preview",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": PERSONA_TEMPLATE.format(persona_details=json.dumps(persona_details, indent=2))}
-        ]
+            {"role": "user", "content": formatted_prompt}
+        ],
+        temperature=0.7
     )
     
     # Parse the response
     response_text = response.choices[0].message.content
-    narrative_response = response_text.split('SURVEY RESPONSE:')[0].replace('NARRATIVE RESPONSE:', '').strip()
-    survey_response_text = response_text.split('SURVEY RESPONSE:')[1].strip()
     
-    # Parse survey response
-    survey_lines = survey_response_text.split('\n')
-    survey_data = {}
-    for line in survey_lines:
-        if ':' in line:
-            key, value = line.split(':', 1)
-            key = key.strip().lower().replace(' ', '_')
-            # Normalize "impact_on_housing_affordability" to "impact_on_housing"
-            if key == "impact_on_housing_affordability":
-                key = "impact_on_housing"
-            value = value.strip()
-            if key in ['support_level', 'impact_on_housing', 'impact_on_transport', 'impact_on_community']:
-                try:
-                    survey_data[key] = int(value)
-                except ValueError:
-                    print(f"[WARNING] Could not parse integer value for {key}: '{value}'. Using 0 as default.")
-                    survey_data[key] = 0  # Default for unparseable int
-            elif key in ['key_concerns', 'suggested_improvements']:
-                survey_data[key] = [item.strip() for item in value.split(',')]
+    # Extract narrative and survey responses
+    narrative_response = ""
+    survey_response = None
     
-    # Expected keys for SurveyResponse
-    expected_numeric_keys = ['support_level', 'impact_on_housing', 'impact_on_transport', 'impact_on_community']
-    expected_list_keys = ['key_concerns', 'suggested_improvements']
-
-    # Check for missing keys and apply defaults
-    for k in expected_numeric_keys:
-        if k not in survey_data:
-            print(f"[WARNING] Survey data missing key: '{k}'. Using 0 as default.")
-            survey_data[k] = 0
+    if "NARRATIVE RESPONSE:" in response_text:
+        narrative_parts = response_text.split("NARRATIVE RESPONSE:")
+        if len(narrative_parts) > 1:
+            narrative_response = narrative_parts[1].split("SURVEY RESPONSE:")[0].strip()
     
-    for k in expected_list_keys:
-        if k not in survey_data:
-            print(f"[WARNING] Survey data missing key: '{k}'. Using empty list as default.")
-            survey_data[k] = []
-
-    # Create survey response object
-    survey_response = SurveyResponse(
-        support_level=survey_data.get('support_level', 0),
-        impact_on_housing=survey_data.get('impact_on_housing', 0),
-        impact_on_transport=survey_data.get('impact_on_transport', 0),
-        impact_on_community=survey_data.get('impact_on_community', 0),
-        key_concerns=survey_data.get('key_concerns', []),
-        suggested_improvements=survey_data.get('suggested_improvements', [])
-    )
+    if "SURVEY RESPONSE:" in response_text:
+        survey_parts = response_text.split("SURVEY RESPONSE:")
+        if len(survey_parts) > 1:
+            survey_text = survey_parts[1].strip()
+            survey_lines = survey_text.split("\n")
+            
+            # Parse survey response
+            support_level = None
+            impact_housing = None
+            impact_transport = None
+            impact_community = None
+            key_concerns = []
+            suggested_improvements = []
+            
+            for line in survey_lines:
+                line = line.strip()
+                if line.startswith("Support Level:"):
+                    try:
+                        support_level = int(line.split(":")[1].strip())
+                    except ValueError:
+                        support_level = 3  # Default to neutral
+                elif line.startswith("Impact on Housing:"):
+                    try:
+                        impact_housing = int(line.split(":")[1].strip())
+                    except ValueError:
+                        impact_housing = 3
+                elif line.startswith("Impact on Transport:"):
+                    try:
+                        impact_transport = int(line.split(":")[1].strip())
+                    except ValueError:
+                        impact_transport = 3
+                elif line.startswith("Impact on Community:"):
+                    try:
+                        impact_community = int(line.split(":")[1].strip())
+                    except ValueError:
+                        impact_community = 3
+                elif line.startswith("Key Concerns:"):
+                    concerns = line.split(":")[1].strip()
+                    key_concerns = [c.strip() for c in concerns.split(",")]
+                elif line.startswith("Suggested Improvements:"):
+                    improvements = line.split(":")[1].strip()
+                    suggested_improvements = [i.strip() for i in improvements.split(",")]
+            
+            survey_response = SurveyResponse(
+                support_level=support_level or 3,
+                impact_on_housing=impact_housing or 3,
+                impact_on_transport=impact_transport or 3,
+                impact_on_community=impact_community or 3,
+                key_concerns=key_concerns,
+                suggested_improvements=suggested_improvements
+            )
     
-    # Analyze sentiment and extract themes
-    sentiment_score = analyze_sentiment(narrative_response)
-    key_themes = extract_key_themes(narrative_response, client)
+    # Extract key themes
+    key_themes = []
+    if "Key Themes:" in response_text:
+        theme_parts = response_text.split("Key Themes:")
+        if len(theme_parts) > 1:
+            theme_text = theme_parts[1].split("Canonical Themes:")[0].strip()
+            key_themes = [t.strip() for t in theme_text.split("\n") if t.strip()]
     
-    # Create and return persona response
+    # Create PersonaResponse object
     return PersonaResponse(
-        persona_details=persona_details,
+        persona_details=persona.model_dump(),
         narrative_response=narrative_response,
-        survey_response=survey_response,
-        timestamp=datetime.now().strftime('%Y%m%d_%H%M%S'),
-        sentiment_score=sentiment_score,
-        key_themes=key_themes
+        timestamp=datetime.now().isoformat(),
+        sentiment_score=0.0,  # Will be calculated later
+        key_themes=key_themes,
+        canonical_themes=[],  # Will be populated later
+        survey_response=survey_response or SurveyResponse()
     )
 
 def generate_aes_persona_response(persona: pd.Series, client: OpenAI) -> PersonaResponse:
@@ -404,18 +424,39 @@ def save_responses_with_canonical_themes(
             client=client
         )
     
-    # Update each response with canonical_themes
+    # Update each response with canonical_themes, robustly
     print("\nUpdating responses with canonical themes...")
-    for response in responses:
-        if hasattr(response, 'key_themes') and response.key_themes:
-            response.canonical_themes = map_themes_to_canonical(
-                response.key_themes, 
-                canonical_mapping,
-                method=classification_method,
-                config_path=config_path
-            )
-        else:
+    persona_fields = [
+        'name','age','gender','location','income','tenure','job_tenure','occupation','education','transport','marital_status','partner_activity','household_size','family_payments','child_care_benefit','investment_properties','transport_infrastructure','political_leaning','trust','issues','engagement'
+    ]
+    for i, response in enumerate(responses):
+        try:
+            if hasattr(response, 'persona_details'):
+                print(f"[DEBUG] Before theme mapping: Response {i+1} persona_details={response.persona_details}, key_themes={getattr(response, 'key_themes', None)}")
+                unknowns = count_unknown_fields_dict(response.persona_details)
+                if len(unknowns) == len(persona_fields):
+                    print(f"[WARNING] Response {i+1} persona_details are ALL 'Unknown'. Skipping theme mapping for this response.")
+                    response.canonical_themes = []
+                    continue
+            if hasattr(response, 'key_themes') and response.key_themes:
+                response.canonical_themes = map_themes_to_canonical(
+                    response.key_themes, 
+                    canonical_mapping,
+                    method=classification_method,
+                    config_path=config_path
+                )
+            else:
+                response.canonical_themes = []
+            print(f"[DEBUG] After theme mapping: Response {i+1} persona_details={response.persona_details}, canonical_themes={getattr(response, 'canonical_themes', None)}")
+        except Exception as e:
+            print(f"[ERROR] Exception while processing response {i+1}: {e}")
             response.canonical_themes = []
+    
+    # Debug: Count unknown fields in persona_details before saving
+    for i, response in enumerate(responses):
+        if hasattr(response, 'persona_details'):
+            print(f"[DEBUG] Before saving: Response {i+1} persona_details={response.persona_details}, canonical_themes={getattr(response, 'canonical_themes', None)}")
+            count_unknown_fields_dict(response.persona_details)
     
     # Save combined responses
     print("\nSaving responses to file...")
@@ -433,9 +474,34 @@ def save_responses_with_canonical_themes(
     
     return combined_file_path
 
+def count_unknown_fields_dict(data):
+    unknown_fields = []
+    persona_fields = [
+        'name','age','gender','location','income','tenure','job_tenure','occupation','education','transport','marital_status','partner_activity','household_size','family_payments','child_care_benefit','investment_properties','transport_infrastructure','political_leaning','trust','issues','engagement'
+    ]
+    for field in persona_fields:
+        val = data.get(field, None)
+        if val == 'Unknown' or val == [] or val == ['Unknown']:
+            unknown_fields.append(field)
+    print(f"[DEBUG] Persona dict has {len(unknown_fields)} fields set to 'Unknown': {unknown_fields}")
+    return unknown_fields
+
 def save_personas_csv(personas: List[Persona], output_dir: str, timestamp: str) -> None:
     """Save personas to CSV file."""
     os.makedirs(output_dir, exist_ok=True)
     personas_data = [persona.model_dump() for persona in personas]
+    # Debug: Print the first few personas data being saved
+    print("\n[DEBUG] First few personas data being saved:")
+    for i, data in enumerate(personas_data[:5]):
+        print(f"Persona {i+1}: {data}")
+    # Alert if all persona details are 'Unknown' and count unknowns for each persona
+    persona_fields = [
+        'name','age','gender','location','income','tenure','job_tenure','occupation','education','transport','marital_status','partner_activity','household_size','family_payments','child_care_benefit','investment_properties','transport_infrastructure','political_leaning','trust','issues','engagement'
+    ]
+    for i, data in enumerate(personas_data):
+        unknowns = count_unknown_fields_dict(data)
+        if len(unknowns) == len(persona_fields):
+            print(f"[ALERT] Persona {i+1} is being saved with ALL fields as 'Unknown'. Data: {data}")
     df = pd.DataFrame(personas_data)
-    df.to_csv(os.path.join(output_dir, f'personas_{timestamp}.csv'), index=False) 
+    df.to_csv(os.path.join(output_dir, f'personas_{timestamp}.csv'), index=False)
+    print(f"Saved personas to {os.path.join(output_dir, f'personas_{timestamp}.csv')}")
